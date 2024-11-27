@@ -1,0 +1,439 @@
+---
+title: "Deep Learning"
+format: 
+    revealjs:
+      smaller: true
+      center: true
+---
+
+```{python}
+import mglearn
+import json
+import numpy as np
+import pandas as pd
+import sys, os
+sys.path.append(os.path.join(os.path.abspath("."), "code"))
+from deep_learning_code import *
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LogisticRegression
+from torchvision import datasets, models, transforms, utils
+from sklearn.pipeline import Pipeline, make_pipeline
+from sklearn.preprocessing import StandardScaler
+import matplotlib.image as mpimg
+%matplotlib inline
+```
+
+## Learning outcomes 
+\
+From this module, you will be able to 
+
+- Explain the role of neural networks in machine learning, including their advantages and disadvantages.
+- Discuss why traditional methods are less effective for image data.
+- Gain a high-level understanding of transfer learning.
+- Differentiate between image classification and object detection.
+
+## Image classification
+\
+
+Have you used search in Google Photos? You can search for "my photos of cat" and it will retrieve photos from your libraries containing cats.
+This can be done using **image classification**, which is treated as a supervised learning problem, where we define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos.
+
+## Image classification
+\
+
+Image classification is not an easy problem because of the variations in the location of the object, lighting, background, camera angle, camera focus etc.
+
+![](img/cat_variation.png)
+<!-- [Source](https://developers.google.com/machine-learning/practica/image-classification) -->
+
+## Neural networks
+\
+
+- Neural networks are perfect for these types of problems where local structures are important. 
+- A significant advancement in image classification was the application of **convolutional neural networks** (ConvNets or CNNs) to this problem. 
+- [ImageNet Classification with Deep Convolutional
+Neural Networks](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
+- Achieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition. 
+- Let's go over the basics of a neural network.
+
+## Introduction to neural networks
+\
+
+- Neural networks can be viewed a generalization of linear models where we apply a series of transformations.
+- Here is graphical representation of a logistic regression model.
+- We have 4 features: x[0], x[1], x[2], x[3]
+
+```{python}
+import mglearn
+
+mglearn.plots.plot_logistic_regression_graph()
+```
+
+## Adding a layer of transformations 
+\
+
+- Below we are adding one "layer" of transformations in between features and the target. 
+- We are repeating the the process of computing the weighted sum multiple times.  
+- The **hidden units** (e.g., h[1], h[2], ...) represent the intermediate processing steps. 
+
+```{python}
+mglearn.plots.plot_single_hidden_layer_graph()
+```
+
+## One more layer of transformations 
+\
+
+- Now we are adding one more layer of transformations. 
+
+```{python}
+mglearn.plots.plot_two_hidden_layer_graph()
+```
+
+## Neural networks 
+\
+
+- With a neural net, you specify the number of features after each transformation.
+  - In the above, it goes from 4 to 3 to 3 to 1.
+
+- To make them really powerful compared to the linear models, we apply a non-linear function to the weighted sum for each hidden node. 
+- Neural network = neural net
+- Deep learning ~ using neural networks
+
+## Why neural networks?
+\
+
+- They can learn very complex functions.
+  - The fundamental tradeoff is primarily controlled by the **number of layers** and **layer sizes**.
+  - More layers / bigger layers --> more complex model.
+  - You can generally get a model that will not underfit. 
+
+- The work really well for structured data:
+  - 1D sequence, e.g. timeseries, language
+  - 2D image
+  - 3D image or video
+- They've had some incredible successes in the last 10 years.
+- Transfer learning (coming later today) is really useful.  
+
+## Why not neural networks?
+\
+
+- Often they require a lot of data.
+- They require a lot of compute time, and, to be faster, specialized hardware called [GPUs](https://en.wikipedia.org/wiki/Graphics_processing_unit).
+- They have huge numbers of hyperparameters are a huge pain to tune.
+  - Think of each layer having hyperparameters, plus some overall hyperparameters.
+  - Being slow compounds this problem.
+- They are not interpretable.
+- I don't recommend training them on your own without further training
+
+  - Good news
+    - You don't have to train your models from scratch in order to use them.
+    - I'll show you some ways to use neural networks without training them yourselves. 
+
+## Deep learning software
+\
+
+The current big players are:
+
+1. [PyTorch](http://pytorch.org)
+2. [TensorFlow](https://www.tensorflow.org)
+
+Both are heavily used in industry. If interested, see [comparison of deep learning software](https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software).
+
+<br><br>
+
+## Introduction to computer vision
+\
+
+- [Computer vision](https://en.wikipedia.org/wiki/Computer_vision) refers to understanding images/videos, usually using ML/AI. 
+- In the last decade this field has been dominated by deep learning. We will explore **image classification** and **object detection**.
+
+## Introduction to computer vision
+\
+
+- image classification: is this a cat or a dog?
+- object localization: where is the cat in this image?
+- object detection: What are the various objects in the image? 
+- instance segmentation: What are the shapes of these various objects in the image? 
+- and much more...
+
+![](img/vision-apps.jpeg)
+<!-- Source: https://learning.oreilly.com/library/view/python-advanced-guide/9781789957211/--> 
+
+
+## Pre-trained models
+\
+
+- In practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.
+- Instead, a common practice is to download a pre-trained model and fine tune it for your task. This is called **transfer learning**.
+- Transfer learning is one of the most common techniques used in the context of computer vision and natural language processing.
+- It refers to using a model already trained on one task as a starting point for learning to perform another task
+
+## Pre-trained models out-of-the-box 
+\
+
+![](img/cnn-ex.png)
+
+<!-- Source: https://cezannec.github.io/Convolutional_Neural_Networks/ -->
+
+- Let's first apply one of these pre-trained models to our own problem right out of the box. 
+
+
+## Pre-trained models out-of-the-box 
+\
+
+- We can easily download famous models using the `torchvision.models` module. All models are available with pre-trained weights (based on ImageNet's 224 x 224 images)
+- We used a pre-trained model vgg16 which is trained on the ImageNet data. 
+- We preprocess the given image. 
+- We get prediction from this pre-trained model on a given image along with prediction probabilities.  
+- For a given image, this model will spit out one of the 1000 classes from ImageNet. 
+
+## Pre-trained models out-of-the-box {.scrollable}
+
+- Let's predict labels with associated probabilities for unseen images
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+import glob
+import matplotlib.pyplot as plt
+images = glob.glob("data/test_images/*.*")
+plt.figure(figsize=(5, 5));
+for image in images:
+    img = Image.open(image)
+    img.load()
+    
+    plt.imshow(img)
+    plt.show()
+    df = classify_image(img)
+    print(df.to_string(index=False))
+    print("--------------------------------------------------------------")
+```
+:::
+
+
+## Pre-trained models out-of-the-box 
+\
+
+- We got these predictions without "doing the ML ourselves".
+- We are using **pre-trained** `vgg16` model which is available in `torchvision`.
+  - `torchvision` has many such pre-trained models available that have been very successful across a wide range of tasks: AlexNet, VGG, ResNet, Inception, MobileNet, etc.
+- Many of these models have been pre-trained on famous datasets like **ImageNet**. 
+- So if we use them out-of-the-box, they will give us one of the ImageNet classes as classification. 
+
+## Pre-trained models out-of-the-box {.smaller}
+\
+
+- Let's try some images which are unlikely to be there in ImageNet. 
+- It's not doing very well here because ImageNet doesn't have proper classes for these images.
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+# Predict labels with associated probabilities for unseen images
+images = glob.glob("data/random_img/*.*")
+for image in images:
+    img = Image.open(image)
+    img.load()
+    plt.imshow(img)
+    plt.show()
+    df = classify_image(img)    
+    print(df.to_string(index=False))
+    print("--------------------------------------------------------------")
+```
+:::
+
+## Pre-trained models out-of-the-box
+\
+
+- Here we are Pre-trained models out-of-the-box. 
+- Can we use pre-trained models for our own classification problem with our classes? 
+- Yes!! We have two options here:
+    1. Add some extra layers to the pre-trained network to suit our particular task
+    2. Pass training data through the network and save the output to use as features for training some other model
+
+
+## Pre-trained models to extract features 
+\
+
+- Let's use pre-trained models to extract features.
+- We will pass our specific data through a pre-trained network to get a feature vector for each example in the data. 
+- The feature vector is usually extracted from the last layer, before the classification layer from the pre-trained network. 
+- You can think of each layer a transformer applying some transformations on the input received to that later. 
+
+![](img/cnn-ex.png)
+
+
+## Pre-trained models to extract features 
+\
+
+- Once we extract these feature vectors for all images in our training data, we can train a machine learning classifier such as logistic regression or random forest. 
+- This classifier will be trained on our classes using feature representations extracted from the pre-trained models.  
+- Let's try this out. 
+- It's better to train such models with GPU. Since our dataset is quite small, we won't have problems running it on a CPU. 
+
+## Pre-trained models to extract features 
+\
+
+Let's look at some sample images in the dataset. 
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+    data_dir = 'data/food/'
+    image_datasets, dataloaders = read_data(data_dir)
+    dataset_sizes = {x: len(image_datasets[x]) for x in ["train", "valid"]}
+    class_names = image_datasets["train"].classes
+    inputs, classes = next(iter(dataloaders["valid"]))
+    plt.figure(figsize=(10, 8)); plt.axis("off"); plt.title("Sample valid Images")
+    plt.imshow(np.transpose(utils.make_grid(inputs, padding=1, normalize=True),(1, 2, 0)));
+```
+:::
+
+## Dataset statistics
+\
+
+Here is the stat of our toy dataset. 
+
+```{python}
+    print(f"Classes: {image_datasets['train'].classes}")
+    print(f"Class count: {image_datasets['train'].targets.count(0)}, {image_datasets['train'].targets.count(1)}, {image_datasets['train'].targets.count(2)}")
+    print(f"Samples:", len(image_datasets["train"]))
+    print(f"First sample: {image_datasets['train'].samples[0]}")
+```
+
+
+## Pre-trained models to extract features 
+\
+
+- Now for each image in our dataset, we'll extract a feature vector from a pre-trained model called densenet121, which is trained on the ImageNet dataset.  
+
+```{python}
+densenet = models.densenet121(weights="DenseNet121_Weights.IMAGENET1K_V1")
+densenet.classifier = nn.Identity()  # remove that last "classification" layer
+Z_train, y_train, Z_valid, y_valid = get_features(
+    densenet, dataloaders["train"], dataloaders["valid"]
+)
+```
+
+## Shape of the feature vector
+\
+
+- Now we have extracted feature vectors for all examples. What's the shape of these features?
+
+```{python}
+Z_train.shape
+```
+
+- The size of each feature vector is 1024 because the size of the last layer in densenet architecture is 1024.  
+
+![](img/densenet-architecture.png)
+
+[Source](https://towardsdatascience.com/understanding-and-visualizing-densenets-7f688092391a)
+
+## A feature vector given by densenet 
+\ 
+
+- Let's examine the feature vectors. 
+
+```{python}
+pd.DataFrame(Z_train).head()
+```
+- The features are hard to interpret but they have some important information about the images which can be useful for classification.  
+
+## Logistic regression with the extracted features 
+\
+
+- Let's try out logistic regression on these extracted features. 
+
+```{python}
+pipe = make_pipeline(StandardScaler(), LogisticRegression(max_iter=2000))
+pipe.fit(Z_train, y_train)
+print("Training score: ", pipe.score(Z_train, y_train))
+```
+
+```{python}
+pipe.score(Z_valid, y_valid)
+print("Validation score: ", pipe.score(Z_valid, y_valid))
+```
+
+- This is great accuracy for so little data and little effort!!!
+
+
+## Sample predictions
+\
+
+Let's examine some sample predictions on the validation set.  
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+# Show predictions for 25 images in the validation set (5 rows of 5 images)
+show_predictions(pipe, Z_valid, y_valid, dataloaders['valid'], class_names, num_images=40)
+```
+:::
+
+
+## Object detection 
+\
+
+- Another useful task and tool to know is object detection using YOLO model. 
+- Let's identify objects in a sample image using a pretrained model called YOLO8. 
+- List the objects present in this image.
+
+![](data/yolo_test/3356700488_183566145b.jpg)
+
+## Object detection using [YOLO](https://docs.ultralytics.com/)
+\
+
+Let's try this out using a pre-trained model. 
+
+
+```{python}
+#| echo: true
+from ultralytics import YOLO
+model = YOLO("yolov8n.pt")  # pretrained YOLOv8n model
+
+yolo_input = "data/yolo_test/3356700488_183566145b.jpg"
+yolo_result = "data/yolo_result.jpg"
+# Run batched inference on a list of images
+result = model(yolo_input)  # return a list of Results objects
+result[0].save(filename=yolo_result)
+```
+
+## Object detection output 
+\
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+
+# Load the images
+input_img = mpimg.imread(yolo_input)
+result_img = mpimg.imread(yolo_result)
+
+# Create a figure to display the images side by side
+fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+
+# Display the first image
+axes[0].imshow(input_img)
+axes[0].axis('off')  # Hide the axes
+axes[0].set_title('Original Image')
+
+# Display the second image
+axes[1].imshow(result_img)
+axes[1].axis('off')  # Hide the axes
+axes[1].set_title('Result Image')
+
+# Show the images
+plt.tight_layout()
+plt.show()
+```
+:::
+
+
+## Summary 
+\
+
+- Neural networks are a flexible class of models.
+  - They are particular powerful for structured input like images, videos, audio, etc.
+  - They can be challenging to train and often require significant computational resources.
+- The good news is we can use pre-trained neural networks.
+  - This saves us a huge amount of time/cost/effort/resources.
+  - We can use these pre-trained networks directly or use them as feature transformers. 

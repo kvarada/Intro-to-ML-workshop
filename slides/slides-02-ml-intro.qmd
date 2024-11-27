@@ -1,0 +1,316 @@
+---
+title: "Introduction to Machine Learning"
+format: 
+    revealjs:
+      smaller: true
+      center: true
+---
+
+## Introduction to Machine Learning
+\
+Machine Learning uses computer programs to digest and accurately model data. After *training* on the data, a program can be used to extract hidden patterns, make predictions in new situations or generate novel content.
+
+The program learns based on the *features* present in the data, which represent the information we have about each example.
+
+## Introduction to Machine Learning
+\ 
+
+![](img/sup-ML-terminology.png)
+
+
+## Activity 1
+\
+Write one (or several) problems in your research field where you think Machine Learning could be applied. Try to address the following questions:
+
+* What goal are you trying to accomplish? What would an ideal solution to your problem look like?
+* How would a human solve this problem? What approaches are presently available and utilized?
+* What kind of data is available to you, or might be collected? What features are present in the data?
+
+One of the learning objectives of the workshop will be to determine whether your goal is best addressed using supervised machine learning, inferential statistics, unsupervised learning, deep learning, generative AI, or a non-ML solution.
+
+## Classification vs. Regression
+\
+
+![](img/classification-vs-regression.png)
+
+## Measuring Performance
+\
+
+* Performance on classification tasks can be measured based on the *accuracy* of the model's predictions.
+
+* Performance on a regression task can be measured based on *error*. Mean squared error is one choice, but there are many others!
+
+
+## Inference vs. Prediction
+\
+
+* *Inference* is the use of a model to infer a relationship between features (independent variables) and targets (independent variables).
+
+* *Prediction* is the use of a model to predict the target value for a new example not seen in training.
+
+## What outcome do we care about?
+\
+
+* A researcher studying the impact of pollution on cancer risk is performing *inference*. They may not make perfect predictions (since the dataset is likely to be noisy) but good statistical inference could be extremely valuable.
+
+* Gmail's spam filtering algorithm is performing *prediction*. We are not really trying to improve human understanding of what makes a message spam (often it is obvious), we just want a model that makes good predictions.
+
+* Of course, these goals are related, so in many situations we may be interested in both.
+
+
+## Example: Linear Regression
+\
+![](img/visualization.png)
+
+Is this inference or prediction?
+
+## Types of Machine Learning
+\
+Today we will see two main types of machine learning, namely
+
+* Supervised Learning, and
+
+* Unsupervised Learning.
+
+We will also discuss which problems each type might be best suited for.
+
+## Supervised Learning
+\
+Here the training data is comprised of a set of *features*, and each example comes with a corresponding *target*. The goal is to get a machine learning model to accurately predict the target based on the feature values.
+
+Examples could include spam filtering, face recognition or weather forecasting.
+
+## Unsupervised Learning
+\
+In unsupervised learning, there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together.
+
+Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix).
+
+## Other ML types
+\
+Some other types of Machine Learning include self-supervised learning and reinforcement learning.
+
+Self-supervised algorithms automatically learn to generate labels and transform unsupervised problems to supervised ones.
+
+Reinforcement Leaning trains an agent using a system of rewards and penalties. The agent learns strategies to maximize reward. AlphaGo is a reinforcement learning agent that taught itself to play Go, and was able to beat the strongest human Go players.
+
+## Activity 2
+\ 
+
+Return to the problems you identified in Activity 1. Try to decide if they involve performing inference or prediction.
+
+Also suggest whether you think they are best approached with supervised or unsupervised learning. What aspects of the problem particularly suggest one approach over another?
+
+## A Simple Supervised Learning Model
+\
+We will use a simple machine learning model-- a decision tree-- to demonstrate some fundamental concepts in machine learning. Suppose we have the following dataset:\
+
+```{python}
+from sklearn import tree
+import pandas as pd
+
+classification_df = pd.read_csv("data/quiz2-grade-toy-classification.csv")
+X = classification_df.drop(columns=["quiz2"])
+y = classification_df["quiz2"]
+
+(pd.concat([X,y], axis=1)).head()
+```
+\ 
+How would you go about predicting the Quiz 2 grade?
+
+## Decision Trees
+\
+A decision tree iteratively splits the data by asking questions about feature values.
+
+The algorithm tries to ask questions that best separate one class from another. It's like a game of twenty questions!
+
+## A Decision Stump
+\
+
+```{python}
+
+#Binarize the data
+#X_binary = X.copy()
+columns = ["lab1", "lab2", "lab3", "lab4", "quiz1"]
+#for col in columns:
+#    X_binary[col] = X_binary[col].apply(lambda x: 1 if x >= 90 else 0)
+
+#Fit a decision stump
+model = tree.DecisionTreeClassifier(max_depth=1) # Create a decision tree
+model.fit(X, y); # Fit a decision tree
+
+tree.plot_tree(model, filled=True, feature_names = ['ml_exp','attendance']+columns, impurity = False, fontsize=16);
+```
+
+We could start by splitting the data based on the students' Lab 3 grades.
+
+## Iterating the procedure
+\ 
+
+```{python}
+#Fit tree of depth 2
+model = tree.DecisionTreeClassifier(max_depth=2) # Create a decision tree
+model.fit(X, y); # Fit a decision tree
+
+tree.plot_tree(model, filled=True, feature_names = ['ml_exp','attendance']+columns, impurity = False, fontsize=10);
+```
+
+Then we further split each of the resulting nodes, again asking questions involving features in the dataset.
+
+## Building a Decision Tree
+\ 
+
+```{python}
+
+#Fit a deeper decision tree
+model = tree.DecisionTreeClassifier() # Create a decision tree
+model.fit(X, y); # Fit a decision tree
+
+tree.plot_tree(model, filled=True, feature_names = ['ml_exp','attendance']+columns, impurity = False, fontsize = 6);
+
+```
+
+
+## Decision Boundary
+\
+The first two questions in our tree involved Lab 3 and Quiz 1 grades. We can make a plot involving these two features to better understand our tree.
+
+![](img/dbound.png)
+
+
+
+## Model Parameters
+\
+
+During training, the model decides which feature to use to split at each node. It also decides which value of the feature to split at. This is the 'learning' phase, where the algorithm is trying different options and selecting the 'best' feature and value for splitting.
+
+
+## Hyperparameters
+\
+The maximum depth of a decision tree (at most how many questions it asks) is a *hyper-parameter* of the model. We can build different trees to test which choice of hyper-parameter gives the best result.
+
+Some models may have a continuous range of options for a given hyper-parameter. This gives rise to a potentially infinite choice of "models" to test.
+
+## Trying to Recognize Faces
+\
+To demonstrate some fundamental concepts in machine learning, we will attempt to biuld a decision tree that can recognize faces. Our data will be taken from the Olivetti Faces dataset, which is a collection of 400 images of faces.
+
+The labels correspond to the forty individuals that are pictured, and the dataset contains 10 photos per individual. We will try to use a decision tree to correctly predict the individual for each photo.
+
+## A Look at the Data
+\
+Each photo is 64x64 pixels in grayscale. The images are represented by a row of pixel intensities showing how dark each individual pixel should be.
+
+```{python}
+from sklearn.datasets import fetch_olivetti_faces as dataloader
+from sklearn.model_selection import train_test_split
+
+pd.set_option('display.max_rows', 6)
+pd.set_option('display.max_columns', 8)
+
+X,y = dataloader(return_X_y = True)#, as_frame=True)
+X_train,X_test,y_train,y_test = train_test_split(X, y, test_size=0.20, random_state=12)
+pd.DataFrame(X)
+```
+```{python}
+print(f"The dataset has {X.shape[1]} features.")
+```
+
+## A Decision Tree Classifier
+\
+We can build a decision tree classifier on the dataset of faces and see how it performs. For now we will train on a random subset of the data that contains 80% of the images (we'll explain why later)
+
+Let's see how accurate this model gets after training.
+
+## A Decision Tree Classifier
+\
+
+```{python}
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(X_train,y_train)
+acc = round(10000*sum(clf.predict(X_train) == y_train)/len(y_train))
+dep = clf.tree_.max_depth
+#tree.plot_tree(clf, max_depth = 3,label = 'none', filled = True)
+print(f"The model classified {acc/100}% of training examples correctly by \n building a decision tree of depth {dep}")
+```
+\
+That's very accurate indeed! Maybe decision trees are a really good way to detect and classify faces.
+
+Remember, we only trained on 80% of the data. Let's see how our model performs on the remaining 20%
+
+## Did we build a good model?
+\
+```{python}
+test_acc = round(10000*sum(clf.predict(X_test) == y_test)/len(y_test))
+print(f"The model acheived an accuracy of {test_acc/100}% on new data")
+```
+\
+...oops.
+
+## What's going on?
+
+```{python}
+results_dict = {"train_error":[],"test_error":[], "depth":[]}
+
+for depth in range(1,38,3):
+    clf = tree.DecisionTreeClassifier(max_depth = depth)
+    clf = clf.fit(X_train,y_train)
+    acc = sum(clf.predict(X_train) == y_train)/len(y_train)
+
+    test_acc = sum(clf.predict(X_test) == y_test)/len(y_test)
+    results_dict["train_error"].append(1-acc)
+    results_dict["test_error"].append(1-test_acc)
+    results_dict["depth"].append(depth)
+
+df = pd.DataFrame(results_dict)
+df = df.set_index("depth")
+df.plot();
+```
+
+## Practice makes perfect
+\
+Our deep decision tree likely just memorized the dataset. After all, with a tree of depth 38, we could actually memorize up to 2^38^ distinct examples!
+
+Clearly this does not make for a good model. After all, we want a model that can recognize faces, even when they appear in new images.
+
+## Overfitting
+\
+*Overfitting* refers to a situation where the model learns noise from the training data, leading to a poor performance when deployed on new data.
+
+Complex models are prone to overfitting-- we cannot just rely on training error to measure their performance. Simple models typically have similar train and test errors, but both will be high.
+
+## 
+
+Thus we have our "fundamental tradeoff": as we increase model complexity, the training error will reduce but the gap between training and test error will increase.
+
+##
+
+![](img/spot.png){fig-align="center"}
+
+## Scenario 1
+\
+Your colleague is trying to build a machine learning model to detect cancers in medical imaging. They know about overfitting, so they separate their data into a training set and a test set.
+
+They use 10 different types of machine learning models, and try 1000 different combinations of hyper-parameters for each. In every case, they only use the training set to train their model, and then note how the model performs by measure accuracy on the test set.
+
+The best model achieves 99% accuracy on the test set. Your colleague tells you they have found a machine learning model that diagnoses cancer with 99% accuracy.
+
+**Do you believe them?**
+
+## The Golden Rule of Machine Learning
+\
+By using the same test set for each of the 10,000 models they tried, your colleague has violated the *golden rule of machine learning*.
+
+The golden rule tells us that **test data must not influence the model training in any way**.
+
+Even though your colleague never directly trained on test data, they used test data multiple times to validate model performance. As a result, they are likely to have found good performance *purely by accident*.
+
+## Scenario 2
+\
+Your colleague now separates their data into a training set, a validation set *and* a test set.
+
+They again use 10 types of models and try 1000 combinations of hyper-parameters for each. They use the training set to train their model, and then note how the model performs by measure accuracy on the *validation* set.
+
+The best model achieves 99% accuracy on the validation set, after which it is used on the test set. It achieves 99% accuracy again.
+
+**Do you trust the outcome now?**
