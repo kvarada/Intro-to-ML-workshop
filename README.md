@@ -1,6 +1,6 @@
 # Introductory Machine Learning Full-Day Workshop for Students with programming background
 
-This repository hosts materials for the [CS Alumni Workshop: Is Machine Learning Suitable for your Projects] (https://my.cs.ubc.ca/event/2024/12/cs-alumni-workshop-machine-learning-suitable-your). This workshop is a collaboration between [the Master of Data Science, Vancouver program](https://masterdatascience.ubc.ca/programs/vancouver) and [the Department of Computer Science](https://www.cs.ubc.ca/) at UBC. 
+This repository hosts materials for the [CS Alumni Workshop: Is Machine Learning Suitable for your Projects](https://my.cs.ubc.ca/event/2024/12/cs-alumni-workshop-machine-learning-suitable-your). This workshop is a collaboration between [the Master of Data Science, Vancouver program](https://masterdatascience.ubc.ca/programs/vancouver) and [the Department of Computer Science](https://www.cs.ubc.ca/) at UBC. 
  
 
 The module slides are available under: `website/slides/`. This website is built using [Quarto](https://quarto.org/) and you first need to install it if you want to build it locally.   
