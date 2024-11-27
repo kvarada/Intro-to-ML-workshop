@@ -1,0 +1,372 @@
+---
+title: "Unsupervised Learning"
+format: 
+    revealjs:
+      smaller: true
+      center: true
+---
+
+## Learning outcomes 
+\
+
+From this module, you will be able to 
+
+- Explain the unsupervised learning paradigm.
+- Describe the role of representation in machine learning.
+- Provide an overview of clustering.
+- Provide an overview of dimensionality reduction.
+
+```{python}
+import os
+import random
+import sys
+import time
+import numpy as np
+import pandas as pd
+sys.path.append(os.path.join(os.path.abspath("."), "code"))
+import matplotlib.pyplot as plt
+from unsupervised_learning_code import *
+from sklearn import cluster, datasets, metrics
+from sklearn.datasets import make_blobs
+import torch
+import torchvision
+from torchvision import datasets, models, transforms, utils
+from PIL import Image
+import matplotlib.pyplot as plt
+import random
+%matplotlib inline
+```
+
+
+
+## Supervised learning
+\
+
+- Training data comprises a set of observations ($X$) and their corresponding targets ($y$). 
+- We wish to find a model function $f$ that relates $X$ to $y$.
+- Then use that model function to predict the targets of new examples.
+- We have been working with this set up so far. 
+
+![](img/sup-learning.png)
+
+
+## Unsupervised learning
+\
+
+- Training data consists of observations ($X$) without any corresponding targets.
+- Unsupervised learning could be used to group similar things together in $X$ or to find underlying structure in the data. 
+
+![](img/unsup-learning.png)
+
+
+## Can we learn without targets?
+\
+
+- Yes, but the learning will be focused on finding the underlying structures of the inputs themselves (rather than finding the function $f$ between input and output like we did in supervised learning models). 
+
+- Examples:
+    - Clustering
+    - Dimensionality reduction
+
+
+## Labeled vs. Unlabeled data
+
+- If you have access to labeled training data, you're in the "supervised" setting. 
+- Unfortunately, getting large amount of labeled training data is often time consuming and expensive.
+- Annotated data can become "stale" after a while in cases such as fraud detection. 
+- Can you still make sense of the data even though you do not have the labels? 
+- Yes! At least to a certain extent! 
+
+## Clustering Activity (~10 mins)
+\
+
+Pick any of the two questions below and answer them in [this Google doc](https://docs.google.com/document/d/1TdmH5LKLC0Y9IWySC4FgsYX0dsNtkX_dBcc7FSSrQg0/edit?usp=sharing).
+
+![](img/food-clustering-activity.png)
+
+- Categorize the food items in the image and write your categories. Do you think there is one correct way to cluster these images? Why or why not?
+- If you want to build a machine learning model to cluster such images how would you represent such images?
+
+## What is clustering? 
+\
+
+- **Clustering** is the task of partitioning the dataset into groups called clusters based on their similarities.
+- The goal of clustering is to discover underlying groups in a given dataset such that:
+    - examples in the same group are as similar as possible;
+    - examples in different groups are as different as possible.          
+- K-Means is one of the simplest and most commonly used clustering algorithms.
+
+## K-Means toy dataset 
+\
+
+```{python}
+#| echo: true
+X, y = make_blobs(n_samples=10, centers=3, n_features=2, random_state=10)
+mglearn.discrete_scatter(X[:, 0], X[:, 1]);
+```
+
+## K-Means demo
+\
+
+![](img/k-means-iterative.png)
+
+K-Means is the simplest clustering algorithm. There is a variety of clustering algorithms available out there. 
+
+## K-Means clustering 
+\
+
+- It requires us to specify the number of clusters in advance and each example is assigned to one (and only one) cluster.
+- The cluster centroids live in the same space as of the dataset but they are **not** actual data points, but instead are average points.
+- It always converges. Convergence is dependent upon the initial centers and it may converge to a sub-optimal solution. 
+
+
+## Let's cluster images!! 
+\
+
+For this demo, I'm going to use a small subset of [200 Bird Species with 11,788 Images](https://www.kaggle.com/datasets/veeralakrishna/200-bird-species-with-11788-images) dataset (available [here](../data/birds.zip))
+
+```{python}
+data_dir = "data/birds"
+file_names = [image_file for image_file in glob.glob(data_dir + "/*/*.jpg")]
+n_images = len(file_names)
+BATCH_SIZE = n_images  # because our dataset is quite small
+birds_inputs, birds_classes = read_img_dataset(data_dir, BATCH_SIZE)
+X_birds = birds_inputs.numpy()
+plot_sample_imgs(birds_inputs[0:24,:,:,:])
+plt.show()
+```
+
+# Clustering images with flattened representation 
+## Flattening images
+\
+
+```{python}
+#| echo: true
+flatten_images = get_flattened_representations(data_dir, BATCH_SIZE)
+print("Shape of the flattened images: ", flatten_images.shape) # 224 by 224 images with 3 color channels
+image_shape=[3,224,224]
+```
+
+## K-Means on flattened representation
+\
+
+```{python}
+#| echo: true
+from sklearn.cluster import KMeans
+k = 3
+km_flatten = KMeans(k, n_init='auto', random_state=123)
+km_flatten.fit(flatten_images)
+print("Shape of cluster centers: ", km_flatten.cluster_centers_.shape)
+unflatten_inputs = np.array([img.reshape(image_shape) for img in flatten_images])
+```
+
+## Examining clusters
+\ 
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+#| echo: true
+for cluster in range(k):
+    get_cluster_images(km_flatten, flatten_images, unflatten_inputs, cluster, n_img=5)
+```
+:::
+
+# Clustering images with representation extracted using transfer learning 
+## Extract features using transfer learning
+\
+
+```{python}
+#| echo: true
+densenet = models.densenet121(weights="DenseNet121_Weights.IMAGENET1K_V1")
+densenet.classifier = torch.nn.Identity()  # remove that last "classification" layer
+Z_birds = get_features(densenet, birds_inputs)
+Z_birds.shape
+```
+
+## K-Means on extracted features
+\
+
+```{python}
+#| echo: true
+k = 3
+km = KMeans(n_clusters=k, n_init='auto', random_state=123)
+km.fit(Z_birds)
+```
+
+## Examining clusters
+\ 
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+#| echo: true
+for cluster in range(k):
+    get_cluster_images(km, Z_birds, X_birds, cluster, n_img=6)
+```
+:::
+
+## Let's try this on the food dataset
+
+\
+```{python}
+data_dir = "data/food/train"
+file_names = [image_file for image_file in glob.glob(data_dir + "/*/*.jpg")]
+n_images = len(file_names)
+BATCH_SIZE = n_images  # because our dataset is quite small
+food_inputs, food_classes = read_img_dataset(data_dir, BATCH_SIZE)
+X_food = food_inputs.numpy()
+plot_sample_imgs(food_inputs[0:24,:,:,:])
+```
+
+## K-Means on food dataset
+\
+
+```{python}
+#| echo: true
+Z_food = get_features(densenet, food_inputs)
+k = 5
+km = KMeans(n_clusters=k, n_init='auto', random_state=123)
+km.fit(Z_food)
+```
+
+## Examining food clusters
+\
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+#| echo: true
+for cluster in range(k):
+    get_cluster_images(km, Z_food, X_food, cluster, n_img=6)
+
+```
+:::
+
+
+# Dimensionality reduction 
+
+## Motivation 
+\
+
+- Representation plays a crucial role when you do machine learning. 
+- How could we create meaningful representations? 
+    - Dimensionality reduction is a popular approach! 
+- Suppose you’re shown the picture below and you are told that this is Eva.
+- Do you have to remember every pixel in the image to recognize other pictures of Eva?
+
+![](img/eva-tree.png)
+
+
+## Motivation 
+\
+
+- For example, if you are asked which one is Eva in the following pictures, it'll be fairly easy for you to identify her just based on some high-level features.
+- Just remembering important features such as shape of eyes, nose, mouth, shape and colour of hair etc. suffice to tell her apart from other people.
+
+![](img/hello-bmjs.png)
+
+## Dimensionality reduction activity
+\
+
+- Goal: Capture the essence of the classroom through photography.
+- We need two volunteers with cell phones to take photos of the classroom.
+- Volunteers will take pictures from various angles to ensure a comprehensive view of the classroom. Suggested angles include:
+    - An overhead view (from above)
+    - Views from each corner of the classroom
+    - A central perspective (from the center of the room)
+    - A low angle view (close to the floor)
+-  Among the photos taken, select and post the one that best captures the majority of objects and the overall atmosphere of the classroom in [this Google doc](https://docs.google.com/document/d/1TdmH5LKLC0Y9IWySC4FgsYX0dsNtkX_dBcc7FSSrQg0/edit#heading=h.trc35ybo6zyf).
+- Discuss: Why certain angles might be better than other for capturing more information?
+
+
+## Principal component analysis (PCA)
+\
+
+- PCA is a popular technique for dimensionality reduction. 
+- When going from higher dimensional space to lower dimensional space, it tries to capture the topology of the points in high dimensional space, making sure that we are not losing some of the important properties of the data.
+
+
+## PCA example
+\
+
+- We'll work through a simpler dataset with grayscale images. 
+- Let's look at some sample images from the dataset. 
+
+```{python}
+import pickle
+animals = pickle.load(open("data/animal_faces.pkl", "rb"))
+
+mpl.rcParams.update(mpl.rcParamsDefault)
+plt.rcParams["image.cmap"] = "gray"
+fig, axes = plt.subplots(2, 5, figsize=(12, 5), subplot_kw={"xticks": (), "yticks": ()})
+for image, ax in zip(animals, axes.ravel()):
+    ax.imshow(image)
+plt.show()
+X_anims = animals.reshape(len(animals), -1)
+print("The shape of the dataset is: ", X_anims.shape) 
+image_shape = (100, 100)
+```
+
+## Applying PCA
+
+```{python}
+#| echo : true
+n_components = 300 
+pca = PCA(n_components=n_components, random_state=42)
+pca.fit(X_anims);
+```
+
+## PCA components
+
+```{python}
+fig, axes = plt.subplots(3, 5, figsize=(10, 6), subplot_kw={"xticks": (), "yticks": ()})
+for i, (component, ax) in enumerate(zip(pca.components_, axes.ravel())):
+    ax.imshow(component.reshape(image_shape))
+    ax.set_title("{}. component".format((i)))
+plt.show()
+```
+
+## PCA components
+\
+
+- We can express a data point (a cat image in this case) as a linear combination of principal components.  
+![](img/PCA-batcat-rep.png)
+
+## Reconstruction with varying number of components
+\
+
+- When we extract components, we lose some information. To what extent can we reconstruct the original data point using a given number of components?
+
+::: {.scroll-container style="overflow-y: scroll; height: 400px;"}
+```{python}
+#| echo: true
+n_components = [10, 100, 200, 300, 500, 800]
+plot_pca_animals(X_anims, (100,100), n_components=n_components, index=30)
+```
+:::
+
+## Comments
+\
+
+It's possible to capture the essence of the dataset using far fewer features!
+
+
+## Word embeddings
+
+- This is not limited to images. 
+- We can create useful representations for any type of data. 
+- For example, an algorithm called `word2vec` creates representations for words so that similar words are close together in the vector space.  
+- You can also create [representation of sentences](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2).
+
+![](img/t-SNE_word_embeddings.png)
+
+
+## Recommender systems (Optional)
+
+- The collaborative filtering approach to recommendation systems is based on a similar idea of identifying meaningful features of users and items.
+
+![](img/toy-movie-pattern.png)
+
+## Take-home message
+
+- A lot of data out there is unlabeled but we can still do many interesting things with it. 
+
+

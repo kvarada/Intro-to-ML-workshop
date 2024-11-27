@@ -1,0 +1,12 @@
+---
+title: ☕ Break
+description: >
+  Get up and move around!
+  We'll start back up at 10:40.
+duration: 10 min
+time: 10:30 - 10:40
+countdown:
+  box_shadow: none
+---
+
+![](slides/img/eva-coffee.png)

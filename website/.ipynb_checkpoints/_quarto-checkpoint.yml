@@ -1,0 +1,63 @@
+project:
+  type: website
+  preview:
+    port: 12345
+  render:
+    - "./*.qmd"
+    - "slides/*.qmd"
+    - "lab/*.qmd"
+    - "about/index.qmd"
+  resources:
+    - slides
+
+website:
+  title: "DSI Machine Learning Workshop"
+  description: "Examine whether machine learning is suitable for your projects"
+  site-url: https://kvarada.github.io/DSI-ML-workshop-2024/
+
+  repo-url: https://github.com/kvarada/DSI-ML-workshop-2024/
+  repo-subdir: website
+  
+  navbar:
+    title: "DSI Machine Learning Workshop"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: workshop.qmd
+        text: Workshop
+      - href: about/index.qmd
+        text: Team
+  
+  page-navigation: true
+  
+  sidebar:
+    - id: workshop
+      contents:
+        - workshop.qmd
+        - workshop-01.qmd
+        - workshop-02.qmd
+        - workshop-03.qmd
+        - workshop-04-break.qmd
+        - workshop-05.qmd
+        - workshop-06-break.qmd
+        - workshop-07.qmd
+        - workshop-08-lunch.qmd
+        - workshop-09.qmd 
+        - workshop-10.qmd
+format:
+  html:
+    theme: [zephyr]
+    toc: false
+    lightbox: true
+          
+editor:
+  render-on-save: true
+
+execute:
+  freeze: auto
+
+publish:
+  gh-pages:
+    name: "gh-pages"
+    branch: main # Or "master" or whatever branch you use
+    path: website

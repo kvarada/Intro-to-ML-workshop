@@ -1,0 +1,11 @@
+---
+title: 🥗🍴 Lunch
+description: >
+  Lunch time! Go eat. We'll see you at 13:30.
+duration: 70 mins
+time: 12:10 - 13:20
+countdown:
+  box_shadow: none
+---
+
+![](slides/img/eva-lunch.png)

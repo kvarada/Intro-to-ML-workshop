@@ -1,0 +1,12 @@
+---
+title: ☕ Break
+description: >
+  Get up and stretch!
+  We'll start back at 11:30.
+duration: 5 min
+time: 11:25 - 11:30
+countdown:
+  box_shadow: none
+---
+
+![](slides/img/eva-coffee.png)

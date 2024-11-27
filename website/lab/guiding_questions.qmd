@@ -1,0 +1,18 @@
+---
+title: ML Problem Framing
+description: Frame your problems as machine learning problems 
+description-short: Lab session 
+
+editor: { render-on-save: true }
+---
+
+Choose a dataset and its corresponding objective, and then try to address the following questions:
+
+-   Is the provided dataset appropriate for the specified objective? What type of data would ideally solve your problem or research question? Are there better-suited datasets available on the internet for this objective?
+-   Clearly define the expected input and the 'ideal' output. Determine if machine learning is the appropriate method for addressing this problem.
+-   If machine learning is deemed suitable, what should the model aim to achieve? How would you measure the model's performance?
+-   How would a human tackle this issue? Can you propose any heuristic methods to solve this problem?
+-   What are the major steps required to resolve this problem?
+-   Draw a diagram that illustrates the input, output, and key stages of the problem-solving process.
+-   Which type of machine learning would be best suited for your problem?
+-   What specific machine learning technique would be most effective for this problem?

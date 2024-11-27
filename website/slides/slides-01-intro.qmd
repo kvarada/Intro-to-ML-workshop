@@ -1,0 +1,42 @@
+---
+title: Welcome!
+subtitle: Is Machine Learning Suitable for Your Projects? 
+date: 2024-08-24
+
+format:
+    revealjs:
+        html-math-method: plain
+        slide-level: 2
+        theme:
+          - slides.scss
+
+editor:
+  render-on-save: true
+---
+
+## Welcome to the workshop! 
+\
+
+* Find a seat where you can see the screen!
+* You will be discussing concepts with your neighbours. So take 15 seconds to introduce yourself to your neighbour.  
+
+## QR code
+\
+
+![](img/DSI-ML-workshop-QR-code.png)
+
+# 🤝 Introductions 🤝 {.middle}
+
+## Meet the teaching team 
+\
+
+- Varada
+- Prajeet
+- Yulia 
+- Tony
+
+## Learning goals of the workshop
+\
+
+The primary learning goal of the workshop is to familiarize yourself with the fundamentals of machine learning and its various types. This knowledge will help you determine which type of machine learning, or whether a non-machine learning approach, would be most appropriate for your problem.
+

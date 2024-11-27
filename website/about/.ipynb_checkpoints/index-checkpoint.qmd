@@ -1,0 +1,44 @@
+---
+title: "Our team"
+
+sidebar: false
+repo-actions: false
+page-navigation: false
+
+listing:
+  template: about.ejs
+  contents:
+    - name: Varada Kolhatkar
+      instructor: true
+      role: "Assistant Professor of Teaching, Computer Science, Master of Data Science"
+      image: varada.png
+    - name: Prajeet Bajpai
+      instructor: true
+      role: "Teaching Postdoctoral Fellow, Master of Data Science"
+      image: prajeet.jpg
+    - name: Raymond Ng
+      organizer: true
+      role: "Scientific Director, Data Science Institute; Professor, Computer Science" 
+      image: raymond.jpg
+    - name: Jie Ie Baik
+      organizer: true
+      role: "Research Administrator, Data Science Institute"
+      image: jie_le.jpg
+    - name: Michele Ng
+      organizer: true
+      role: "Special Projects Coordinator, Computer Science"
+      image: michele.jpeg
+    - name: Yulia Egorova
+      image: yulia.png
+      assistant: true
+    - name: Tony Shum
+      image: tony.jpeg
+      assistant: true
+
+---
+
+::: column-body
+::: {#listing}
+
+:::
+:::

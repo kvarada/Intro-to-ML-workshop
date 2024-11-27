@@ -1,0 +1,64 @@
+---
+title: ML Problem Framing
+description: Example topics and dataset for machine learning problems 
+description-short: Lab session
+
+editor: { render-on-save: true }
+---
+
+## Example Topics for Machine Learning Projects
+
+Below are some topics and datasets of real-world issues that could possibly be solved using Machine Learning
+
+### Business
+
+::: {.callout-tip collapse="true"}
+#### Stock Market Sentiment
+
+Imagine you work at a bank, and the current workflow to understand the stock market sentiment isn't performing well. Your boss asks you to explore machine learning approaches to improve the detection of stock market sentiment, which is crucial to some of the trading strategies, based on comments in social media platform. While researching online, you find [this dataset on Kaggle](https://www.kaggle.com/datasets/utkarshxy/stock-markettweets-lexicon-data) that could be useful for creating a prototype.
+:::
+
+::: {.callout-tip collapse="true"}
+#### E-commerce Strategy
+
+Imagine you are a consultant hired by an E-commerce platform. You are asked to analyze the retail data and explore machine learning approaches to address one of the planned initiatives of the company, which includes but not limited to:
+
+- customer segmentation based on their purchase history to derive more customized marketing strategy
+- personalized suggestions of items to customers so as to increase the conversion.
+
+While researching online, you find [this dataset on Kaggle](https://www.kaggle.com/datasets/ishanshrivastava28/tata-online-retail-dataset) that could be useful as a starting point.
+:::
+
+### Science & Engineering
+
+::: {.callout-tip collapse="true"}
+#### Cancer Diagnosis
+
+Imagine you work at a medical research institute which specialized in cancer-related research. You try to explore machine learning approaches to diagnoze patients of the risk of cancer based on images of tissues, hoping to achieve early detection and early treatment to patients. While researching online, you find [this dataset on NCI](https://www.cancerimagingarchive.net/collection/osteosarcoma-tumor-assessment/) that could be useful.
+:::
+
+::: {.callout-tip collapse="true"}
+#### Polycystic ovary syndrome
+
+Imagine you work at a university laboratory which specialized in research on Polycystic ovary syndrome (PCOS), which is a disorder involving infrequent, irregular or prolonged menstrual periods of women. You try to explore machine learning approaches to diagnoze patients of the risk of PCOS based on clinical data. While researching online, you find [this dataset on Kaggle](https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos) that could be useful.
+:::
+
+### Social Science
+
+::: {.callout-tip collapse="true"}
+#### Obesity Levels
+
+Imagine you work at the Health Bureau of a country. You try to explore machine learning approaches to estimate the obesity levels of your citizens, as well as to understand the key factors relevant to obesity. This helps you defining better public health policy. While researching online, you find [this dataset on UCI](https://archive.ics.uci.edu/dataset/544/estimation+of+obesity+levels+based+on+eating+habits+and+physical+condition) that could be useful.
+:::
+
+## Open Data Source for Machine Learning Projects
+
+Below are some websites that can provide open data useful for Machine Learning projects.
+
+-   [UCI Machine Learning Repository](https://archive.ics.uci.edu/datasets)
+-   [Kaggle](https://www.kaggle.com/datasets)
+-   [Federal Reserve Bank of St. Louis](https://fred.stlouisfed.org/)
+-   [National Library of Medicine](https://pubchem.ncbi.nlm.nih.gov/)
+-   [Gapminder](https://www.gapminder.org/data/)
+-   [The Humanitarian Data Exchange (HDX)](https://data.humdata.org/dataset)
+-   [Statistics Canada](https://www150.statcan.gc.ca/n1/en/type/data?MM=1#tables)

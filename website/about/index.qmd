@@ -1,0 +1,33 @@
+---
+title: "Our team"
+
+sidebar: false
+repo-actions: false
+page-navigation: false
+
+listing:
+  template: about.ejs
+  contents:
+    - name: Varada Kolhatkar
+      instructor: true
+      role: "Assistant Professor of Teaching, Computer Science, Master of Data Science"
+      image: varada.png
+    - name: Prajeet Bajpai
+      instructor: true
+      role: "Teaching Postdoctoral Fellow, Master of Data Science"
+      image: prajeet.jpg
+    - name: Tony Shum
+      image: tony.jpeg
+      assistant: true
+    - name: Michele Ng
+      organizer: true
+      role: "Special Projects Coordinator, Computer Science"
+      image: michele.jpeg
+
+---
+
+::: column-body
+::: {#listing}
+
+:::
+:::

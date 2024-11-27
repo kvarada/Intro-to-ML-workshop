@@ -1,0 +1,19 @@
+---
+title: Welcome and getting started
+description: Hello and welcome to the workshop!
+description-short: Hello and welcome to the workshop!
+duration: 10 min
+time: 9:00 - 9:10
+
+editor: { render-on-save: true }
+---
+
+## Slides
+
+{{< revealjs "slides/slides-01-intro.html" height="600px" class="ratio ratio-16x9" >}}
+
+## Outline
+
+- Welcome to the workshop!
+- Introductions and meet your neighbors
+- About the learning objective of the workshop

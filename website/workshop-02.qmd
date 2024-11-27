@@ -1,0 +1,19 @@
+---
+title: ML Fundamentals
+description: Introduction to Machine Learning Fundamentals 
+description-short: Introduction to Machine Learning Fundamentals
+duration: 50 min
+time: 9:10 - 10:00
+
+editor: { render-on-save: true }
+---
+
+## Slides
+
+{{< revealjs "slides/slides-02-ml-intro.html" height="600px" class="ratio ratio-16x9" >}}
+
+## Outline
+
+- Machine learning terminology
+- Machine learning fundamentals
+- Decision trees

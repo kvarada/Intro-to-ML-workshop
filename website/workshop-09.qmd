@@ -1,0 +1,21 @@
+---
+title: Large Language Models 
+description: Introduction to Large Language Models 
+description-short: Introduction to Large Language Models 
+duration: 30 mins
+time: 13:30 - 14:00
+
+editor: { render-on-save: true }
+---
+
+## Slides
+
+{{< revealjs "slides/slides-06-llms.html" height="600px" class="ratio ratio-16x9" >}}
+
+
+## Outline
+
+- Activity 
+- Markov model of language
+- Transformers, self-attention (high level)
+- Pipelines before and after LLMs

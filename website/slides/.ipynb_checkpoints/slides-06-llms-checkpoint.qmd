@@ -1,0 +1,139 @@
+---
+title: "Large Language Models"
+format: 
+    revealjs:
+      smaller: true
+      center: true
+jupyter: 
+  kernelspec:
+    display_name: '571'
+    language: python
+    name: '571'
+---
+
+## Learning outcomes 
+\
+From this module, you will be able to 
+
+```{python}
+import os
+import random
+import sys
+import IPython
+from IPython.display import HTML, display
+```
+
+## Language models activity 
+\
+
+Each of you will receive a sticky note with a word on it. Here's what you'll do:
+
+- Carefully **remove the sticky note to see the word**. This word is for your eyes only —- no peeking, neighbours!
+- Think quickly: what word would logically follow the word on the sticky note? **Write this next word on a new sticky note**.
+- You have about 20 seconds for this step, so trust your instincts!
+- **Pass your predicted word to the person next to you**. Do not pass the word you **received** from your neighbour forward. Keep the chain going!
+- Stop after the last person in your row has finished. 
+- Finally, one person from your row will enter the collective sentence into [our Google Doc](https://docs.google.com/document/d/1TdmH5LKLC0Y9IWySC4FgsYX0dsNtkX_dBcc7FSSrQg0/edit#heading=h.h4gszne09tpb).
+
+<br><br><br><br>
+
+## Markov model of language 
+\
+
+- You've just created a simple Markov model of language!
+- In predicting the next word from a minimal context, you likely used your linguistic intuition and familiarity with common two-word phrases or collocations.
+- You could create more coherent sentences by taking into account more context e.g., previous two words or four words or 100 words.
+- This idea was first used by Shannon for characters in The Shannon's game. See this video by [Jordan Boyd-Graber](https://www.youtube.com/watch?v=0shft1gokac) for more information on this. 
+
+## Applications of predicting next word
+\
+
+One of the most common applications for predicting the next word is the 'smart compose' feature in your emails, text messages, and search engines.
+
+```{python}
+url = "https://2.bp.blogspot.com/-KlBuhzV_oFw/WvxP_OAkJ1I/AAAAAAAACu0/T0F6lFZl-2QpS0O7VBMhf8wkUPvnRaPIACLcBGAs/s1600/image2.gif"
+
+IPython.display.IFrame(url, width=500, height=500)
+```
+
+## Language model
+\
+
+A language model computes the probability distribution over sequences (of words or characters). Intuitively, this probability tells us how "good" or plausible a sequence of words is. 
+
+![](img/voice-assistant-ex.png)
+
+<!-- <img src="img/voice-assistant-ex.png" height="1400" width="1400"> -->
+
+Check out this [recent BMO ad](https://www.youtube.com/watch?v=VzqKtAYeJt4).
+
+
+## A simple model of language 
+\
+
+- Calculate the co-occurrence frequencies and probabilities based on these frequencies
+- Predict the next word based on these probabilities
+
+![](img/Markov-bigram-probs.png)
+
+
+## Long-distance dependencies 
+\
+
+What are some reasonable predictions for the next word in the sequence? 
+
+> I am studying law at the University of British Columbia Point Grey campus in Vancouver because I want to work as a ___
+
+Markov model is unable to capture such long-distance dependencies in language. 
+
+## Transformer models
+\
+
+Enter attention and transformer models! Transformer models are at the core of all state-of-the-art Generative AI models (e.g., BERT, GPT3, GPT4, Gemini, DALL-E, Llama, Github Copilot)? 
+
+![](img/genai.png)
+
+[Source](https://jalammar.github.io/how-gpt3-works-visualizations-animations/)
+
+## Transformer models
+\
+
+![](img/GPT-4-tech-report-abstract.png)
+
+Source: [GPT-4 Technical Report](https://arxiv.org/pdf/2303.08774.pdf)
+
+
+## Self-attention 
+\
+
+- An important innovation which makes these models work so well is **self-attention**. 
+- Count how many times the players wearing the white pass the basketball?
+
+```{python}
+url = "https://www.youtube.com/embed/vJG698U2Mvo"
+IPython.display.IFrame(url, width=500, height=500)
+```
+
+## Self-attention 
+\
+
+When we process information, we often selectively focus on specific parts of the input, giving more attention to relevant information and less attention to irrelevant information. This is the core idea of **attention**.
+
+Consider the examples below: 
+
+- Example 1: She left a brief **note** on the kitchen table, reminding him to pick up groceries.
+  
+- Example 2: The diplomat’s speech struck a positive **note** in the peace negotiations.
+
+- Example 3: She plucked the guitar strings, ending with a melancholic **note**.
+
+The word **note** in these examples serves quite distinct meanings, each tied to different contexts. To capture varying word meanings across different contexts, we need a mechanism that considers the wider context to compute each word's contextual representation.
+
+- **Self-attention** is just that mechanism!
+
+## NLP applications before and after GenAI
+\
+
+- Sentiment analysis 
+- Summarization
+- Named-entity recognition 

@@ -1,0 +1,19 @@
+---
+title: ML Models
+description: Introduction to Different Types of Machine Learning Models 
+description-short: Introduction to Different Types of Machine Learning Models 
+duration: 30 min
+time: 10:00 - 10:30
+
+editor: { render-on-save: true }
+---
+
+## Slides
+
+{{< revealjs "slides/slides-03-ml-models.html" height="600px" class="ratio ratio-16x9" >}}
+
+## Outline
+
+- Machine learning terminology
+- Machine learning fundamentals
+- Decision trees
