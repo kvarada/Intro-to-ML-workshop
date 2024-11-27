@@ -1,1 +1,1 @@
-Sitemap: https://kvarada.github.io/DSI-ML-workshop-2024/sitemap.xml
+Sitemap: https://kvarada.github.io/Intro-to-ML-workshop-2024/sitemap.xml
