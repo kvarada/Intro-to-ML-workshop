@@ -378,46 +378,70 @@
     "text": "Thank you!\n\nThat’s it for the modules! Now, let’s begin the lab session.\nThank you for your engagement! We would love your feedback. Here is the survey link:\n\nhttps://forms.gle/e5YWKPZtC3N7UNEW9"
   },
   {
-    "objectID": "workshop-10-exercise3.html",
-    "href": "workshop-10-exercise3.html",
+    "objectID": "workshop-11-exercise3.html",
+    "href": "workshop-11-exercise3.html",
     "title": "Exercise 3: Language Models",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Exercise 3: Language Models"
+    ]
   },
   {
-    "objectID": "workshop-10-exercise3.html#slides",
-    "href": "workshop-10-exercise3.html#slides",
+    "objectID": "workshop-11-exercise3.html#slides",
+    "href": "workshop-11-exercise3.html#slides",
     "title": "Exercise 3: Language Models",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Exercise 3: Language Models"
+    ]
   },
   {
-    "objectID": "workshop-10-exercise3.html#outline",
-    "href": "workshop-10-exercise3.html#outline",
+    "objectID": "workshop-11-exercise3.html#outline",
+    "href": "workshop-11-exercise3.html#outline",
     "title": "Exercise 3: Language Models",
     "section": "Outline",
-    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals"
+    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals",
+    "crumbs": [
+      "Workshop",
+      "Exercise 3: Language Models"
+    ]
   },
   {
     "objectID": "workshop-08-exercise2.html",
     "href": "workshop-08-exercise2.html",
     "title": "Exercise 2: Transfer Learning",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Exercise 2: Transfer Learning"
+    ]
   },
   {
     "objectID": "workshop-08-exercise2.html#slides",
     "href": "workshop-08-exercise2.html#slides",
     "title": "Exercise 2: Transfer Learning",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Exercise 2: Transfer Learning"
+    ]
   },
   {
     "objectID": "workshop-08-exercise2.html#outline",
     "href": "workshop-08-exercise2.html#outline",
     "title": "Exercise 2: Transfer Learning",
     "section": "Outline",
-    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals"
+    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals",
+    "crumbs": [
+      "Workshop",
+      "Exercise 2: Transfer Learning"
+    ]
   },
   {
     "objectID": "workshop-03.html",
@@ -518,7 +542,7 @@
     "href": "workshop.html",
     "title": "Overview",
     "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break followed by hands-on practice\n\n\n10:30 - 11:30\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nDeep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:30\n\n\n \n\n\n\n\nLarge Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:50\n\n\n \n\n\n\n\nML Problem Framing\n\n\n2:00 - 3:30\n\n\nLab session\n\n\n\n\n\nNo matching items",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:30 - 10:40\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nDeep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\n☕ Break\n\n\n14:20 - 14:30\n\n\n \n\n\n\n\nLarge Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:45\n\n\n \n\n\n\n\nML Problem Framing\n\n\n2:00 - 3:30\n\n\nLab session\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
       "Overview"
@@ -529,10 +553,43 @@
     "href": "workshop.html#schedule",
     "title": "Overview",
     "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break followed by hands-on practice\n\n\n10:30 - 11:30\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nDeep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:30\n\n\n \n\n\n\n\nLarge Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:50\n\n\n \n\n\n\n\nML Problem Framing\n\n\n2:00 - 3:30\n\n\nLab session\n\n\n\n\n\nNo matching items",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:30 - 10:40\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nDeep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\n☕ Break\n\n\n14:20 - 14:30\n\n\n \n\n\n\n\nLarge Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:45\n\n\n \n\n\n\n\nML Problem Framing\n\n\n2:00 - 3:30\n\n\nLab session\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
       "Overview"
+    ]
+  },
+  {
+    "objectID": "workshop-05-exercise1.html",
+    "href": "workshop-05-exercise1.html",
+    "title": "Exercise 1: ML fundamentals",
+    "section": "",
+    "text": "In this session, you will do a hands on exercise on machine learning fundamentals.",
+    "crumbs": [
+      "Workshop",
+      "Exercise 1: ML fundamentals"
+    ]
+  },
+  {
+    "objectID": "workshop-05-exercise1.html#resources",
+    "href": "workshop-05-exercise1.html#resources",
+    "title": "Exercise 1: ML fundamentals",
+    "section": "Resources",
+    "text": "Resources",
+    "crumbs": [
+      "Workshop",
+      "Exercise 1: ML fundamentals"
+    ]
+  },
+  {
+    "objectID": "workshop-05-exercise1.html#slides",
+    "href": "workshop-05-exercise1.html#slides",
+    "title": "Exercise 1: ML fundamentals",
+    "section": "Slides",
+    "text": "Slides",
+    "crumbs": [
+      "Workshop",
+      "Exercise 1: ML fundamentals"
     ]
   },
   {
@@ -543,39 +600,26 @@
     "text": "Welcome\nWelcome everyone to the “CS Alumni Workshop: Is Machine Learning Suitable for Your Projects?”\n\nWhen 🕘 9:00 am to 4:00 pm on December 7th, 2024\nWhere? 📍 Room 4074 of the UBC Orchard Commons, 6363 Agronomy Rd, Vancouver, BC V6T 1Z4\n\n\n\nThis workshop is a collaboration between the Master of Data Science, Vancouver program and the Department of Computer Science at UBC.\nThe Computer Science Department is pleased to offer this workshop to their alumni as a token of appreciation and a valuable opportunity for professional development.\nIn this workshop, you will discover how machine learning can improve your research projects. The workshop is tailored for students and researchers with some programming background. We will demystify the fundamentals of machine learning and clarify what it can and cannot do for your work and/or research. By the end of the workshop, you will be familiar with the fundamentals of machine learning and different types of machine learning."
   },
   {
-    "objectID": "workshop-05-exercise1.html",
-    "href": "workshop-05-exercise1.html",
-    "title": "Exercise 1: ML fundamentals",
-    "section": "",
-    "text": "In this session, you will do a hands on exercise on machine learning fundamentals."
-  },
-  {
-    "objectID": "workshop-05-exercise1.html#resources",
-    "href": "workshop-05-exercise1.html#resources",
-    "title": "Exercise 1: ML fundamentals",
-    "section": "Resources",
-    "text": "Resources"
-  },
-  {
-    "objectID": "workshop-05-exercise1.html#slides",
-    "href": "workshop-05-exercise1.html#slides",
-    "title": "Exercise 1: ML fundamentals",
-    "section": "Slides",
-    "text": "Slides"
-  },
-  {
-    "objectID": "workshop-11.html",
-    "href": "workshop-11.html",
+    "objectID": "workshop-12.html",
+    "href": "workshop-12.html",
     "title": "ML Problem Framing",
     "section": "",
-    "text": "In this session, you will practice framing a given problem as a machine learning problem:"
+    "text": "In this session, you will practice framing a given problem as a machine learning problem:",
+    "crumbs": [
+      "Workshop",
+      "ML Problem Framing"
+    ]
   },
   {
-    "objectID": "workshop-11.html#resources",
-    "href": "workshop-11.html#resources",
+    "objectID": "workshop-12.html#resources",
+    "href": "workshop-12.html#resources",
     "title": "ML Problem Framing",
     "section": "Resources",
-    "text": "Resources\n\nSample datasets and goals\nGuiding questions\nExample"
+    "text": "Resources\n\nSample datasets and goals\nGuiding questions\nExample",
+    "crumbs": [
+      "Workshop",
+      "ML Problem Framing"
+    ]
   },
   {
     "objectID": "slides/slides-01-intro.html#welcome-to-the-workshop",
@@ -671,25 +715,37 @@
     "href": "workshop-06.html",
     "title": "Deep Learning",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Deep Learning"
+    ]
   },
   {
     "objectID": "workshop-06.html#slides",
     "href": "workshop-06.html#slides",
     "title": "Deep Learning",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Deep Learning"
+    ]
   },
   {
     "objectID": "workshop-06.html#outline",
     "href": "workshop-06.html#outline",
     "title": "Deep Learning",
     "section": "Outline",
-    "text": "Outline\n\nNeural Networks\nTransfer learning\nObject detection"
+    "text": "Outline\n\nNeural Networks\nTransfer learning\nObject detection",
+    "crumbs": [
+      "Workshop",
+      "Deep Learning"
+    ]
   },
   {
-    "objectID": "workshop-09.html",
-    "href": "workshop-09.html",
+    "objectID": "workshop-10.html",
+    "href": "workshop-10.html",
     "title": "Large Language Models",
     "section": "",
     "text": "View slides in full screen",
@@ -699,8 +755,8 @@
     ]
   },
   {
-    "objectID": "workshop-09.html#slides",
-    "href": "workshop-09.html#slides",
+    "objectID": "workshop-10.html#slides",
+    "href": "workshop-10.html#slides",
     "title": "Large Language Models",
     "section": "",
     "text": "View slides in full screen",
@@ -710,8 +766,8 @@
     ]
   },
   {
-    "objectID": "workshop-09.html#outline",
-    "href": "workshop-09.html#outline",
+    "objectID": "workshop-10.html#outline",
+    "href": "workshop-10.html#outline",
     "title": "Large Language Models",
     "section": "Outline",
     "text": "Outline\n\nActivity\nMarkov model of language\nTransformers, self-attention (high level)\nPipelines before and after LLMs",

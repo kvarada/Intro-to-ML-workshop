@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Frame your problems as machine learning problems">
+<meta name="description" content="Hands on exercise on language models">
 
-<title>ML Problem Framing – Introduction to Machine Learning Workshop</title>
+<title>Exercise 3: Language Models – Introduction to Machine Learning Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./workshop-12.html" rel="next">
+<link href="./workshop-10.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -67,11 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+ 
+  <style>
+  .slide-deck {
+      border: 3px solid #dee2e6;
+      width: 100%;
+  }
+  </style>
+  
 
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-sidebar floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -93,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./workshop.html"> 
+    <a class="nav-link active" href="./workshop.html" aria-current="page"> 
 <span class="menu-text">Workshop</span></a>
   </li>  
   <li class="nav-item">
@@ -106,10 +116,105 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./workshop-11-exercise3.html">Exercise 3: Language Models</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome and getting started</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML Fundamentals</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML Models</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-04-break.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">☕ Break</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-05-exercise1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise 1: ML fundamentals</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Deep Learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-07-lunch.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">🥗🍴 Lunch</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-08-exercise2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercise 2: Transfer Learning</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-09-break.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">☕ Break</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Large Language Models</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-11-exercise3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Exercise 3: Language Models</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./workshop-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ML Problem Framing</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
@@ -117,12 +222,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ML Problem Framing</h1>
+<h1 class="title">Exercise 3: Language Models</h1>
 </div>
 
 <div>
   <div class="description">
-    Frame your problems as machine learning problems
+    Hands on exercise on language models
   </div>
 </div>
 
@@ -139,20 +244,19 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>In this session, you will practice framing a given problem as a machine learning problem:</p>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+    <p><a href="slides/slides-03-ml-models.html" target="_blank">View slides in full screen</a></p>
+       <div class="ratio ratio-16x9">
+      <iframe class="slide-deck" src="slides/slides-03-ml-models.html" height="600px"></iframe>
+    </div>
+  
+</section>
+<section id="outline" class="level2">
+<h2 class="anchored" data-anchor-id="outline">Outline</h2>
 <ul>
-<li>Team up with your neighbor(s).</li>
-<li>Choose a problem that interests you most. You can refer to <a href="lab/datasets_and_goals.html">the sample datasets and goals</a>.for inspiration.</li>
-<li>Frame your machine learning problem by addressing <a href="lab/guiding_questions.html">the guiding questions</a>.</li>
-<li>We have provided <a href="lab/example.html">an example</a> for your reference.</li>
-<li>The teaching team is available and happy to brainstorm with you.</li>
-</ul>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<ul>
-<li><a href="lab/datasets_and_goals.html">Sample datasets and goals</a></li>
-<li><a href="lab/guiding_questions.html">Guiding questions</a></li>
-<li><a href="lab/example.html">Example</a></li>
+<li>Machine learning terminology</li>
+<li>Machine learning fundamentals</li>
 </ul>
 
 
@@ -579,6 +683,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./workshop-10.html" class="pagination-link" aria-label="Large Language Models">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Large Language Models</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./workshop-12.html" class="pagination-link" aria-label="ML Problem Framing">
+        <span class="nav-page-text">ML Problem Framing</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
