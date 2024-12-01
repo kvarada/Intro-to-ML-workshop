@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Lunch time! Go eat. We’ll see you at 13:30.">
 
-<title>Introduction to Machine Learning Workshop</title>
+<title>🥗🍴 Lunch – Introduction to Machine Learning Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,6 +40,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -88,7 +92,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -114,24 +118,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">🥗🍴 Lunch</h1>
+</div>
+
+<div>
+  <div class="description">
+    <p>Lunch time! Go eat. We’ll see you at 13:30.</p>
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
 
-<section id="welcome" class="level1 unnumbered">
-<h1 class="unnumbered">Welcome</h1>
-<p>Welcome everyone to the “CS Alumni Workshop: Is Machine Learning Suitable for Your Projects?”</p>
-<ul>
-<li><p><strong>When</strong> 🕘 9:00 am to 4:00 pm on December 7th, 2024</p></li>
-<li><p><strong>Where?</strong> 📍 <a href="https://learningspaces.ubc.ca/classrooms/orch-4074">Room 4074 of the UBC Orchard Commons</a>, 6363 Agronomy Rd, Vancouver, BC V6T 1Z4</p></li>
-</ul>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.853164736889!2d-123.2535824882542!3d49.26022897127008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672cba66be131%3A0x4e5c75d2f5097ca5!2s6363%20Agronomy%20Rd%2C%20Vancouver%2C%20BC%20V6T%201Z4!5e0!3m2!1sen!2sca!4v1732719337824!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-<p>This workshop is a collaboration between <a href="https://masterdatascience.ubc.ca/programs/vancouver">the Master of Data Science, Vancouver program</a> and <a href="https://www.cs.ubc.ca/">the Department of Computer Science</a> at UBC.</p>
-<p>The Computer Science Department is pleased to offer this workshop to their alumni as a token of appreciation and a valuable opportunity for professional development.</p>
-<p>In this workshop, you will discover how machine learning can improve your research projects. The workshop is tailored for students and researchers with some programming background. We will demystify the fundamentals of machine learning and clarify what it can and cannot do for your work and/or research. By the end of the workshop, you will be familiar with the fundamentals of machine learning and different types of machine learning.</p>
+    
+  
+    
+  </div>
+  
 
 
-</section>
+</header>
+
+
+<p><a href="slides/img/eva-lunch.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="slides/img/eva-lunch.png" class="img-fluid"></a></p>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -555,6 +568,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

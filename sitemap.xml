@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-05-unsupervised-learning.html</loc>
-    <lastmod>2024-11-27T15:18:58.316Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-04-deep-learning.html</loc>
-    <lastmod>2024-11-27T15:18:58.316Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-02-ml-intro.html</loc>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-03-ml-models.html</loc>
     <lastmod>2024-11-27T15:18:58.315Z</lastmod>
   </url>
   <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-07.html</loc>
-    <lastmod>2024-11-27T15:18:58.458Z</lastmod>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-05-llms.html</loc>
+    <lastmod>2024-11-27T15:18:58.316Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-10-exercise3.html</loc>
+    <lastmod>2024-12-01T05:03:50.399Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-08-exercise2.html</loc>
+    <lastmod>2024-12-01T05:03:44.427Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-03.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-01.html</loc>
-    <lastmod>2024-11-27T15:18:58.457Z</lastmod>
+    <lastmod>2024-12-01T02:42:05.224Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/lab/guiding_questions.html</loc>
@@ -37,28 +37,28 @@
     <lastmod>2024-11-27T15:18:58.459Z</lastmod>
   </url>
   <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-08-lunch.html</loc>
-    <lastmod>2024-11-27T15:18:58.459Z</lastmod>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-07-lunch.html</loc>
+    <lastmod>2024-12-01T04:54:32.439Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-04-break.html</loc>
-    <lastmod>2024-11-27T15:18:58.458Z</lastmod>
+    <lastmod>2024-12-01T02:46:56.174Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/index.html</loc>
     <lastmod>2024-11-27T15:18:56.978Z</lastmod>
   </url>
   <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-06-break.html</loc>
-    <lastmod>2024-11-27T15:18:58.458Z</lastmod>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-05-exercise1.html</loc>
+    <lastmod>2024-12-01T05:03:38.839Z</lastmod>
   </url>
   <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-10.html</loc>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-11.html</loc>
     <lastmod>2024-11-27T15:18:58.459Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-01-intro.html</loc>
-    <lastmod>2024-11-27T15:18:58.315Z</lastmod>
+    <lastmod>2024-12-01T02:44:23.426Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/lab/example.html</loc>
@@ -70,22 +70,22 @@
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-02.html</loc>
-    <lastmod>2024-11-27T15:18:58.457Z</lastmod>
+    <lastmod>2024-12-01T02:44:50.641Z</lastmod>
   </url>
   <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-05.html</loc>
-    <lastmod>2024-11-27T15:18:58.458Z</lastmod>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-06.html</loc>
+    <lastmod>2024-12-01T04:54:23.593Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-09.html</loc>
-    <lastmod>2024-11-27T15:18:58.459Z</lastmod>
+    <lastmod>2024-12-01T05:04:43.431Z</lastmod>
   </url>
   <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-06-llms.html</loc>
-    <lastmod>2024-11-27T15:18:58.316Z</lastmod>
-  </url>
-  <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-03-ml-models.html</loc>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-02-ml-intro.html</loc>
     <lastmod>2024-11-27T15:18:58.315Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-04-deep-learning.html</loc>
+    <lastmod>2024-11-27T15:18:58.316Z</lastmod>
   </url>
 </urlset>
