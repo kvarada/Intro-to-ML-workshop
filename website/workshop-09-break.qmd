@@ -1,10 +1,10 @@
 ---
 title: ☕ Break
 description: >
-  Get up and stretch!
-  We'll start back at 11:30.
-duration: 5 min
-time: 11:25 - 11:30
+  Get up and move around!
+  We'll start back up at 10:40.
+duration: 60 min
+time: 14:20 - 14:30
 countdown:
   box_shadow: none
 ---

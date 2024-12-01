@@ -1,9 +1,9 @@
 ---
-title: ML Fundamentals
+title: "Module 1: ML Fundamentals"
 description: Introduction to Machine Learning Fundamentals 
 description-short: Introduction to Machine Learning Fundamentals
 duration: 50 min
-time: 9:10 - 10:00
+time: 9:15 - 10:00
 
 editor: { render-on-save: true }
 ---

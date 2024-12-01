@@ -1,0 +1,18 @@
+---
+title: "Exercise 1: ML fundamentals" 
+description: Hands on exercise on ML fundamentals 
+description-short: 
+duration: 30 min
+time: 10:40 - 11:30
+
+editor: { render-on-save: true }
+---
+
+
+In this session, you will do a hands on exercise on machine learning fundamentals. 
+
+- Team up with your neighbor(s).
+
+## Resources 
+
+## Slides
