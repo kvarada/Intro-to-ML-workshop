@@ -378,186 +378,192 @@
     "text": "Thank you!\n\nThat’s it for the modules! Now, let’s begin the lab session.\nThank you for your engagement! We would love your feedback. Here is the survey link:\n\nhttps://forms.gle/e5YWKPZtC3N7UNEW9"
   },
   {
-    "objectID": "workshop-11-exercise3.html",
-    "href": "workshop-11-exercise3.html",
-    "title": "Exercise 3: Language Models",
+    "objectID": "workshop-12.html",
+    "href": "workshop-12.html",
+    "title": "Summary and wrap up",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Exercise 3: Language Models"
+      "Summary and wrap up"
     ]
   },
   {
-    "objectID": "workshop-11-exercise3.html#slides",
-    "href": "workshop-11-exercise3.html#slides",
-    "title": "Exercise 3: Language Models",
+    "objectID": "workshop-12.html#slides",
+    "href": "workshop-12.html#slides",
+    "title": "Summary and wrap up",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Exercise 3: Language Models"
+      "Summary and wrap up"
     ]
   },
   {
-    "objectID": "workshop-11-exercise3.html#outline",
-    "href": "workshop-11-exercise3.html#outline",
-    "title": "Exercise 3: Language Models",
+    "objectID": "workshop-12.html#outline",
+    "href": "workshop-12.html#outline",
+    "title": "Summary and wrap up",
     "section": "Outline",
-    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals",
+    "text": "Outline\n\nSummary\nThanks\nSurvey",
     "crumbs": [
       "Workshop",
-      "Exercise 3: Language Models"
+      "Summary and wrap up"
     ]
   },
   {
-    "objectID": "workshop-08-exercise2.html",
-    "href": "workshop-08-exercise2.html",
-    "title": "Exercise 2: Transfer Learning",
+    "objectID": "workshop-10.html",
+    "href": "workshop-10.html",
+    "title": "Module 4: Large Language Models",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Exercise 2: Transfer Learning"
+      "Module 4: Large Language Models"
     ]
   },
   {
-    "objectID": "workshop-08-exercise2.html#slides",
-    "href": "workshop-08-exercise2.html#slides",
-    "title": "Exercise 2: Transfer Learning",
+    "objectID": "workshop-10.html#slides",
+    "href": "workshop-10.html#slides",
+    "title": "Module 4: Large Language Models",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Exercise 2: Transfer Learning"
+      "Module 4: Large Language Models"
     ]
   },
   {
-    "objectID": "workshop-08-exercise2.html#outline",
-    "href": "workshop-08-exercise2.html#outline",
-    "title": "Exercise 2: Transfer Learning",
+    "objectID": "workshop-10.html#outline",
+    "href": "workshop-10.html#outline",
+    "title": "Module 4: Large Language Models",
     "section": "Outline",
-    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals",
+    "text": "Outline\n\nActivity\nMarkov model of language\nTransformers, self-attention (high level)\nPipelines before and after LLMs",
     "crumbs": [
       "Workshop",
-      "Exercise 2: Transfer Learning"
+      "Module 4: Large Language Models"
     ]
   },
   {
-    "objectID": "workshop-03.html",
-    "href": "workshop-03.html",
-    "title": "ML Models",
+    "objectID": "workshop-06.html",
+    "href": "workshop-06.html",
+    "title": "Module 3: Deep Learning",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "ML Models"
+      "Module 3: Deep Learning"
     ]
   },
   {
-    "objectID": "workshop-03.html#slides",
-    "href": "workshop-03.html#slides",
-    "title": "ML Models",
+    "objectID": "workshop-06.html#slides",
+    "href": "workshop-06.html#slides",
+    "title": "Module 3: Deep Learning",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "ML Models"
+      "Module 3: Deep Learning"
     ]
   },
   {
-    "objectID": "workshop-03.html#outline",
-    "href": "workshop-03.html#outline",
-    "title": "ML Models",
+    "objectID": "workshop-06.html#outline",
+    "href": "workshop-06.html#outline",
+    "title": "Module 3: Deep Learning",
+    "section": "Outline",
+    "text": "Outline\n\nNeural Networks\nTransfer learning\nObject detection",
+    "crumbs": [
+      "Workshop",
+      "Module 3: Deep Learning"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html",
+    "href": "workshop-02.html",
+    "title": "Module 1: ML Fundamentals",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Module 1: ML Fundamentals"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html#slides",
+    "href": "workshop-02.html#slides",
+    "title": "Module 1: ML Fundamentals",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Module 1: ML Fundamentals"
+    ]
+  },
+  {
+    "objectID": "workshop-02.html#outline",
+    "href": "workshop-02.html#outline",
+    "title": "Module 1: ML Fundamentals",
     "section": "Outline",
     "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals\nDecision trees",
     "crumbs": [
       "Workshop",
-      "ML Models"
+      "Module 1: ML Fundamentals"
     ]
   },
   {
-    "objectID": "workshop-01.html",
-    "href": "workshop-01.html",
-    "title": "Welcome and getting started",
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Our team",
     "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Workshop",
-      "Welcome and getting started"
-    ]
+    "text": "Varada Kolhatkar\n        Assistant Professor of Teaching, Computer Science, Master of Data Science\n        \n            Instructor\n        \n        \n    \n\n    \n        \n        Prajeet Bajpai\n        Teaching Postdoctoral Fellow, Master of Data Science\n        \n            Instructor\n        \n        \n    \n\n    \n        \n        Tony Shum\n        \n        \n            Assistant\n        \n        \n    \n\n    \n        \n        Michele Ng\n        Special Projects Coordinator, Computer Science\n        \n            Organizer\n        \n        \n    \n\n\n\nNo matching items"
   },
   {
-    "objectID": "workshop-01.html#slides",
-    "href": "workshop-01.html#slides",
-    "title": "Welcome and getting started",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Workshop",
-      "Welcome and getting started"
-    ]
-  },
-  {
-    "objectID": "workshop-01.html#outline",
-    "href": "workshop-01.html#outline",
-    "title": "Welcome and getting started",
-    "section": "Outline",
-    "text": "Outline\n\nWelcome to the workshop!\nIntroductions and meet your neighbors\nAbout the learning objective of the workshop",
-    "crumbs": [
-      "Workshop",
-      "Welcome and getting started"
-    ]
-  },
-  {
-    "objectID": "lab/guiding_questions.html",
-    "href": "lab/guiding_questions.html",
+    "objectID": "lab/example.html",
+    "href": "lab/example.html",
     "title": "ML Problem Framing",
     "section": "",
-    "text": "Choose a dataset and its corresponding objective, and then try to address the following questions:\n\nIs the provided dataset appropriate for the specified objective? What type of data would ideally solve your problem or research question? Are there better-suited datasets available on the internet for this objective?\nClearly define the expected input and the ‘ideal’ output. Determine if machine learning is the appropriate method for addressing this problem.\nIf machine learning is deemed suitable, what should the model aim to achieve? How would you measure the model’s performance?\nHow would a human tackle this issue? Can you propose any heuristic methods to solve this problem?\nWhat are the major steps required to resolve this problem?\nDraw a diagram that illustrates the input, output, and key stages of the problem-solving process.\nWhich type of machine learning would be best suited for your problem?\nWhat specific machine learning technique would be most effective for this problem?"
+    "text": "Imagine you work at a bank, and the current fraud detection workflow isn’t performing well. Your boss asks you to explore machine learning approaches to improve the detection and flagging of fraudulent credit card transactions. While researching online, you find Credit Card Fraud Detection dataset on Kaggle that could be useful for creating a prototype."
   },
   {
-    "objectID": "lab/datasets_and_goals.html",
-    "href": "lab/datasets_and_goals.html",
+    "objectID": "lab/example.html#scenario",
+    "href": "lab/example.html#scenario",
     "title": "ML Problem Framing",
     "section": "",
-    "text": "Below are some topics and datasets of real-world issues that could possibly be solved using Machine Learning\n\n\n\n\n\n\n\n\nStock Market Sentiment\n\n\n\n\n\nImagine you work at a bank, and the current workflow to understand the stock market sentiment isn’t performing well. Your boss asks you to explore machine learning approaches to improve the detection of stock market sentiment, which is crucial to some of the trading strategies, based on comments in social media platform. While researching online, you find this dataset on Kaggle that could be useful for creating a prototype.\n\n\n\n\n\n\n\n\n\nE-commerce Strategy\n\n\n\n\n\nImagine you are a consultant hired by an E-commerce platform. You are asked to analyze the retail data and explore machine learning approaches to address one of the planned initiatives of the company, which includes but not limited to:\n\ncustomer segmentation based on their purchase history to derive more customized marketing strategy\npersonalized suggestions of items to customers so as to increase the conversion.\n\nWhile researching online, you find this dataset on Kaggle that could be useful as a starting point.\n\n\n\n\n\n\n\n\n\n\n\n\nCancer Diagnosis\n\n\n\n\n\nImagine you work at a medical research institute which specialized in cancer-related research. You try to explore machine learning approaches to diagnoze patients of the risk of cancer based on images of tissues, hoping to achieve early detection and early treatment to patients. While researching online, you find this dataset on NCI that could be useful.\n\n\n\n\n\n\n\n\n\nPolycystic ovary syndrome\n\n\n\n\n\nImagine you work at a university laboratory which specialized in research on Polycystic ovary syndrome (PCOS), which is a disorder involving infrequent, irregular or prolonged menstrual periods of women. You try to explore machine learning approaches to diagnoze patients of the risk of PCOS based on clinical data. While researching online, you find this dataset on Kaggle that could be useful.\n\n\n\n\n\n\n\n\n\n\n\n\nObesity Levels\n\n\n\n\n\nImagine you work at the Health Bureau of a country. You try to explore machine learning approaches to estimate the obesity levels of your citizens, as well as to understand the key factors relevant to obesity. This helps you defining better public health policy. While researching online, you find this dataset on UCI that could be useful."
+    "text": "Imagine you work at a bank, and the current fraud detection workflow isn’t performing well. Your boss asks you to explore machine learning approaches to improve the detection and flagging of fraudulent credit card transactions. While researching online, you find Credit Card Fraud Detection dataset on Kaggle that could be useful for creating a prototype."
   },
   {
-    "objectID": "lab/datasets_and_goals.html#example-topics-for-machine-learning-projects",
-    "href": "lab/datasets_and_goals.html#example-topics-for-machine-learning-projects",
+    "objectID": "lab/example.html#problem-framing",
+    "href": "lab/example.html#problem-framing",
     "title": "ML Problem Framing",
-    "section": "",
-    "text": "Below are some topics and datasets of real-world issues that could possibly be solved using Machine Learning\n\n\n\n\n\n\n\n\nStock Market Sentiment\n\n\n\n\n\nImagine you work at a bank, and the current workflow to understand the stock market sentiment isn’t performing well. Your boss asks you to explore machine learning approaches to improve the detection of stock market sentiment, which is crucial to some of the trading strategies, based on comments in social media platform. While researching online, you find this dataset on Kaggle that could be useful for creating a prototype.\n\n\n\n\n\n\n\n\n\nE-commerce Strategy\n\n\n\n\n\nImagine you are a consultant hired by an E-commerce platform. You are asked to analyze the retail data and explore machine learning approaches to address one of the planned initiatives of the company, which includes but not limited to:\n\ncustomer segmentation based on their purchase history to derive more customized marketing strategy\npersonalized suggestions of items to customers so as to increase the conversion.\n\nWhile researching online, you find this dataset on Kaggle that could be useful as a starting point.\n\n\n\n\n\n\n\n\n\n\n\n\nCancer Diagnosis\n\n\n\n\n\nImagine you work at a medical research institute which specialized in cancer-related research. You try to explore machine learning approaches to diagnoze patients of the risk of cancer based on images of tissues, hoping to achieve early detection and early treatment to patients. While researching online, you find this dataset on NCI that could be useful.\n\n\n\n\n\n\n\n\n\nPolycystic ovary syndrome\n\n\n\n\n\nImagine you work at a university laboratory which specialized in research on Polycystic ovary syndrome (PCOS), which is a disorder involving infrequent, irregular or prolonged menstrual periods of women. You try to explore machine learning approaches to diagnoze patients of the risk of PCOS based on clinical data. While researching online, you find this dataset on Kaggle that could be useful.\n\n\n\n\n\n\n\n\n\n\n\n\nObesity Levels\n\n\n\n\n\nImagine you work at the Health Bureau of a country. You try to explore machine learning approaches to estimate the obesity levels of your citizens, as well as to understand the key factors relevant to obesity. This helps you defining better public health policy. While researching online, you find this dataset on UCI that could be useful."
+    "section": "Problem Framing",
+    "text": "Problem Framing\n\nIs the provided dataset appropriate for the specified objective? What type of data would ideally solve your problem or research question? Are there better-suited datasets available on the internet for this objective?\n\nThe ideal dataset should contain data about the transactions, e.g. transaction details, customer details, etc., which could be used to classify the fraud transaction. Moreover, it should contain an indicator whether it is a fraud transaction for supervised machine learning methods. If such indicator is not available, we can apply outlier detection to identify transactions which deviate much from normal transactions as frauds.\nThe provided dataset contains target column ‘Class’ that indicates whether it is a fraud transaction. It also contains other columns (‘Time’, ‘Amount’, ‘V1-V28’) which can be used as features to predict the target column ‘Class’.\nThere are some caveats for using the dataset.\n\nThe dataset is a transformed dataset with PCA-transformed columns ‘V1’ - ‘V28’. Without having the original dataset, we are not sure how the PCA transformation is performed. We cannot guarantee if the same transformation can be applied to any new data (e.g. real-world data of new transactions)\nFrom the interpretation perspective, we might fail to draw any meaningful insights between the features and the target as we do not understand the meaning of the columns ‘V1’ - ‘V28’. Moreover, we might not detect any potential bias or unfairness within the ML model if the original dataset contains sensitive information, e.g. age, gender, etc.\n\nThere could possibly be better-suited datasets, for example this dataset.\n\n\n\nClearly define the expected input and the ‘ideal’ output. Determine if machine learning is the appropriate method for addressing this problem.\n\nData Input: Data about the transactions, for example:\n\nmerchandise details: time, amount, merchant information, etc.\ncustomer details: account balance, credit score, cardholder information, etc.\n\nData Output: A soft prediction (probability) whether a transaction is a fraud\nAs we can clearly define the expected input and output and we can collect the data, machine learning is the appropriate method to address the problem.\n\n\n\nIf machine learning is deemed suitable, what should the model aim to achieve? How would you measure the model’s performance?\n\nOur objective is to detect fraudulent transactions by having a soft prediction (probability) and a threshold to determine whether a transaction is a fraud\nWe can expect there would potentially be false positives (legit transactions predicted as fraud) and false negatives (fraudulent transactions predicted as legit) from the predictions and the model should balance both based on our needs. For example, more false negatives might create more bad debts, while more false positives might affect the revenue.\nMoreover, the dataset is an unbalanced dataset with less than 1% are actual fraudulent records.\nWe can use evaluation metrics, e.g. precision, recall, area under precision-recall curve, etc. to measure the model performance. For example, if we are trying to minimize false negatives, we would focus more on recall (true positive rate).\n\n\n\nHow would a human tackle this issue? Can you propose any heuristic methods to solve this problem?\n\nIt would be a data collection -&gt; analysis by expert -&gt; decision making -&gt; remedy approach to solve this issue by human.\n\nData collection: We collect historical legit and fraud transactions and the related information, e.g. transaction, merchant, cardholder, etc.\nAnalysis by expert: Expert will deep dive into the collected data to identify any pattern/traits of the fraud transactions from the data. Moreover, they will provide a score of the likeliness of fraud for a transaction.\nDecision making: A cutoff of the score will be made to classify if a transaction is a fraud.\nRemedy: If the transaction is legit, no action is required. If it is a fraud, the money transfer will be on-hold. Further investigation will undergo.\n\n\n\n\nWhat are the major steps required to resolve this problem?\n\nFor machine-learning based approach, we would go through similar but slightly different steps to resolve the problem\n\nData collection & wrangling: Data collection is similar to the above. We will also carry out data wrangling to handle unclean data (e.g. missing values) and transform data into desired format (e.g. scaling).\nModel training: A subset of the data will be used to train the model to learn any pattern for fraud/legit transactions. The model will then output the predictions.\nValidation/Testing: Another subset(s) of the data will be used to test the model performance, which is helpful in model selection, estimation of performance under real-world scenario, etc.\nDeployment: The defined data processing pipeline and trained model will be deployed to the existing system/workflow, which can intake the transaction data and output the prediction results to the relevant stakeholder(s) for further actions.\n\n\n\n\nDraw a diagram that illustrates the input, output, and key stages of the problem-solving process.\n\n\n\nWhich type of machine learning would be best suited for your problem? What specific machine learning technique would be most effective for this problem?\n\nWe have labelled data of legit/fraud transactions and our goal is to classify the transactions. Supervised machine learning is best-suited.\nLinear regression can be applied first to observe any linear relationship between the target and the features, and we can obtain a baseline performance.\nGiven the possible non-linear relationship between the target and the features, non-linear algorithms (e.g. SVM) can be applied and we can observe if there is any significant improvement in model performance.\nGiven the variety of data types (textual, numerical, etc.), decision tree based algorithm (gradient boosted tree) can be applied and we can observe if there is any significant improvement in model performance."
   },
   {
-    "objectID": "lab/datasets_and_goals.html#open-data-source-for-machine-learning-projects",
-    "href": "lab/datasets_and_goals.html#open-data-source-for-machine-learning-projects",
-    "title": "ML Problem Framing",
-    "section": "Open Data Source for Machine Learning Projects",
-    "text": "Open Data Source for Machine Learning Projects\nBelow are some websites that can provide open data useful for Machine Learning projects.\n\nUCI Machine Learning Repository\nKaggle\nFederal Reserve Bank of St. Louis\nNational Library of Medicine\nGapminder\nThe Humanitarian Data Exchange (HDX)\nStatistics Canada"
+    "objectID": "slides/slides-01-intro.html#welcome-to-the-workshop",
+    "href": "slides/slides-01-intro.html#welcome-to-the-workshop",
+    "title": "Welcome!",
+    "section": "Welcome to the workshop!",
+    "text": "Welcome to the workshop!\n\n\n\nFind a seat where you can see the screen!\nYou will be discussing concepts with your neighbours. So take 15 seconds to introduce yourself to your neighbour."
   },
   {
-    "objectID": "workshop.html",
-    "href": "workshop.html",
-    "title": "Overview",
-    "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:30 - 10:40\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nDeep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\n☕ Break\n\n\n14:20 - 14:30\n\n\n \n\n\n\n\nLarge Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:45\n\n\n \n\n\n\n\nML Problem Framing\n\n\n2:00 - 3:30\n\n\nLab session\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
+    "objectID": "slides/slides-01-intro.html#qr-code",
+    "href": "slides/slides-01-intro.html#qr-code",
+    "title": "Welcome!",
+    "section": "QR code",
+    "text": "QR code"
   },
   {
-    "objectID": "workshop.html#schedule",
-    "href": "workshop.html#schedule",
-    "title": "Overview",
-    "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:30 - 10:40\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nDeep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\n☕ Break\n\n\n14:20 - 14:30\n\n\n \n\n\n\n\nLarge Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:45\n\n\n \n\n\n\n\nML Problem Framing\n\n\n2:00 - 3:30\n\n\nLab session\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Workshop",
-      "Overview"
-    ]
+    "objectID": "slides/slides-01-intro.html#meet-the-teaching-team",
+    "href": "slides/slides-01-intro.html#meet-the-teaching-team",
+    "title": "Welcome!",
+    "section": "Meet the teaching team",
+    "text": "Meet the teaching team\n\n\n\nPrajeet\nTony\nVarada"
+  },
+  {
+    "objectID": "slides/slides-01-intro.html#learning-goals-of-the-workshop",
+    "href": "slides/slides-01-intro.html#learning-goals-of-the-workshop",
+    "title": "Welcome!",
+    "section": "Learning goals of the workshop",
+    "text": "Learning goals of the workshop\n\n\nThe primary learning goal of the workshop is to familiarize yourself with the fundamentals of machine learning and its various types. This knowledge will help you determine which type of machine learning, or whether a non-machine learning approach, would be most appropriate for your problem."
   },
   {
     "objectID": "workshop-05-exercise1.html",
@@ -600,180 +606,185 @@
     "text": "Welcome\nWelcome everyone to the “CS Alumni Workshop: Is Machine Learning Suitable for Your Projects?”\n\nWhen 🕘 9:00 am to 4:00 pm on December 7th, 2024\nWhere? 📍 Room 4074 of the UBC Orchard Commons, 6363 Agronomy Rd, Vancouver, BC V6T 1Z4\n\n\n\nThis workshop is a collaboration between the Master of Data Science, Vancouver program and the Department of Computer Science at UBC.\nThe Computer Science Department is pleased to offer this workshop to their alumni as a token of appreciation and a valuable opportunity for professional development.\nIn this workshop, you will discover how machine learning can improve your research projects. The workshop is tailored for students and researchers with some programming background. We will demystify the fundamentals of machine learning and clarify what it can and cannot do for your work and/or research. By the end of the workshop, you will be familiar with the fundamentals of machine learning and different types of machine learning."
   },
   {
-    "objectID": "workshop-12.html",
-    "href": "workshop-12.html",
-    "title": "ML Problem Framing",
+    "objectID": "workshop.html",
+    "href": "workshop.html",
+    "title": "Overview",
     "section": "",
-    "text": "In this session, you will practice framing a given problem as a machine learning problem:",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:30 - 10:40\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\n☕ Break\n\n\n14:20 - 14:30\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
-      "ML Problem Framing"
+      "Overview"
     ]
   },
   {
-    "objectID": "workshop-12.html#resources",
-    "href": "workshop-12.html#resources",
-    "title": "ML Problem Framing",
-    "section": "Resources",
-    "text": "Resources\n\nSample datasets and goals\nGuiding questions\nExample",
+    "objectID": "workshop.html#schedule",
+    "href": "workshop.html#schedule",
+    "title": "Overview",
+    "section": "",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:30 - 10:40\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\n☕ Break\n\n\n14:20 - 14:30\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
-      "ML Problem Framing"
+      "Overview"
     ]
   },
   {
-    "objectID": "slides/slides-01-intro.html#welcome-to-the-workshop",
-    "href": "slides/slides-01-intro.html#welcome-to-the-workshop",
-    "title": "Welcome!",
-    "section": "Welcome to the workshop!",
-    "text": "Welcome to the workshop!\n\n\n\nFind a seat where you can see the screen!\nYou will be discussing concepts with your neighbours. So take 15 seconds to introduce yourself to your neighbour."
-  },
-  {
-    "objectID": "slides/slides-01-intro.html#qr-code",
-    "href": "slides/slides-01-intro.html#qr-code",
-    "title": "Welcome!",
-    "section": "QR code",
-    "text": "QR code"
-  },
-  {
-    "objectID": "slides/slides-01-intro.html#meet-the-teaching-team",
-    "href": "slides/slides-01-intro.html#meet-the-teaching-team",
-    "title": "Welcome!",
-    "section": "Meet the teaching team",
-    "text": "Meet the teaching team\n\n\n\nPrajeet\nTony\nVarada"
-  },
-  {
-    "objectID": "slides/slides-01-intro.html#learning-goals-of-the-workshop",
-    "href": "slides/slides-01-intro.html#learning-goals-of-the-workshop",
-    "title": "Welcome!",
-    "section": "Learning goals of the workshop",
-    "text": "Learning goals of the workshop\n\n\nThe primary learning goal of the workshop is to familiarize yourself with the fundamentals of machine learning and its various types. This knowledge will help you determine which type of machine learning, or whether a non-machine learning approach, would be most appropriate for your problem."
-  },
-  {
-    "objectID": "lab/example.html",
-    "href": "lab/example.html",
+    "objectID": "lab/datasets_and_goals.html",
+    "href": "lab/datasets_and_goals.html",
     "title": "ML Problem Framing",
     "section": "",
-    "text": "Imagine you work at a bank, and the current fraud detection workflow isn’t performing well. Your boss asks you to explore machine learning approaches to improve the detection and flagging of fraudulent credit card transactions. While researching online, you find Credit Card Fraud Detection dataset on Kaggle that could be useful for creating a prototype."
+    "text": "Below are some topics and datasets of real-world issues that could possibly be solved using Machine Learning\n\n\n\n\n\n\n\n\nStock Market Sentiment\n\n\n\n\n\nImagine you work at a bank, and the current workflow to understand the stock market sentiment isn’t performing well. Your boss asks you to explore machine learning approaches to improve the detection of stock market sentiment, which is crucial to some of the trading strategies, based on comments in social media platform. While researching online, you find this dataset on Kaggle that could be useful for creating a prototype.\n\n\n\n\n\n\n\n\n\nE-commerce Strategy\n\n\n\n\n\nImagine you are a consultant hired by an E-commerce platform. You are asked to analyze the retail data and explore machine learning approaches to address one of the planned initiatives of the company, which includes but not limited to:\n\ncustomer segmentation based on their purchase history to derive more customized marketing strategy\npersonalized suggestions of items to customers so as to increase the conversion.\n\nWhile researching online, you find this dataset on Kaggle that could be useful as a starting point.\n\n\n\n\n\n\n\n\n\n\n\n\nCancer Diagnosis\n\n\n\n\n\nImagine you work at a medical research institute which specialized in cancer-related research. You try to explore machine learning approaches to diagnoze patients of the risk of cancer based on images of tissues, hoping to achieve early detection and early treatment to patients. While researching online, you find this dataset on NCI that could be useful.\n\n\n\n\n\n\n\n\n\nPolycystic ovary syndrome\n\n\n\n\n\nImagine you work at a university laboratory which specialized in research on Polycystic ovary syndrome (PCOS), which is a disorder involving infrequent, irregular or prolonged menstrual periods of women. You try to explore machine learning approaches to diagnoze patients of the risk of PCOS based on clinical data. While researching online, you find this dataset on Kaggle that could be useful.\n\n\n\n\n\n\n\n\n\n\n\n\nObesity Levels\n\n\n\n\n\nImagine you work at the Health Bureau of a country. You try to explore machine learning approaches to estimate the obesity levels of your citizens, as well as to understand the key factors relevant to obesity. This helps you defining better public health policy. While researching online, you find this dataset on UCI that could be useful."
   },
   {
-    "objectID": "lab/example.html#scenario",
-    "href": "lab/example.html#scenario",
+    "objectID": "lab/datasets_and_goals.html#example-topics-for-machine-learning-projects",
+    "href": "lab/datasets_and_goals.html#example-topics-for-machine-learning-projects",
     "title": "ML Problem Framing",
     "section": "",
-    "text": "Imagine you work at a bank, and the current fraud detection workflow isn’t performing well. Your boss asks you to explore machine learning approaches to improve the detection and flagging of fraudulent credit card transactions. While researching online, you find Credit Card Fraud Detection dataset on Kaggle that could be useful for creating a prototype."
+    "text": "Below are some topics and datasets of real-world issues that could possibly be solved using Machine Learning\n\n\n\n\n\n\n\n\nStock Market Sentiment\n\n\n\n\n\nImagine you work at a bank, and the current workflow to understand the stock market sentiment isn’t performing well. Your boss asks you to explore machine learning approaches to improve the detection of stock market sentiment, which is crucial to some of the trading strategies, based on comments in social media platform. While researching online, you find this dataset on Kaggle that could be useful for creating a prototype.\n\n\n\n\n\n\n\n\n\nE-commerce Strategy\n\n\n\n\n\nImagine you are a consultant hired by an E-commerce platform. You are asked to analyze the retail data and explore machine learning approaches to address one of the planned initiatives of the company, which includes but not limited to:\n\ncustomer segmentation based on their purchase history to derive more customized marketing strategy\npersonalized suggestions of items to customers so as to increase the conversion.\n\nWhile researching online, you find this dataset on Kaggle that could be useful as a starting point.\n\n\n\n\n\n\n\n\n\n\n\n\nCancer Diagnosis\n\n\n\n\n\nImagine you work at a medical research institute which specialized in cancer-related research. You try to explore machine learning approaches to diagnoze patients of the risk of cancer based on images of tissues, hoping to achieve early detection and early treatment to patients. While researching online, you find this dataset on NCI that could be useful.\n\n\n\n\n\n\n\n\n\nPolycystic ovary syndrome\n\n\n\n\n\nImagine you work at a university laboratory which specialized in research on Polycystic ovary syndrome (PCOS), which is a disorder involving infrequent, irregular or prolonged menstrual periods of women. You try to explore machine learning approaches to diagnoze patients of the risk of PCOS based on clinical data. While researching online, you find this dataset on Kaggle that could be useful.\n\n\n\n\n\n\n\n\n\n\n\n\nObesity Levels\n\n\n\n\n\nImagine you work at the Health Bureau of a country. You try to explore machine learning approaches to estimate the obesity levels of your citizens, as well as to understand the key factors relevant to obesity. This helps you defining better public health policy. While researching online, you find this dataset on UCI that could be useful."
   },
   {
-    "objectID": "lab/example.html#problem-framing",
-    "href": "lab/example.html#problem-framing",
+    "objectID": "lab/datasets_and_goals.html#open-data-source-for-machine-learning-projects",
+    "href": "lab/datasets_and_goals.html#open-data-source-for-machine-learning-projects",
     "title": "ML Problem Framing",
-    "section": "Problem Framing",
-    "text": "Problem Framing\n\nIs the provided dataset appropriate for the specified objective? What type of data would ideally solve your problem or research question? Are there better-suited datasets available on the internet for this objective?\n\nThe ideal dataset should contain data about the transactions, e.g. transaction details, customer details, etc., which could be used to classify the fraud transaction. Moreover, it should contain an indicator whether it is a fraud transaction for supervised machine learning methods. If such indicator is not available, we can apply outlier detection to identify transactions which deviate much from normal transactions as frauds.\nThe provided dataset contains target column ‘Class’ that indicates whether it is a fraud transaction. It also contains other columns (‘Time’, ‘Amount’, ‘V1-V28’) which can be used as features to predict the target column ‘Class’.\nThere are some caveats for using the dataset.\n\nThe dataset is a transformed dataset with PCA-transformed columns ‘V1’ - ‘V28’. Without having the original dataset, we are not sure how the PCA transformation is performed. We cannot guarantee if the same transformation can be applied to any new data (e.g. real-world data of new transactions)\nFrom the interpretation perspective, we might fail to draw any meaningful insights between the features and the target as we do not understand the meaning of the columns ‘V1’ - ‘V28’. Moreover, we might not detect any potential bias or unfairness within the ML model if the original dataset contains sensitive information, e.g. age, gender, etc.\n\nThere could possibly be better-suited datasets, for example this dataset.\n\n\n\nClearly define the expected input and the ‘ideal’ output. Determine if machine learning is the appropriate method for addressing this problem.\n\nData Input: Data about the transactions, for example:\n\nmerchandise details: time, amount, merchant information, etc.\ncustomer details: account balance, credit score, cardholder information, etc.\n\nData Output: A soft prediction (probability) whether a transaction is a fraud\nAs we can clearly define the expected input and output and we can collect the data, machine learning is the appropriate method to address the problem.\n\n\n\nIf machine learning is deemed suitable, what should the model aim to achieve? How would you measure the model’s performance?\n\nOur objective is to detect fraudulent transactions by having a soft prediction (probability) and a threshold to determine whether a transaction is a fraud\nWe can expect there would potentially be false positives (legit transactions predicted as fraud) and false negatives (fraudulent transactions predicted as legit) from the predictions and the model should balance both based on our needs. For example, more false negatives might create more bad debts, while more false positives might affect the revenue.\nMoreover, the dataset is an unbalanced dataset with less than 1% are actual fraudulent records.\nWe can use evaluation metrics, e.g. precision, recall, area under precision-recall curve, etc. to measure the model performance. For example, if we are trying to minimize false negatives, we would focus more on recall (true positive rate).\n\n\n\nHow would a human tackle this issue? Can you propose any heuristic methods to solve this problem?\n\nIt would be a data collection -&gt; analysis by expert -&gt; decision making -&gt; remedy approach to solve this issue by human.\n\nData collection: We collect historical legit and fraud transactions and the related information, e.g. transaction, merchant, cardholder, etc.\nAnalysis by expert: Expert will deep dive into the collected data to identify any pattern/traits of the fraud transactions from the data. Moreover, they will provide a score of the likeliness of fraud for a transaction.\nDecision making: A cutoff of the score will be made to classify if a transaction is a fraud.\nRemedy: If the transaction is legit, no action is required. If it is a fraud, the money transfer will be on-hold. Further investigation will undergo.\n\n\n\n\nWhat are the major steps required to resolve this problem?\n\nFor machine-learning based approach, we would go through similar but slightly different steps to resolve the problem\n\nData collection & wrangling: Data collection is similar to the above. We will also carry out data wrangling to handle unclean data (e.g. missing values) and transform data into desired format (e.g. scaling).\nModel training: A subset of the data will be used to train the model to learn any pattern for fraud/legit transactions. The model will then output the predictions.\nValidation/Testing: Another subset(s) of the data will be used to test the model performance, which is helpful in model selection, estimation of performance under real-world scenario, etc.\nDeployment: The defined data processing pipeline and trained model will be deployed to the existing system/workflow, which can intake the transaction data and output the prediction results to the relevant stakeholder(s) for further actions.\n\n\n\n\nDraw a diagram that illustrates the input, output, and key stages of the problem-solving process.\n\n\n\nWhich type of machine learning would be best suited for your problem? What specific machine learning technique would be most effective for this problem?\n\nWe have labelled data of legit/fraud transactions and our goal is to classify the transactions. Supervised machine learning is best-suited.\nLinear regression can be applied first to observe any linear relationship between the target and the features, and we can obtain a baseline performance.\nGiven the possible non-linear relationship between the target and the features, non-linear algorithms (e.g. SVM) can be applied and we can observe if there is any significant improvement in model performance.\nGiven the variety of data types (textual, numerical, etc.), decision tree based algorithm (gradient boosted tree) can be applied and we can observe if there is any significant improvement in model performance."
+    "section": "Open Data Source for Machine Learning Projects",
+    "text": "Open Data Source for Machine Learning Projects\nBelow are some websites that can provide open data useful for Machine Learning projects.\n\nUCI Machine Learning Repository\nKaggle\nFederal Reserve Bank of St. Louis\nNational Library of Medicine\nGapminder\nThe Humanitarian Data Exchange (HDX)\nStatistics Canada"
   },
   {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "Our team",
+    "objectID": "lab/guiding_questions.html",
+    "href": "lab/guiding_questions.html",
+    "title": "ML Problem Framing",
     "section": "",
-    "text": "Varada Kolhatkar\n        Assistant Professor of Teaching, Computer Science, Master of Data Science\n        \n            Instructor\n        \n        \n    \n\n    \n        \n        Prajeet Bajpai\n        Teaching Postdoctoral Fellow, Master of Data Science\n        \n            Instructor\n        \n        \n    \n\n    \n        \n        Tony Shum\n        \n        \n            Assistant\n        \n        \n    \n\n    \n        \n        Michele Ng\n        Special Projects Coordinator, Computer Science\n        \n            Organizer\n        \n        \n    \n\n\n\nNo matching items"
+    "text": "Choose a dataset and its corresponding objective, and then try to address the following questions:\n\nIs the provided dataset appropriate for the specified objective? What type of data would ideally solve your problem or research question? Are there better-suited datasets available on the internet for this objective?\nClearly define the expected input and the ‘ideal’ output. Determine if machine learning is the appropriate method for addressing this problem.\nIf machine learning is deemed suitable, what should the model aim to achieve? How would you measure the model’s performance?\nHow would a human tackle this issue? Can you propose any heuristic methods to solve this problem?\nWhat are the major steps required to resolve this problem?\nDraw a diagram that illustrates the input, output, and key stages of the problem-solving process.\nWhich type of machine learning would be best suited for your problem?\nWhat specific machine learning technique would be most effective for this problem?"
   },
   {
-    "objectID": "workshop-02.html",
-    "href": "workshop-02.html",
-    "title": "ML Fundamentals",
+    "objectID": "workshop-01.html",
+    "href": "workshop-01.html",
+    "title": "Welcome and getting started",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "ML Fundamentals"
+      "Welcome and getting started"
     ]
   },
   {
-    "objectID": "workshop-02.html#slides",
-    "href": "workshop-02.html#slides",
-    "title": "ML Fundamentals",
+    "objectID": "workshop-01.html#slides",
+    "href": "workshop-01.html#slides",
+    "title": "Welcome and getting started",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "ML Fundamentals"
+      "Welcome and getting started"
     ]
   },
   {
-    "objectID": "workshop-02.html#outline",
-    "href": "workshop-02.html#outline",
-    "title": "ML Fundamentals",
+    "objectID": "workshop-01.html#outline",
+    "href": "workshop-01.html#outline",
+    "title": "Welcome and getting started",
+    "section": "Outline",
+    "text": "Outline\n\nWelcome to the workshop!\nIntroductions and meet your neighbors\nAbout the learning objective of the workshop",
+    "crumbs": [
+      "Workshop",
+      "Welcome and getting started"
+    ]
+  },
+  {
+    "objectID": "workshop-03.html",
+    "href": "workshop-03.html",
+    "title": "Module 2: ML Models",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Module 2: ML Models"
+    ]
+  },
+  {
+    "objectID": "workshop-03.html#slides",
+    "href": "workshop-03.html#slides",
+    "title": "Module 2: ML Models",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Module 2: ML Models"
+    ]
+  },
+  {
+    "objectID": "workshop-03.html#outline",
+    "href": "workshop-03.html#outline",
+    "title": "Module 2: ML Models",
     "section": "Outline",
     "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals\nDecision trees",
     "crumbs": [
       "Workshop",
-      "ML Fundamentals"
+      "Module 2: ML Models"
     ]
   },
   {
-    "objectID": "workshop-06.html",
-    "href": "workshop-06.html",
-    "title": "Deep Learning",
+    "objectID": "workshop-08-exercise2.html",
+    "href": "workshop-08-exercise2.html",
+    "title": "Exercise 2: Transfer Learning",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Deep Learning"
+      "Exercise 2: Transfer Learning"
     ]
   },
   {
-    "objectID": "workshop-06.html#slides",
-    "href": "workshop-06.html#slides",
-    "title": "Deep Learning",
+    "objectID": "workshop-08-exercise2.html#slides",
+    "href": "workshop-08-exercise2.html#slides",
+    "title": "Exercise 2: Transfer Learning",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Deep Learning"
+      "Exercise 2: Transfer Learning"
     ]
   },
   {
-    "objectID": "workshop-06.html#outline",
-    "href": "workshop-06.html#outline",
-    "title": "Deep Learning",
+    "objectID": "workshop-08-exercise2.html#outline",
+    "href": "workshop-08-exercise2.html#outline",
+    "title": "Exercise 2: Transfer Learning",
     "section": "Outline",
-    "text": "Outline\n\nNeural Networks\nTransfer learning\nObject detection",
+    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals",
     "crumbs": [
       "Workshop",
-      "Deep Learning"
+      "Exercise 2: Transfer Learning"
     ]
   },
   {
-    "objectID": "workshop-10.html",
-    "href": "workshop-10.html",
-    "title": "Large Language Models",
+    "objectID": "workshop-11-exercise3.html",
+    "href": "workshop-11-exercise3.html",
+    "title": "Exercise 3: Language Models",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Large Language Models"
+      "Exercise 3: Language Models"
     ]
   },
   {
-    "objectID": "workshop-10.html#slides",
-    "href": "workshop-10.html#slides",
-    "title": "Large Language Models",
+    "objectID": "workshop-11-exercise3.html#slides",
+    "href": "workshop-11-exercise3.html#slides",
+    "title": "Exercise 3: Language Models",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Workshop",
-      "Large Language Models"
+      "Exercise 3: Language Models"
     ]
   },
   {
-    "objectID": "workshop-10.html#outline",
-    "href": "workshop-10.html#outline",
-    "title": "Large Language Models",
+    "objectID": "workshop-11-exercise3.html#outline",
+    "href": "workshop-11-exercise3.html#outline",
+    "title": "Exercise 3: Language Models",
     "section": "Outline",
-    "text": "Outline\n\nActivity\nMarkov model of language\nTransformers, self-attention (high level)\nPipelines before and after LLMs",
+    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals",
     "crumbs": [
       "Workshop",
-      "Large Language Models"
+      "Exercise 3: Language Models"
     ]
   },
   {
