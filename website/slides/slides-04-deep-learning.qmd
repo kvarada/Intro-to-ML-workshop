@@ -30,7 +30,9 @@ From this module, you will be able to
 - Explain the role of neural networks in machine learning, including their advantages and disadvantages.
 - Discuss why traditional methods are less effective for image data.
 - Gain a high-level understanding of transfer learning.
+- Use transfer learning for your own tasks. 
 - Differentiate between image classification and object detection.
+
 
 ## Image classification
 \
@@ -51,9 +53,9 @@ Image classification is not an easy problem because of the variations in the loc
 
 - Neural networks are perfect for these types of problems where local structures are important. 
 - A significant advancement in image classification was the application of **convolutional neural networks** (ConvNets or CNNs) to this problem. 
-- [ImageNet Classification with Deep Convolutional
-Neural Networks](https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)
-- Achieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition. 
+  - [ImageNet Classification with Deep Convolutional
+Neural Networks](https://dl.acm.org/doi/10.1145/3065386)
+  - Achieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition. 
 - Let's go over the basics of a neural network.
 
 ## Introduction to neural networks
@@ -107,11 +109,11 @@ mglearn.plots.plot_two_hidden_layer_graph()
   - More layers / bigger layers --> more complex model.
   - You can generally get a model that will not underfit. 
 
-- The work really well for structured data:
+- They work really well for structured data:
   - 1D sequence, e.g. timeseries, language
   - 2D image
   - 3D image or video
-- They've had some incredible successes in the last 10 years.
+- They've had some incredible successes in the last 12 years.
 - Transfer learning (coming later today) is really useful.  
 
 ## Why not neural networks?
@@ -119,13 +121,12 @@ mglearn.plots.plot_two_hidden_layer_graph()
 
 - Often they require a lot of data.
 - They require a lot of compute time, and, to be faster, specialized hardware called [GPUs](https://en.wikipedia.org/wiki/Graphics_processing_unit).
-- They have huge numbers of hyperparameters are a huge pain to tune.
+- They have huge numbers of hyperparameters
   - Think of each layer having hyperparameters, plus some overall hyperparameters.
   - Being slow compounds this problem.
 - They are not interpretable.
 - I don't recommend training them on your own without further training
-
-  - Good news
+- Good news
     - You don't have to train your models from scratch in order to use them.
     - I'll show you some ways to use neural networks without training them yourselves. 
 
@@ -166,7 +167,7 @@ Both are heavily used in industry. If interested, see [comparison of deep learni
 - In practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.
 - Instead, a common practice is to download a pre-trained model and fine tune it for your task. This is called **transfer learning**.
 - Transfer learning is one of the most common techniques used in the context of computer vision and natural language processing.
-- It refers to using a model already trained on one task as a starting point for learning to perform another task
+- It refers to using a model already trained on one task as a starting point for learning to perform another task.
 
 ## Pre-trained models out-of-the-box 
 \
@@ -243,7 +244,7 @@ for image in images:
 ## Pre-trained models out-of-the-box
 \
 
-- Here we are Pre-trained models out-of-the-box. 
+- Here we are using pre-trained models out-of-the-box. 
 - Can we use pre-trained models for our own classification problem with our classes? 
 - Yes!! We have two options here:
     1. Add some extra layers to the pre-trained network to suit our particular task
@@ -437,3 +438,10 @@ plt.show()
 - The good news is we can use pre-trained neural networks.
   - This saves us a huge amount of time/cost/effort/resources.
   - We can use these pre-trained networks directly or use them as feature transformers. 
+
+
+
+
+
+
+
