@@ -411,37 +411,25 @@
     ]
   },
   {
-    "objectID": "workshop-10.html",
-    "href": "workshop-10.html",
+    "objectID": "workshop-09.html",
+    "href": "workshop-09.html",
     "title": "Module 4: Large Language Models",
     "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Workshop",
-      "Module 4: Large Language Models"
-    ]
+    "text": "View slides in full screen"
   },
   {
-    "objectID": "workshop-10.html#slides",
-    "href": "workshop-10.html#slides",
+    "objectID": "workshop-09.html#slides",
+    "href": "workshop-09.html#slides",
     "title": "Module 4: Large Language Models",
     "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Workshop",
-      "Module 4: Large Language Models"
-    ]
+    "text": "View slides in full screen"
   },
   {
-    "objectID": "workshop-10.html#outline",
-    "href": "workshop-10.html#outline",
+    "objectID": "workshop-09.html#outline",
+    "href": "workshop-09.html#outline",
     "title": "Module 4: Large Language Models",
     "section": "Outline",
-    "text": "Outline\n\nActivity\nMarkov model of language\nTransformers, self-attention (high level)\nPipelines before and after LLMs",
-    "crumbs": [
-      "Workshop",
-      "Module 4: Large Language Models"
-    ]
+    "text": "Outline\n\nActivity\nMarkov model of language\nTransformers, self-attention (high level)\nPipelines before and after LLMs"
   },
   {
     "objectID": "workshop-06.html",
@@ -610,7 +598,7 @@
     "href": "workshop.html",
     "title": "Overview",
     "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:30 - 10:40\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\n☕ Break\n\n\n14:20 - 14:30\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:30 - 9:40\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:40 - 10:30\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:30 - 10:55\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:55 - 11:00\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n11:00 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:20\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:00 - 14:50\n\n\nIntroduction to Large Language Models\n\n\n\n\n☕ Break\n\n\n14:50 - 15:00\n\n\n \n\n\n\n\nExercise 3: Language Models\n\n\n15:00 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
       "Overview"
@@ -621,7 +609,7 @@
     "href": "workshop.html#schedule",
     "title": "Overview",
     "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:00 - 9:15\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:15 - 10:00\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:00 - 10:30\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:30 - 10:40\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n10:40 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:30\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\n☕ Break\n\n\n14:20 - 14:30\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:30 - 3:10\n\n\nIntroduction to Large Language Models\n\n\n\n\nExercise 3: Language Models\n\n\n15:10 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:30 - 9:40\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:40 - 10:30\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:30 - 10:55\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:55 - 11:00\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n11:00 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:20\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:00 - 14:50\n\n\nIntroduction to Large Language Models\n\n\n\n\n☕ Break\n\n\n14:50 - 15:00\n\n\n \n\n\n\n\nExercise 3: Language Models\n\n\n15:00 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
       "Overview"
@@ -1023,7 +1011,7 @@
     "href": "slides/slides-04-deep-learning.html#learning-outcomes",
     "title": "Deep Learning",
     "section": "Learning outcomes",
-    "text": "Learning outcomes\n\nFrom this module, you will be able to\n\nExplain the role of neural networks in machine learning, including their advantages and disadvantages.\nDiscuss why traditional methods are less effective for image data.\nGain a high-level understanding of transfer learning.\nDifferentiate between image classification and object detection."
+    "text": "Learning outcomes\n\nFrom this module, you will be able to\n\nExplain the role of neural networks in machine learning, including their advantages and disadvantages.\nDiscuss why traditional methods are less effective for image data.\nGain a high-level understanding of transfer learning.\nUse transfer learning for your own tasks.\nDifferentiate between image classification and object detection."
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#image-classification",
@@ -1044,7 +1032,7 @@
     "href": "slides/slides-04-deep-learning.html#neural-networks",
     "title": "Deep Learning",
     "section": "Neural networks",
-    "text": "Neural networks\n\n\n\nNeural networks are perfect for these types of problems where local structures are important.\nA significant advancement in image classification was the application of convolutional neural networks (ConvNets or CNNs) to this problem.\nImageNet Classification with Deep Convolutional Neural Networks\nAchieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition.\nLet’s go over the basics of a neural network."
+    "text": "Neural networks\n\n\n\nNeural networks are perfect for these types of problems where local structures are important.\nA significant advancement in image classification was the application of convolutional neural networks (ConvNets or CNNs) to this problem.\n\nImageNet Classification with Deep Convolutional Neural Networks\nAchieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition.\n\nLet’s go over the basics of a neural network."
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#introduction-to-neural-networks",
@@ -1079,14 +1067,14 @@
     "href": "slides/slides-04-deep-learning.html#why-neural-networks",
     "title": "Deep Learning",
     "section": "Why neural networks?",
-    "text": "Why neural networks?\n\n\n\nThey can learn very complex functions.\n\nThe fundamental tradeoff is primarily controlled by the number of layers and layer sizes.\nMore layers / bigger layers –&gt; more complex model.\nYou can generally get a model that will not underfit.\n\nThe work really well for structured data:\n\n1D sequence, e.g. timeseries, language\n2D image\n3D image or video\n\nThey’ve had some incredible successes in the last 10 years.\nTransfer learning (coming later today) is really useful."
+    "text": "Why neural networks?\n\n\n\nThey can learn very complex functions.\n\nThe fundamental tradeoff is primarily controlled by the number of layers and layer sizes.\nMore layers / bigger layers –&gt; more complex model.\nYou can generally get a model that will not underfit.\n\nThey work really well for structured data:\n\n1D sequence, e.g. timeseries, language\n2D image\n3D image or video\n\nThey’ve had some incredible successes in the last 12 years.\nTransfer learning (coming later today) is really useful."
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#why-not-neural-networks",
     "href": "slides/slides-04-deep-learning.html#why-not-neural-networks",
     "title": "Deep Learning",
     "section": "Why not neural networks?",
-    "text": "Why not neural networks?\n\n\n\nOften they require a lot of data.\nThey require a lot of compute time, and, to be faster, specialized hardware called GPUs.\nThey have huge numbers of hyperparameters are a huge pain to tune.\n\nThink of each layer having hyperparameters, plus some overall hyperparameters.\nBeing slow compounds this problem.\n\nThey are not interpretable.\nI don’t recommend training them on your own without further training\n\nGood news\n\nYou don’t have to train your models from scratch in order to use them.\nI’ll show you some ways to use neural networks without training them yourselves."
+    "text": "Why not neural networks?\n\n\n\nOften they require a lot of data.\nThey require a lot of compute time, and, to be faster, specialized hardware called GPUs.\nThey have huge numbers of hyperparameters\n\nThink of each layer having hyperparameters, plus some overall hyperparameters.\nBeing slow compounds this problem.\n\nThey are not interpretable.\nI don’t recommend training them on your own without further training\nGood news\n\nYou don’t have to train your models from scratch in order to use them.\nI’ll show you some ways to use neural networks without training them yourselves."
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#deep-learning-software",
@@ -1114,7 +1102,7 @@
     "href": "slides/slides-04-deep-learning.html#pre-trained-models",
     "title": "Deep Learning",
     "section": "Pre-trained models",
-    "text": "Pre-trained models\n\n\n\nIn practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.\nInstead, a common practice is to download a pre-trained model and fine tune it for your task. This is called transfer learning.\nTransfer learning is one of the most common techniques used in the context of computer vision and natural language processing.\nIt refers to using a model already trained on one task as a starting point for learning to perform another task"
+    "text": "Pre-trained models\n\n\n\nIn practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.\nInstead, a common practice is to download a pre-trained model and fine tune it for your task. This is called transfer learning.\nTransfer learning is one of the most common techniques used in the context of computer vision and natural language processing.\nIt refers to using a model already trained on one task as a starting point for learning to perform another task."
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#pre-trained-models-out-of-the-box",
@@ -1156,7 +1144,7 @@
     "href": "slides/slides-04-deep-learning.html#pre-trained-models-out-of-the-box-5",
     "title": "Deep Learning",
     "section": "Pre-trained models out-of-the-box",
-    "text": "Pre-trained models out-of-the-box\n\n\n\nHere we are Pre-trained models out-of-the-box.\nCan we use pre-trained models for our own classification problem with our classes?\nYes!! We have two options here:\n\nAdd some extra layers to the pre-trained network to suit our particular task\nPass training data through the network and save the output to use as features for training some other model"
+    "text": "Pre-trained models out-of-the-box\n\n\n\nHere we are using pre-trained models out-of-the-box.\nCan we use pre-trained models for our own classification problem with our classes?\nYes!! We have two options here:\n\nAdd some extra layers to the pre-trained network to suit our particular task\nPass training data through the network and save the output to use as features for training some other model"
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#pre-trained-models-to-extract-features",
@@ -1233,7 +1221,7 @@
     "href": "slides/slides-04-deep-learning.html#object-detection-using-yolo",
     "title": "Deep Learning",
     "section": "Object detection using YOLO",
-    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\nCreating new Ultralytics Settings v0.0.6 file ✅ \nView Ultralytics Settings with 'yolo settings' or at '/Users/kvarada/Library/Application Support/Ultralytics/settings.json'\nUpdate Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 67.3ms\nSpeed: 2.0ms preprocess, 67.3ms inference, 7.1ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
+    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 54.8ms\nSpeed: 2.5ms preprocess, 54.8ms inference, 6.0ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#object-detection-output",

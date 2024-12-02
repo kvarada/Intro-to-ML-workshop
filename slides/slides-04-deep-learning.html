@@ -407,6 +407,7 @@ From this module, you will be able to</p>
 <li>Explain the role of neural networks in machine learning, including their advantages and disadvantages.</li>
 <li>Discuss why traditional methods are less effective for image data.</li>
 <li>Gain a high-level understanding of transfer learning.</li>
+<li>Use transfer learning for your own tasks.</li>
 <li>Differentiate between image classification and object detection.</li>
 </ul>
 </section>
@@ -429,9 +430,11 @@ From this module, you will be able to</p>
 </p>
 <ul>
 <li>Neural networks are perfect for these types of problems where local structures are important.</li>
-<li>A significant advancement in image classification was the application of <strong>convolutional neural networks</strong> (ConvNets or CNNs) to this problem.</li>
-<li><a href="https://proceedings.neurips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf">ImageNet Classification with Deep Convolutional Neural Networks</a></li>
+<li>A significant advancement in image classification was the application of <strong>convolutional neural networks</strong> (ConvNets or CNNs) to this problem.
+<ul>
+<li><a href="https://dl.acm.org/doi/10.1145/3065386">ImageNet Classification with Deep Convolutional Neural Networks</a></li>
 <li>Achieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition.</li>
+</ul></li>
 <li>Let’s go over the basics of a neural network.</li>
 </ul>
 </section>
@@ -492,13 +495,13 @@ From this module, you will be able to</p>
 <li>More layers / bigger layers –&gt; more complex model.</li>
 <li>You can generally get a model that will not underfit.</li>
 </ul></li>
-<li>The work really well for structured data:
+<li>They work really well for structured data:
 <ul>
 <li>1D sequence, e.g.&nbsp;timeseries, language</li>
 <li>2D image</li>
 <li>3D image or video</li>
 </ul></li>
-<li>They’ve had some incredible successes in the last 10 years.</li>
+<li>They’ve had some incredible successes in the last 12 years.</li>
 <li>Transfer learning (coming later today) is really useful.</li>
 </ul>
 </section>
@@ -507,21 +510,19 @@ From this module, you will be able to</p>
 <p><br>
 </p>
 <ul>
-<li><p>Often they require a lot of data.</p></li>
-<li><p>They require a lot of compute time, and, to be faster, specialized hardware called <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a>.</p></li>
-<li><p>They have huge numbers of hyperparameters are a huge pain to tune.</p>
+<li>Often they require a lot of data.</li>
+<li>They require a lot of compute time, and, to be faster, specialized hardware called <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a>.</li>
+<li>They have huge numbers of hyperparameters
 <ul>
 <li>Think of each layer having hyperparameters, plus some overall hyperparameters.</li>
 <li>Being slow compounds this problem.</li>
 </ul></li>
-<li><p>They are not interpretable.</p></li>
-<li><p>I don’t recommend training them on your own without further training</p>
-<ul>
+<li>They are not interpretable.</li>
+<li>I don’t recommend training them on your own without further training</li>
 <li>Good news
 <ul>
 <li>You don’t have to train your models from scratch in order to use them.</li>
 <li>I’ll show you some ways to use neural networks without training them yourselves.</li>
-</ul></li>
 </ul></li>
 </ul>
 </section>
@@ -567,7 +568,7 @@ From this module, you will be able to</p>
 <li>In practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.</li>
 <li>Instead, a common practice is to download a pre-trained model and fine tune it for your task. This is called <strong>transfer learning</strong>.</li>
 <li>Transfer learning is one of the most common techniques used in the context of computer vision and natural language processing.</li>
-<li>It refers to using a model already trained on one task as a starting point for learning to perform another task</li>
+<li>It refers to using a model already trained on one task as a starting point for learning to perform another task.</li>
 </ul>
 </section>
 <section id="pre-trained-models-out-of-the-box" class="slide level2 center">
@@ -599,7 +600,7 @@ From this module, you will be able to</p>
 <li>Let’s predict labels with associated probabilities for unseen images</li>
 </ul>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="dba83603" class="cell" data-execution_count="5">
+<div id="14c6ad06" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -686,7 +687,7 @@ Walker hound, Walker foxhound              0.580
 <li>It’s not doing very well here because ImageNet doesn’t have proper classes for these images.</li>
 </ul>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="14518a32" class="cell" data-execution_count="6">
+<div id="194a6af5" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -785,7 +786,7 @@ lakeside, lakeshore              0.097
 <p><br>
 </p>
 <ul>
-<li>Here we are Pre-trained models out-of-the-box.</li>
+<li>Here we are using pre-trained models out-of-the-box.</li>
 <li>Can we use pre-trained models for our own classification problem with our classes?</li>
 <li>Yes!! We have two options here:
 <ol type="1">
@@ -824,7 +825,7 @@ lakeside, lakeshore              0.097
 </p>
 <p>Let’s look at some sample images in the dataset.</p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="6881c092" class="cell" data-execution_count="7">
+<div id="e58025e0" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -840,7 +841,7 @@ lakeside, lakeshore              0.097
 <p><br>
 </p>
 <p>Here is the stat of our toy dataset.</p>
-<div id="b0d51561" class="cell" data-execution_count="8">
+<div id="d079bb13" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-stdout">
 <pre><code>Classes: ['beet_salad', 'chocolate_cake', 'edamame', 'french_fries', 'pizza', 'spring_rolls', 'sushi']
 Class count: 40, 38, 40
@@ -864,7 +865,7 @@ First sample: ('data/food/train/beet_salad/104294.jpg', 0)</code></pre>
 <ul>
 <li>Now we have extracted feature vectors for all examples. What’s the shape of these features?</li>
 </ul>
-<div id="f068e332" class="cell" data-execution_count="10">
+<div id="54bf300b" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>torch.Size([283, 1024])</code></pre>
 </div>
@@ -881,7 +882,7 @@ First sample: ('data/food/train/beet_salad/104294.jpg', 0)</code></pre>
 <ul>
 <li>Let’s examine the feature vectors.</li>
 </ul>
-<div id="c57ceed5" class="cell" data-execution_count="11">
+<div id="7ede6137" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display" data-execution_count="11">
 <div>
 <style scoped="">
@@ -1064,12 +1065,12 @@ First sample: ('data/food/train/beet_salad/104294.jpg', 0)</code></pre>
 <ul>
 <li>Let’s try out logistic regression on these extracted features.</li>
 </ul>
-<div id="3a6f8302" class="cell" data-execution_count="12">
+<div id="5fae609d" class="cell" data-execution_count="12">
 <div class="cell-output cell-output-stdout">
 <pre><code>Training score:  1.0</code></pre>
 </div>
 </div>
-<div id="7475d840" class="cell" data-execution_count="13">
+<div id="6473a58b" class="cell" data-execution_count="13">
 <div class="cell-output cell-output-stdout">
 <pre><code>Validation score:  0.835820895522388</code></pre>
 </div>
@@ -1084,7 +1085,7 @@ First sample: ('data/food/train/beet_salad/104294.jpg', 0)</code></pre>
 </p>
 <p>Let’s examine some sample predictions on the validation set.</p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="04b22217" class="cell" data-execution_count="14">
+<div id="9eb04d99" class="cell" data-execution_count="14">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -1111,7 +1112,7 @@ First sample: ('data/food/train/beet_salad/104294.jpg', 0)</code></pre>
 <p><br>
 </p>
 <p>Let’s try this out using a pre-trained model.</p>
-<div id="1e1ea6db" class="cell" data-execution_count="15">
+<div id="23a79ba6" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a></a><span class="im">from</span> ultralytics <span class="im">import</span> YOLO</span>
 <span id="cb15-2"><a></a>model <span class="op">=</span> YOLO(<span class="st">"yolov8n.pt"</span>)  <span class="co"># pretrained YOLOv8n model</span></span>
 <span id="cb15-3"><a></a></span>
@@ -1121,12 +1122,9 @@ First sample: ('data/food/train/beet_salad/104294.jpg', 0)</code></pre>
 <span id="cb15-7"><a></a>result <span class="op">=</span> model(yolo_input)  <span class="co"># return a list of Results objects</span></span>
 <span id="cb15-8"><a></a>result[<span class="dv">0</span>].save(filename<span class="op">=</span>yolo_result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Creating new Ultralytics Settings v0.0.6 file ✅ 
-View Ultralytics Settings with 'yolo settings' or at '/Users/kvarada/Library/Application Support/Ultralytics/settings.json'
-Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
-
-image 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 67.3ms
-Speed: 2.0ms preprocess, 67.3ms inference, 7.1ms postprocess per image at shape (1, 3, 512, 640)</code></pre>
+<pre><code>
+image 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 54.8ms
+Speed: 2.5ms preprocess, 54.8ms inference, 6.0ms postprocess per image at shape (1, 3, 512, 640)</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="15">
 <pre><code>'data/yolo_result.jpg'</code></pre>
@@ -1138,7 +1136,7 @@ Speed: 2.0ms preprocess, 67.3ms inference, 7.1ms postprocess per image at shape 
 <p><br>
 </p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="b5153449" class="cell" data-execution_count="16">
+<div id="61051755" class="cell" data-execution_count="16">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
