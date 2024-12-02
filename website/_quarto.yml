@@ -11,15 +11,15 @@ project:
     - slides
 
 website:
-  title: "DSI Machine Learning Workshop"
+  title: "Introduction to Machine Learning Workshop"
   description: "Examine whether machine learning is suitable for your projects"
-  site-url: https://kvarada.github.io/DSI-ML-workshop-2024/
+  site-url: https://kvarada.github.io/Intro-to-ML-workshop-2024
 
-  repo-url: https://github.com/kvarada/DSI-ML-workshop-2024/
+  repo-url: https://github.com/kvarada/Intro-to-ML-workshop-2024
   repo-subdir: website
   
   navbar:
-    title: "DSI Machine Learning Workshop"
+    title: "Introduction to Machine Learning Workshop"
     left:
       - href: index.qmd
         text: Home
@@ -38,12 +38,14 @@ website:
         - workshop-02.qmd
         - workshop-03.qmd
         - workshop-04-break.qmd
-        - workshop-05.qmd
-        - workshop-06-break.qmd
-        - workshop-07.qmd
-        - workshop-08-lunch.qmd
-        - workshop-09.qmd 
+        - workshop-05-exercise1.qmd
+        - workshop-06.qmd
+        - workshop-07-lunch.qmd
+        - workshop-08-exercise2.qmd
+        - workshop-09-break.qmd
         - workshop-10.qmd
+        - workshop-11-exercise3.qmd
+        - workshop-12.qmd
 format:
   html:
     theme: [zephyr]

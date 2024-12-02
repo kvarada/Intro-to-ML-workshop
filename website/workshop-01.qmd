@@ -1,9 +1,9 @@
 ---
-title: Welcome and getting started
+title: "Welcome and getting started"
 description: Hello and welcome to the workshop!
 description-short: Hello and welcome to the workshop!
-duration: 10 min
-time: 9:00 - 9:10
+duration: 15 min
+time: 9:00 - 9:15
 
 editor: { render-on-save: true }
 ---
