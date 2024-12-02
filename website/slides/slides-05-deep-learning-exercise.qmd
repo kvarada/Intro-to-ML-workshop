@@ -1,0 +1,23 @@
+---
+title: "Deep Learning Exercise"
+format: 
+    revealjs:
+      smaller: true
+      center: true
+---
+
+## Game Time
+
+Here is a Jupyter notebook you can download for further exploration:
+[Download and Save the Jupyter Notebook](downloads/exercise-02-deep-learning.ipynb){.btn .btn-primary}
+
+1. Go to [https://www.kaggle.com/kernels](https://www.kaggle.com/kernels)
+2. Make an account if you don't have one, and verify your phone number (to get access to GPUs)
+3. Select `+ New Notebook`
+<img src="img/create_notebook.png" alt="drawing" width="400"/>
+
+4. Go to `File -> Import Notebook`
+<img src="img/import_notebook.png" alt="drawing" width="400"/>
+
+5. Upload this notebook
+6. Follow the guidelines in the notebook

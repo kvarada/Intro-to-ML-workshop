@@ -437,3 +437,7 @@ plt.show()
 - The good news is we can use pre-trained neural networks.
   - This saves us a huge amount of time/cost/effort/resources.
   - We can use these pre-trained networks directly or use them as feature transformers. 
+
+## Thank you! 
+
+- That's it for the modules! Now, let's begin the game time.

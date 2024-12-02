@@ -1,7 +1,7 @@
 project:
   type: website
   preview:
-    port: 12345
+    port: 12341
   render:
     - "./*.qmd"
     - "slides/*.qmd"
