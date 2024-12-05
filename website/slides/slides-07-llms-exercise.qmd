@@ -11,6 +11,12 @@ format:
 Here is a Jupyter notebook you can download for further exploration:
 [Download and Save the Jupyter Notebook](downloads/exercise-03-language-model.ipynb){.btn .btn-primary}
 
+Follow the guidelines in the next page.
+
+<img src="img/save_notebook.png" alt="drawing" width="400"/>
+
+## How To Work On Kaggle
+
 1. Go to [https://www.kaggle.com/kernels](https://www.kaggle.com/kernels)
 2. Make an account if you don't have one
 3. Select `+ New Notebook`
@@ -20,9 +26,22 @@ Here is a Jupyter notebook you can download for further exploration:
 <img src="img/import_notebook.png" alt="drawing" width="400"/>
 
 5. Upload this notebook
-6. Follow the guidelines in the notebook
 
-## Thank you! 
+## How To Work On Kaggle
 
-- Thank you for your engagement! We would love your feedback. Here is the survey link: 
-    - [https://forms.gle/e5YWKPZtC3N7UNEW9](https://forms.gle/e5YWKPZtC3N7UNEW9)
+6. On the right-hand side of your Kaggle notebook, make sure:
+  - `Internet` is enabled.
+  
+7. Follow the guidelines in the notebook
+
+<img src="img/notebook_options2.png" alt="drawing" width="400"/>
+
+
+## How To Add a Dataset
+
+1. Click `+ Add data` at the top right of the notebook.
+
+2. Choose `Datasets` and search for the keyword (e.g. 'cat-breed-mardhik'). Several datasets will appear. Look for and 'Add' the dataset.
+
+<img src="img/add_data1.png" alt="drawing" width="400"/>
+<img src="img/add_data2.png" alt="drawing" width="400"/>
