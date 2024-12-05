@@ -2,8 +2,8 @@
 title: "Module 4: Large Language Models"
 description: Introduction to Large Language Models 
 description-short: Introduction to Large Language Models 
-duration: 40 mins
-time: 14:30 - 3:10
+duration: 50 mins
+time: 14:00 - 14:50
 
 editor: { render-on-save: true }
 ---

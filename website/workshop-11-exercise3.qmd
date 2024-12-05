@@ -2,8 +2,8 @@
 title: "Exercise 3: Language Models"
 description: Hands on exercise on language models
 description-short: 
-duration: 30 min
-time: 15:10 - 15:45
+duration: 45 min
+time: 15:00 - 15:45
 
 editor: { render-on-save: true }
 ---
