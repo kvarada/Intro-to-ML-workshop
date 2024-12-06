@@ -17,7 +17,7 @@ website:
 
   repo-url: https://github.com/kvarada/Intro-to-ML-workshop-2024
   repo-subdir: website
-  
+
   navbar:
     title: "Introduction to Machine Learning Workshop"
     left:
@@ -27,9 +27,9 @@ website:
         text: Workshop
       - href: about/index.qmd
         text: Team
-  
+
   page-navigation: true
-  
+
   sidebar:
     - id: workshop
       contents:
@@ -42,8 +42,8 @@ website:
         - workshop-06.qmd
         - workshop-07-lunch.qmd
         - workshop-08-exercise2.qmd
-        - workshop-09-break.qmd
-        - workshop-10.qmd
+        - workshop-09.qmd
+        - workshop-10-break.qmd
         - workshop-11-exercise3.qmd
         - workshop-12.qmd
 format:
@@ -51,7 +51,7 @@ format:
     theme: [zephyr]
     toc: false
     lightbox: true
-          
+
 editor:
   render-on-save: true
 

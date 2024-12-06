@@ -17,13 +17,13 @@ editor:
 ## Welcome to the workshop! 
 \
 
-* Find a seat where you can see the screen!
-* You will be discussing concepts with your neighbours. So take 15 seconds to introduce yourself to your neighbour.  
+* Find a seat of your choice.
+* Take 15 seconds to introduce yourself to your neighbour.  
 
 ## QR code
 \
 
-![](img/DSI-ML-workshop-QR-code.png)
+![](img/ml-workshop-QR-code.png)
 
 # 🤝 Introductions 🤝 {.middle}
 
@@ -37,5 +37,11 @@ editor:
 ## Learning goals of the workshop
 \
 
-The primary learning goal of the workshop is to familiarize yourself with the fundamentals of machine learning and its various types. This knowledge will help you determine which type of machine learning, or whether a non-machine learning approach, would be most appropriate for your problem.
+- The primary learning goal of the workshop is to familiarize yourself with the fundamentals of machine learning and its various types. This knowledge will help you determine which type of machine learning, or whether a non-machine learning approach, would be most appropriate for your problem.
+- We will have four modules in the workshop
+  - Module 1: Machine learning fundamentals 
+  - Module 2: Supervised machine learning models 
+  - Module 3: Introduction to deep learning
+  - Module 4: Introduction to large language models 
 
+  There will be hands-on exercises associated with these modules. 
