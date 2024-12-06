@@ -5,8 +5,8 @@
     <lastmod>2024-11-27T15:18:58.315Z</lastmod>
   </url>
   <url>
-    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-05-llms.html</loc>
-    <lastmod>2024-11-27T15:18:58.316Z</lastmod>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-06-llms.html</loc>
+    <lastmod>2024-12-06T05:13:38.647Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-12.html</loc>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-09.html</loc>
-    <lastmod>2024-12-02T20:02:51.208Z</lastmod>
+    <lastmod>2024-12-06T05:13:38.649Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-06.html</loc>
@@ -26,11 +26,15 @@
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/about/index.html</loc>
-    <lastmod>2024-11-27T15:18:56.976Z</lastmod>
+    <lastmod>2024-12-06T14:10:39.106Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/lab/example.html</loc>
     <lastmod>2024-11-27T15:18:56.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-07-llms-exercise.html</loc>
+    <lastmod>2024-12-06T05:13:38.647Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-01-intro.html</loc>
@@ -54,11 +58,15 @@
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-07-lunch.html</loc>
-    <lastmod>2024-12-02T20:00:02.590Z</lastmod>
+    <lastmod>2024-12-06T05:13:33.864Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop.html</loc>
     <lastmod>2024-12-01T05:20:37.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-05-deep-learning-exercise.html</loc>
+    <lastmod>2024-12-06T05:13:38.647Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/lab/datasets_and_goals.html</loc>
@@ -78,11 +86,11 @@
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-08-exercise2.html</loc>
-    <lastmod>2024-12-01T05:11:53.831Z</lastmod>
+    <lastmod>2024-12-06T05:13:38.648Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/workshop-11-exercise3.html</loc>
-    <lastmod>2024-12-02T20:02:40.086Z</lastmod>
+    <lastmod>2024-12-06T05:13:38.649Z</lastmod>
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-02-ml-intro.html</loc>
@@ -90,6 +98,6 @@
   </url>
   <url>
     <loc>https://kvarada.github.io/Intro-to-ML-workshop-2024/slides/slides-04-deep-learning.html</loc>
-    <lastmod>2024-12-01T17:23:15.354Z</lastmod>
+    <lastmod>2024-12-06T05:13:38.646Z</lastmod>
   </url>
 </urlset>

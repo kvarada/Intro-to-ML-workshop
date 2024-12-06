@@ -238,144 +238,144 @@
     "text": "Wouldn’t it be nice if we could train a machine learning model to find such a transform?"
   },
   {
-    "objectID": "slides/slides-05-llms.html#learning-outcomes",
-    "href": "slides/slides-05-llms.html#learning-outcomes",
+    "objectID": "slides/slides-06-llms.html#learning-outcomes",
+    "href": "slides/slides-06-llms.html#learning-outcomes",
     "title": "Large Language Models",
     "section": "Learning outcomes",
     "text": "Learning outcomes\n\nFrom this module, you will be able to"
   },
   {
-    "objectID": "slides/slides-05-llms.html#language-models-activity",
-    "href": "slides/slides-05-llms.html#language-models-activity",
+    "objectID": "slides/slides-06-llms.html#language-models-activity",
+    "href": "slides/slides-06-llms.html#language-models-activity",
     "title": "Large Language Models",
     "section": "Language models activity",
     "text": "Language models activity\n\n\nEach of you will receive a sticky note with a word on it. Here’s what you’ll do:\n\nCarefully remove the sticky note to see the word. This word is for your eyes only —- no peeking, neighbours!\nThink quickly: what word would logically follow the word on the sticky note? Write this next word on a new sticky note.\nYou have about 20 seconds for this step, so trust your instincts!\nPass your predicted word to the person next to you. Do not pass the word you received from your neighbour forward. Keep the chain going!\nStop after the last person in your row has finished.\nFinally, one person from your row will enter the collective sentence into our Google Doc."
   },
   {
-    "objectID": "slides/slides-05-llms.html#markov-model-of-language",
-    "href": "slides/slides-05-llms.html#markov-model-of-language",
+    "objectID": "slides/slides-06-llms.html#markov-model-of-language",
+    "href": "slides/slides-06-llms.html#markov-model-of-language",
     "title": "Large Language Models",
     "section": "Markov model of language",
     "text": "Markov model of language\n\n\n\nYou’ve just created a simple Markov model of language!\nIn predicting the next word from a minimal context, you likely used your linguistic intuition and familiarity with common two-word phrases or collocations.\nYou could create more coherent sentences by taking into account more context e.g., previous two words or four words or 100 words.\nThis idea was first used by Shannon for characters in The Shannon’s game. See this video by Jordan Boyd-Graber for more information on this."
   },
   {
-    "objectID": "slides/slides-05-llms.html#applications-of-predicting-next-word",
-    "href": "slides/slides-05-llms.html#applications-of-predicting-next-word",
+    "objectID": "slides/slides-06-llms.html#applications-of-predicting-next-word",
+    "href": "slides/slides-06-llms.html#applications-of-predicting-next-word",
     "title": "Large Language Models",
     "section": "Applications of predicting next word",
     "text": "Applications of predicting next word\n\n\nOne of the most common applications for predicting the next word is the ‘smart compose’ feature in your emails, text messages, and search engines."
   },
   {
-    "objectID": "slides/slides-05-llms.html#language-model",
-    "href": "slides/slides-05-llms.html#language-model",
+    "objectID": "slides/slides-06-llms.html#language-model",
+    "href": "slides/slides-06-llms.html#language-model",
     "title": "Large Language Models",
     "section": "Language model",
     "text": "Language model\n\n\nA language model computes the probability distribution over sequences (of words or characters). Intuitively, this probability tells us how “good” or plausible a sequence of words is.\n\n\nCheck out this recent BMO ad."
   },
   {
-    "objectID": "slides/slides-05-llms.html#a-simple-model-of-language",
-    "href": "slides/slides-05-llms.html#a-simple-model-of-language",
+    "objectID": "slides/slides-06-llms.html#a-simple-model-of-language",
+    "href": "slides/slides-06-llms.html#a-simple-model-of-language",
     "title": "Large Language Models",
     "section": "A simple model of language",
     "text": "A simple model of language\n\n\n\nCalculate the co-occurrence frequencies and probabilities based on these frequencies\nPredict the next word based on these probabilities\nThis is a Markov model of language."
   },
   {
-    "objectID": "slides/slides-05-llms.html#long-distance-dependencies",
-    "href": "slides/slides-05-llms.html#long-distance-dependencies",
+    "objectID": "slides/slides-06-llms.html#long-distance-dependencies",
+    "href": "slides/slides-06-llms.html#long-distance-dependencies",
     "title": "Large Language Models",
     "section": "Long-distance dependencies",
     "text": "Long-distance dependencies\n\n\nWhat are some reasonable predictions for the next word in the sequence?\n\nI am studying law at the University of British Columbia Point Grey campus in Vancouver because I want to work as a ___\n\nMarkov model is unable to capture such long-distance dependencies in language."
   },
   {
-    "objectID": "slides/slides-05-llms.html#transformer-models",
-    "href": "slides/slides-05-llms.html#transformer-models",
+    "objectID": "slides/slides-06-llms.html#transformer-models",
+    "href": "slides/slides-06-llms.html#transformer-models",
     "title": "Large Language Models",
     "section": "Transformer models",
     "text": "Transformer models\n\n\nEnter attention and transformer models! Transformer models are at the core of all state-of-the-art Generative AI models (e.g., BERT, GPT3, GPT4, Gemini, DALL-E, Llama, Github Copilot)?\n\nSource"
   },
   {
-    "objectID": "slides/slides-05-llms.html#transformer-models-1",
-    "href": "slides/slides-05-llms.html#transformer-models-1",
+    "objectID": "slides/slides-06-llms.html#transformer-models-1",
+    "href": "slides/slides-06-llms.html#transformer-models-1",
     "title": "Large Language Models",
     "section": "Transformer models",
     "text": "Transformer models\n\n\n\nSource: GPT-4 Technical Report"
   },
   {
-    "objectID": "slides/slides-05-llms.html#self-attention",
-    "href": "slides/slides-05-llms.html#self-attention",
+    "objectID": "slides/slides-06-llms.html#self-attention",
+    "href": "slides/slides-06-llms.html#self-attention",
     "title": "Large Language Models",
     "section": "Self-attention",
     "text": "Self-attention\n\n\n\nAn important innovation which makes these models work so well is self-attention.\nCount how many times the players wearing the white pass the basketball?"
   },
   {
-    "objectID": "slides/slides-05-llms.html#self-attention-1",
-    "href": "slides/slides-05-llms.html#self-attention-1",
+    "objectID": "slides/slides-06-llms.html#self-attention-1",
+    "href": "slides/slides-06-llms.html#self-attention-1",
     "title": "Large Language Models",
     "section": "Self-attention",
     "text": "Self-attention\n\n\nWhen we process information, we often selectively focus on specific parts of the input, giving more attention to relevant information and less attention to irrelevant information. This is the core idea of attention.\nConsider the examples below:\n\nExample 1: She left a brief note on the kitchen table, reminding him to pick up groceries.\nExample 2: The diplomat’s speech struck a positive note in the peace negotiations.\nExample 3: She plucked the guitar strings, ending with a melancholic note.\n\nThe word note in these examples serves quite distinct meanings, each tied to different contexts. To capture varying word meanings across different contexts, we need a mechanism that considers the wider context to compute each word’s contextual representation.\n\nSelf-attention is just that mechanism!"
   },
   {
-    "objectID": "slides/slides-05-llms.html#using-llms-in-your-applications",
-    "href": "slides/slides-05-llms.html#using-llms-in-your-applications",
+    "objectID": "slides/slides-06-llms.html#using-llms-in-your-applications",
+    "href": "slides/slides-06-llms.html#using-llms-in-your-applications",
     "title": "Large Language Models",
     "section": "Using LLMs in your applications",
     "text": "Using LLMs in your applications\n\n\n\nThere are several Python libraries available which allow us to use pre-trained LLMs in our applications.\n\n🤗 Transformers library\nOpenAI GPT\nHaystack\nLangChain\nspacy-transformers\n…"
   },
   {
-    "objectID": "slides/slides-05-llms.html#types-of-llms",
-    "href": "slides/slides-05-llms.html#types-of-llms",
+    "objectID": "slides/slides-06-llms.html#types-of-llms",
+    "href": "slides/slides-06-llms.html#types-of-llms",
     "title": "Large Language Models",
     "section": "Types of LLMs",
     "text": "Types of LLMs\nIf you want to use pre-trained LLMs, it’s useful to know that there are three main types of LLMs.\n\n\n\n\n\n\n\n\n\nFeature\nDecoder-only (e.g., GPT-3)\nEncoder-only (e.g., BERT, RoBERTa)\nEncoder decoder (e.g., T5, BARD)\n\n\n\n\nOutput Computation is based on\nInformation earlier in the context\nEntire context (bidirectional)\nEncoded input context\n\n\nText Generation\nCan naturally generate text completion\nCannot directly generate text\nCan generate outputs naturally\n\n\nExample\nDSI ML workshop audience is ___\nDSI ML workshop audience is the best! → positive\nInput: Translate to Mandarin: Long but productive day! Output: 漫长而富有成效的一天！"
   },
   {
-    "objectID": "slides/slides-05-llms.html#pipelines-before-llms",
-    "href": "slides/slides-05-llms.html#pipelines-before-llms",
+    "objectID": "slides/slides-06-llms.html#pipelines-before-llms",
+    "href": "slides/slides-06-llms.html#pipelines-before-llms",
     "title": "Large Language Models",
     "section": "Pipelines before LLMs",
     "text": "Pipelines before LLMs\n\n\n\nText preprocessing: Tokenization, stopword removal, stemming/lemmatization.\nFeature extraction: Bag of Words or word embeddings.\nTraining: Supervised learning on a labeled dataset (e.g., with positive, negative, and neutral sentiment categories for sentiment analysis).\nEvaluation: Performance typically measured using accuracy, F1-score, etc.\nMain challenges:\n\nExtensive feature engineering required for good performance.\nDifficulty in capturing the nuances and context of sentiment, especially in complex sentences."
   },
   {
-    "objectID": "slides/slides-05-llms.html#pipelines-after-llms",
-    "href": "slides/slides-05-llms.html#pipelines-after-llms",
+    "objectID": "slides/slides-06-llms.html#pipelines-after-llms",
+    "href": "slides/slides-06-llms.html#pipelines-after-llms",
     "title": "Large Language Models",
     "section": "Pipelines after LLMs",
     "text": "Pipelines after LLMs\n \n\nfrom transformers import pipeline, AutoModelForTokenClassification, AutoTokenizer\n# Sentiment analysis pipeline\nanalyzer = pipeline(\"sentiment-analysis\", model='distilbert-base-uncased-finetuned-sst-2-english')\nanalyzer([\"I asked my model to predict my future, and it said '404: Life not found.'\",\n          '''Machine learning is just like cooking—sometimes you follow the recipe, \n            and other times you just hope for the best!.'''])\n\n[{'label': 'NEGATIVE', 'score': 0.995707631111145},\n {'label': 'POSITIVE', 'score': 0.9994770884513855}]"
   },
   {
-    "objectID": "slides/slides-05-llms.html#zero-shot-learning",
-    "href": "slides/slides-05-llms.html#zero-shot-learning",
+    "objectID": "slides/slides-06-llms.html#zero-shot-learning",
+    "href": "slides/slides-06-llms.html#zero-shot-learning",
     "title": "Large Language Models",
     "section": "Zero-shot learning",
     "text": "Zero-shot learning\n\n\n\n\n\n['i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived',\n 'i was feeling a little vain when i did this one',\n 'i cant walk into a shop anywhere where i do not feel uncomfortable',\n 'i felt anger when at the end of a telephone call',\n 'i explain why i clung to a relationship with a boy who was in many ways immature and uncommitted despite the excitement i should have been feeling for getting accepted into the masters program at the university of virginia',\n 'i like to have the same breathless feeling as a reader eager to see what will happen next',\n 'i jest i feel grumpy tired and pre menstrual which i probably am but then again its only been a week and im about as fit as a walrus on vacation for the summer',\n 'i don t feel particularly agitated',\n 'i feel beautifully emotional knowing that these women of whom i knew just a handful were holding me and my baba on our journey',\n 'i pay attention it deepens into a feeling of being invaded and helpless',\n 'i just feel extremely comfortable with the group of people that i dont even need to hide myself',\n 'i find myself in the odd position of feeling supportive of']"
   },
   {
-    "objectID": "slides/slides-05-llms.html#zero-shot-learning-for-emotion-detection",
-    "href": "slides/slides-05-llms.html#zero-shot-learning-for-emotion-detection",
+    "objectID": "slides/slides-06-llms.html#zero-shot-learning-for-emotion-detection",
+    "href": "slides/slides-06-llms.html#zero-shot-learning-for-emotion-detection",
     "title": "Large Language Models",
     "section": "Zero-shot learning for emotion detection",
     "text": "Zero-shot learning for emotion detection\n\n\n\nfrom transformers import AutoTokenizer\nfrom transformers import pipeline \nimport torch\n\n#Load the pretrained model\nmodel_name = \"facebook/bart-large-mnli\"\nclassifier = pipeline('zero-shot-classification', model=model_name)\nexs = dataset[\"test\"][\"text\"][:10]\ncandidate_labels = [\"sadness\", \"joy\", \"love\",\"anger\", \"fear\", \"surprise\"]\noutputs = classifier(exs, candidate_labels)"
   },
   {
-    "objectID": "slides/slides-05-llms.html#zero-shot-learning-for-emotion-detection-1",
-    "href": "slides/slides-05-llms.html#zero-shot-learning-for-emotion-detection-1",
+    "objectID": "slides/slides-06-llms.html#zero-shot-learning-for-emotion-detection-1",
+    "href": "slides/slides-06-llms.html#zero-shot-learning-for-emotion-detection-1",
     "title": "Large Language Models",
     "section": "Zero-shot learning for emotion detection",
     "text": "Zero-shot learning for emotion detection\n\n\n\n\n\n\n\n\n\n\n\n\nsequence\nlabels\nscores\n\n\n\n\n0\nim feeling rather rotten so im not very ambiti...\n[sadness, anger, surprise, fear, joy, love]\n[0.7367963194847107, 0.10041721910238266, 0.09...\n\n\n1\nim updating my blog because i feel shitty\n[sadness, surprise, anger, fear, joy, love]\n[0.7429746985435486, 0.13775986433029175, 0.05...\n\n\n2\ni never make her separate from me because i do...\n[love, sadness, surprise, fear, anger, joy]\n[0.3153638243675232, 0.22490324079990387, 0.19...\n\n\n3\ni left with my bouquet of red and yellow tulip...\n[surprise, joy, love, sadness, fear, anger]\n[0.42182087898254395, 0.3336702883243561, 0.21...\n\n\n4\ni was feeling a little vain when i did this one\n[surprise, anger, fear, love, joy, sadness]\n[0.5639430284500122, 0.17000176012516022, 0.08...\n\n\n5\ni cant walk into a shop anywhere where i do no...\n[surprise, fear, sadness, anger, joy, love]\n[0.37033382058143616, 0.36559492349624634, 0.1...\n\n\n6\ni felt anger when at the end of a telephone call\n[anger, surprise, fear, sadness, joy, love]\n[0.9760521054267883, 0.01253431849181652, 0.00...\n\n\n7\ni explain why i clung to a relationship with a...\n[surprise, joy, love, sadness, fear, anger]\n[0.4382022023200989, 0.232231006026268, 0.1298...\n\n\n8\ni like to have the same breathless feeling as ...\n[surprise, joy, love, fear, anger, sadness]\n[0.7675782442092896, 0.13846899569034576, 0.03...\n\n\n9\ni jest i feel grumpy tired and pre menstrual w...\n[surprise, sadness, anger, fear, joy, love]\n[0.7340186834335327, 0.11860235780477524, 0.07..."
   },
   {
-    "objectID": "slides/slides-05-llms.html#harms-of-large-language-models",
-    "href": "slides/slides-05-llms.html#harms-of-large-language-models",
+    "objectID": "slides/slides-06-llms.html#harms-of-large-language-models",
+    "href": "slides/slides-06-llms.html#harms-of-large-language-models",
     "title": "Large Language Models",
     "section": "Harms of large language models",
     "text": "Harms of large language models\nWhile these models are super powerful and useful, be mindful of the harms caused by these models. Some of the harms as summarized here are:\n\nperformance disparties\nsocial biases and stereotypes\ntoxicity\nmisinformation\nsecurity and privacy risks\ncopyright and legal protections\nenvironmental impact\ncentralization of power"
   },
   {
-    "objectID": "slides/slides-05-llms.html#thank-you",
-    "href": "slides/slides-05-llms.html#thank-you",
+    "objectID": "slides/slides-06-llms.html#thank-you",
+    "href": "slides/slides-06-llms.html#thank-you",
     "title": "Large Language Models",
     "section": "Thank you!",
-    "text": "Thank you!\n\nThat’s it for the modules! Now, let’s begin the lab session.\nThank you for your engagement! We would love your feedback. Here is the survey link:\n\nhttps://forms.gle/e5YWKPZtC3N7UNEW9"
+    "text": "Thank you!\n\nThat’s it for the modules! Now, let’s begin the game time."
   },
   {
     "objectID": "workshop-12.html",
@@ -502,7 +502,7 @@
     "href": "about/index.html",
     "title": "Our team",
     "section": "",
-    "text": "Varada Kolhatkar\n        Assistant Professor of Teaching, Computer Science, Master of Data Science\n        \n            Instructor\n        \n        \n    \n\n    \n        \n        Prajeet Bajpai\n        Teaching Postdoctoral Fellow, Master of Data Science\n        \n            Instructor\n        \n        \n    \n\n    \n        \n        Tony Shum\n        \n        \n            Assistant\n        \n        \n    \n\n    \n        \n        Michele Ng\n        Special Projects Coordinator, Computer Science\n        \n            Organizer\n        \n        \n    \n\n\n\nNo matching items"
+    "text": "Varada Kolhatkar\n        Assistant Professor of Teaching, Computer Science, Master of Data Science\n        \n            Instructor\n        \n        \n    \n\n    \n        \n        Prajeet Bajpai\n        Teaching Postdoctoral Fellow, Master of Data Science\n        \n            Instructor\n        \n        \n    \n\n    \n        \n        Tony Shum\n        Data Engineer & Data Scientist\n        \n            Assistant\n        \n        \n    \n\n    \n        \n        Michele Ng\n        Special Projects Coordinator, Computer Science\n        \n            Organizer\n        \n        \n    \n\n\n\nNo matching items"
   },
   {
     "objectID": "lab/example.html",
@@ -524,6 +524,34 @@
     "title": "ML Problem Framing",
     "section": "Problem Framing",
     "text": "Problem Framing\n\nIs the provided dataset appropriate for the specified objective? What type of data would ideally solve your problem or research question? Are there better-suited datasets available on the internet for this objective?\n\nThe ideal dataset should contain data about the transactions, e.g. transaction details, customer details, etc., which could be used to classify the fraud transaction. Moreover, it should contain an indicator whether it is a fraud transaction for supervised machine learning methods. If such indicator is not available, we can apply outlier detection to identify transactions which deviate much from normal transactions as frauds.\nThe provided dataset contains target column ‘Class’ that indicates whether it is a fraud transaction. It also contains other columns (‘Time’, ‘Amount’, ‘V1-V28’) which can be used as features to predict the target column ‘Class’.\nThere are some caveats for using the dataset.\n\nThe dataset is a transformed dataset with PCA-transformed columns ‘V1’ - ‘V28’. Without having the original dataset, we are not sure how the PCA transformation is performed. We cannot guarantee if the same transformation can be applied to any new data (e.g. real-world data of new transactions)\nFrom the interpretation perspective, we might fail to draw any meaningful insights between the features and the target as we do not understand the meaning of the columns ‘V1’ - ‘V28’. Moreover, we might not detect any potential bias or unfairness within the ML model if the original dataset contains sensitive information, e.g. age, gender, etc.\n\nThere could possibly be better-suited datasets, for example this dataset.\n\n\n\nClearly define the expected input and the ‘ideal’ output. Determine if machine learning is the appropriate method for addressing this problem.\n\nData Input: Data about the transactions, for example:\n\nmerchandise details: time, amount, merchant information, etc.\ncustomer details: account balance, credit score, cardholder information, etc.\n\nData Output: A soft prediction (probability) whether a transaction is a fraud\nAs we can clearly define the expected input and output and we can collect the data, machine learning is the appropriate method to address the problem.\n\n\n\nIf machine learning is deemed suitable, what should the model aim to achieve? How would you measure the model’s performance?\n\nOur objective is to detect fraudulent transactions by having a soft prediction (probability) and a threshold to determine whether a transaction is a fraud\nWe can expect there would potentially be false positives (legit transactions predicted as fraud) and false negatives (fraudulent transactions predicted as legit) from the predictions and the model should balance both based on our needs. For example, more false negatives might create more bad debts, while more false positives might affect the revenue.\nMoreover, the dataset is an unbalanced dataset with less than 1% are actual fraudulent records.\nWe can use evaluation metrics, e.g. precision, recall, area under precision-recall curve, etc. to measure the model performance. For example, if we are trying to minimize false negatives, we would focus more on recall (true positive rate).\n\n\n\nHow would a human tackle this issue? Can you propose any heuristic methods to solve this problem?\n\nIt would be a data collection -&gt; analysis by expert -&gt; decision making -&gt; remedy approach to solve this issue by human.\n\nData collection: We collect historical legit and fraud transactions and the related information, e.g. transaction, merchant, cardholder, etc.\nAnalysis by expert: Expert will deep dive into the collected data to identify any pattern/traits of the fraud transactions from the data. Moreover, they will provide a score of the likeliness of fraud for a transaction.\nDecision making: A cutoff of the score will be made to classify if a transaction is a fraud.\nRemedy: If the transaction is legit, no action is required. If it is a fraud, the money transfer will be on-hold. Further investigation will undergo.\n\n\n\n\nWhat are the major steps required to resolve this problem?\n\nFor machine-learning based approach, we would go through similar but slightly different steps to resolve the problem\n\nData collection & wrangling: Data collection is similar to the above. We will also carry out data wrangling to handle unclean data (e.g. missing values) and transform data into desired format (e.g. scaling).\nModel training: A subset of the data will be used to train the model to learn any pattern for fraud/legit transactions. The model will then output the predictions.\nValidation/Testing: Another subset(s) of the data will be used to test the model performance, which is helpful in model selection, estimation of performance under real-world scenario, etc.\nDeployment: The defined data processing pipeline and trained model will be deployed to the existing system/workflow, which can intake the transaction data and output the prediction results to the relevant stakeholder(s) for further actions.\n\n\n\n\nDraw a diagram that illustrates the input, output, and key stages of the problem-solving process.\n\n\n\nWhich type of machine learning would be best suited for your problem? What specific machine learning technique would be most effective for this problem?\n\nWe have labelled data of legit/fraud transactions and our goal is to classify the transactions. Supervised machine learning is best-suited.\nLinear regression can be applied first to observe any linear relationship between the target and the features, and we can obtain a baseline performance.\nGiven the possible non-linear relationship between the target and the features, non-linear algorithms (e.g. SVM) can be applied and we can observe if there is any significant improvement in model performance.\nGiven the variety of data types (textual, numerical, etc.), decision tree based algorithm (gradient boosted tree) can be applied and we can observe if there is any significant improvement in model performance."
+  },
+  {
+    "objectID": "slides/slides-07-llms-exercise.html#game-time",
+    "href": "slides/slides-07-llms-exercise.html#game-time",
+    "title": "Large Language Models Exercise",
+    "section": "Game Time",
+    "text": "Game Time\nHere is a Jupyter notebook you can download for further exploration: Download and Save the Jupyter Notebook\nFollow the guidelines in the next page."
+  },
+  {
+    "objectID": "slides/slides-07-llms-exercise.html#how-to-work-on-kaggle",
+    "href": "slides/slides-07-llms-exercise.html#how-to-work-on-kaggle",
+    "title": "Large Language Models Exercise",
+    "section": "How To Work On Kaggle",
+    "text": "How To Work On Kaggle\n\nGo to https://www.kaggle.com/kernels\nMake an account if you don’t have one\nSelect + New Notebook \nGo to File -&gt; Import Notebook \nUpload this notebook"
+  },
+  {
+    "objectID": "slides/slides-07-llms-exercise.html#how-to-work-on-kaggle-1",
+    "href": "slides/slides-07-llms-exercise.html#how-to-work-on-kaggle-1",
+    "title": "Large Language Models Exercise",
+    "section": "How To Work On Kaggle",
+    "text": "How To Work On Kaggle\n\nOn the right-hand side of your Kaggle notebook, make sure:\n\n\nInternet is enabled.\n\n\nFollow the guidelines in the notebook"
+  },
+  {
+    "objectID": "slides/slides-07-llms-exercise.html#how-to-add-a-dataset",
+    "href": "slides/slides-07-llms-exercise.html#how-to-add-a-dataset",
+    "title": "Large Language Models Exercise",
+    "section": "How To Add a Dataset",
+    "text": "How To Add a Dataset\n\nClick + Add data at the top right of the notebook.\nChoose Datasets and search for the keyword (e.g. ‘cat-breed-mardhik’). Several datasets will appear. Look for and ‘Add’ the dataset."
   },
   {
     "objectID": "slides/slides-01-intro.html#welcome-to-the-workshop",
@@ -614,6 +642,34 @@
       "Workshop",
       "Overview"
     ]
+  },
+  {
+    "objectID": "slides/slides-05-deep-learning-exercise.html#game-time",
+    "href": "slides/slides-05-deep-learning-exercise.html#game-time",
+    "title": "Deep Learning Exercise",
+    "section": "Game Time",
+    "text": "Game Time\nHere is a Jupyter notebook you can download for further exploration: Download and Save the Jupyter Notebook\nFollow the guidelines in the next page."
+  },
+  {
+    "objectID": "slides/slides-05-deep-learning-exercise.html#how-to-work-on-kaggle",
+    "href": "slides/slides-05-deep-learning-exercise.html#how-to-work-on-kaggle",
+    "title": "Deep Learning Exercise",
+    "section": "How To Work On Kaggle",
+    "text": "How To Work On Kaggle\n\nGo to https://www.kaggle.com/kernels\nMake an account if you don’t have one, and verify your phone number (to get access to GPUs)\nSelect + New Notebook \nGo to File -&gt; Import Notebook \nUpload this notebook"
+  },
+  {
+    "objectID": "slides/slides-05-deep-learning-exercise.html#how-to-work-on-kaggle-1",
+    "href": "slides/slides-05-deep-learning-exercise.html#how-to-work-on-kaggle-1",
+    "title": "Deep Learning Exercise",
+    "section": "How To Work On Kaggle",
+    "text": "How To Work On Kaggle\n\nOn the right-hand side of your Kaggle notebook, make sure:\n\n\nInternet is enabled.\nIn the Accelerator dropdown, choose GPU when you’re ready to use it (you can turn it on/off as you need it).\n\n\nFollow the guidelines in the notebook"
+  },
+  {
+    "objectID": "slides/slides-05-deep-learning-exercise.html#how-to-add-a-dataset",
+    "href": "slides/slides-05-deep-learning-exercise.html#how-to-add-a-dataset",
+    "title": "Deep Learning Exercise",
+    "section": "How To Add a Dataset",
+    "text": "How To Add a Dataset\n\nClick + Add data at the top right of the notebook.\nChoose Datasets and search for the keyword (e.g. ‘cat-breed-mardhik’). Several datasets will appear. Look for and ‘Add’ the dataset."
   },
   {
     "objectID": "lab/datasets_and_goals.html",
@@ -732,17 +788,6 @@
     ]
   },
   {
-    "objectID": "workshop-08-exercise2.html#outline",
-    "href": "workshop-08-exercise2.html#outline",
-    "title": "Exercise 2: Transfer Learning",
-    "section": "Outline",
-    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals",
-    "crumbs": [
-      "Workshop",
-      "Exercise 2: Transfer Learning"
-    ]
-  },
-  {
     "objectID": "workshop-11-exercise3.html",
     "href": "workshop-11-exercise3.html",
     "title": "Exercise 3: Language Models",
@@ -759,17 +804,6 @@
     "title": "Exercise 3: Language Models",
     "section": "",
     "text": "View slides in full screen",
-    "crumbs": [
-      "Workshop",
-      "Exercise 3: Language Models"
-    ]
-  },
-  {
-    "objectID": "workshop-11-exercise3.html#outline",
-    "href": "workshop-11-exercise3.html#outline",
-    "title": "Exercise 3: Language Models",
-    "section": "Outline",
-    "text": "Outline\n\nMachine learning terminology\nMachine learning fundamentals",
     "crumbs": [
       "Workshop",
       "Exercise 3: Language Models"
@@ -1221,7 +1255,7 @@
     "href": "slides/slides-04-deep-learning.html#object-detection-using-yolo",
     "title": "Deep Learning",
     "section": "Object detection using YOLO",
-    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 54.8ms\nSpeed: 2.5ms preprocess, 54.8ms inference, 6.0ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
+    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 68.4ms\nSpeed: 1.2ms preprocess, 68.4ms inference, 6.6ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#object-detection-output",
@@ -1236,5 +1270,12 @@
     "title": "Deep Learning",
     "section": "Summary",
     "text": "Summary\n\n\n\nNeural networks are a flexible class of models.\n\nThey are particular powerful for structured input like images, videos, audio, etc.\nThey can be challenging to train and often require significant computational resources.\n\nThe good news is we can use pre-trained neural networks.\n\nThis saves us a huge amount of time/cost/effort/resources.\nWe can use these pre-trained networks directly or use them as feature transformers."
+  },
+  {
+    "objectID": "slides/slides-04-deep-learning.html#thank-you",
+    "href": "slides/slides-04-deep-learning.html#thank-you",
+    "title": "Deep Learning",
+    "section": "Thank you!",
+    "text": "Thank you!\n\nThat’s it for the modules! Now, let’s begin the game time."
   }
 ]

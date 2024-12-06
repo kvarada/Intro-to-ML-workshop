@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <title>Introduction to Machine Learning Workshop – Large Language Models</title>
+  <title>Introduction to Machine Learning Workshop – Large Language Models Exercise</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,71 +28,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -384,393 +319,54 @@
       margin-right: 0; 
     }
   </style>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
-  
-  <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Large Language Models</h1>
+  <h1 class="title">Large Language Models Exercise</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section id="learning-outcomes" class="slide level2 center">
-<h2>Learning outcomes</h2>
-<p><br>
-From this module, you will be able to</p>
-</section>
-<section id="language-models-activity" class="slide level2 center">
-<h2>Language models activity</h2>
-<p><br>
-</p>
-<p>Each of you will receive a sticky note with a word on it. Here’s what you’ll do:</p>
-<ul>
-<li>Carefully <strong>remove the sticky note to see the word</strong>. This word is for your eyes only —- no peeking, neighbours!</li>
-<li>Think quickly: what word would logically follow the word on the sticky note? <strong>Write this next word on a new sticky note</strong>.</li>
-<li>You have about 20 seconds for this step, so trust your instincts!</li>
-<li><strong>Pass your predicted word to the person next to you</strong>. Do not pass the word you <strong>received</strong> from your neighbour forward. Keep the chain going!</li>
-<li>Stop after the last person in your row has finished.</li>
-<li>Finally, one person from your row will enter the collective sentence into <a href="https://docs.google.com/document/d/1TdmH5LKLC0Y9IWySC4FgsYX0dsNtkX_dBcc7FSSrQg0/edit#heading=h.h4gszne09tpb">our Google Doc</a>.</li>
-</ul>
-<p><br><br><br><br></p>
-</section>
-<section id="markov-model-of-language" class="slide level2 center">
-<h2>Markov model of language</h2>
-<p><br>
-</p>
-<ul>
-<li>You’ve just created a simple Markov model of language!</li>
-<li>In predicting the next word from a minimal context, you likely used your linguistic intuition and familiarity with common two-word phrases or collocations.</li>
-<li>You could create more coherent sentences by taking into account more context e.g., previous two words or four words or 100 words.</li>
-<li>This idea was first used by Shannon for characters in The Shannon’s game. See this video by <a href="https://www.youtube.com/watch?v=0shft1gokac">Jordan Boyd-Graber</a> for more information on this.</li>
-</ul>
-</section>
-<section id="applications-of-predicting-next-word" class="slide level2 center">
-<h2>Applications of predicting next word</h2>
-<p><br>
-</p>
-<p>One of the most common applications for predicting the next word is the ‘smart compose’ feature in your emails, text messages, and search engines.</p>
-<div id="b5dc5fcc" class="cell" data-execution_count="2">
-<div class="cell-output cell-output-display" data-execution_count="2">
+<section id="game-time" class="slide level2 center">
+<h2>Game Time</h2>
+<p>Here is a Jupyter notebook you can download for further exploration: <a href="downloads/exercise-03-language-model.ipynb" class="btn btn-primary">Download and Save the Jupyter Notebook</a></p>
+<p>Follow the guidelines in the next page.</p>
 
-        <iframe width="500" height="500" src="https://2.bp.blogspot.com/-KlBuhzV_oFw/WvxP_OAkJ1I/AAAAAAAACu0/T0F6lFZl-2QpS0O7VBMhf8wkUPvnRaPIACLcBGAs/s1600/image2.gif" frameborder="0" allowfullscreen=""></iframe>
-        
-</div>
-</div>
+<img src="img/save_notebook.png" alt="drawing" width="400" class="r-stretch"></section>
+<section id="how-to-work-on-kaggle" class="slide level2 center">
+<h2>How To Work On Kaggle</h2>
+<ol type="1">
+<li><p>Go to <a href="https://www.kaggle.com/kernels">https://www.kaggle.com/kernels</a></p></li>
+<li><p>Make an account if you don’t have one</p></li>
+<li><p>Select <code>+ New Notebook</code> <img src="img/create_notebook.png" alt="drawing" width="400"></p></li>
+<li><p>Go to <code>File -&gt; Import Notebook</code> <img src="img/import_notebook.png" alt="drawing" width="400"></p></li>
+<li><p>Upload this notebook</p></li>
+</ol>
 </section>
-<section id="language-model" class="slide level2 center">
-<h2>Language model</h2>
-<p><br>
-</p>
-<p>A language model computes the probability distribution over sequences (of words or characters). Intuitively, this probability tells us how “good” or plausible a sequence of words is.</p>
-
-<!-- <img src="img/voice-assistant-ex.png" height="1400" width="1400"> -->
-<img data-src="img/voice-assistant-ex.png" class="r-stretch"><p>Check out this <a href="https://www.youtube.com/watch?v=VzqKtAYeJt4">recent BMO ad</a>.</p>
-</section>
-<section id="a-simple-model-of-language" class="slide level2 center">
-<h2>A simple model of language</h2>
-<p><br>
-</p>
+<section id="how-to-work-on-kaggle-1" class="slide level2 center">
+<h2>How To Work On Kaggle</h2>
+<ol start="6" type="1">
+<li>On the right-hand side of your Kaggle notebook, make sure:</li>
+</ol>
 <ul>
-<li>Calculate the co-occurrence frequencies and probabilities based on these frequencies</li>
-<li>Predict the next word based on these probabilities</li>
-<li>This is a Markov model of language.</li>
+<li><code>Internet</code> is enabled.</li>
 </ul>
+<ol start="7" type="1">
+<li>Follow the guidelines in the notebook</li>
+</ol>
 
-<img data-src="img/Markov-bigram-probs.png" class="r-stretch"></section>
-<section id="long-distance-dependencies" class="slide level2 center">
-<h2>Long-distance dependencies</h2>
-<p><br>
-</p>
-<p>What are some reasonable predictions for the next word in the sequence?</p>
-<blockquote>
-<p>I am studying law at the University of British Columbia Point Grey campus in Vancouver because I want to work as a ___</p>
-</blockquote>
-<p>Markov model is unable to capture such long-distance dependencies in language.</p>
-</section>
-<section id="transformer-models" class="slide level2 center">
-<h2>Transformer models</h2>
-<p><br>
-</p>
-<p>Enter attention and transformer models! Transformer models are at the core of all state-of-the-art Generative AI models (e.g., BERT, GPT3, GPT4, Gemini, DALL-E, Llama, Github Copilot)?</p>
-
-<img data-src="img/genai.png" class="r-stretch"><p><a href="https://jalammar.github.io/how-gpt3-works-visualizations-animations/">Source</a></p>
-</section>
-<section id="transformer-models-1" class="slide level2 center">
-<h2>Transformer models</h2>
-<p><br>
-</p>
-
-<img data-src="img/GPT-4-tech-report-abstract.png" class="r-stretch"><p>Source: <a href="https://arxiv.org/pdf/2303.08774.pdf">GPT-4 Technical Report</a></p>
-</section>
-<section id="self-attention" class="slide level2 center">
-<h2>Self-attention</h2>
-<p><br>
-</p>
-<ul>
-<li>An important innovation which makes these models work so well is <strong>self-attention</strong>.</li>
-<li>Count how many times the players wearing the white pass the basketball?</li>
-</ul>
-<div id="e81137ec" class="cell" data-execution_count="3">
-<div class="cell-output cell-output-display" data-execution_count="3">
-
-        <iframe width="500" height="500" src="https://www.youtube.com/embed/vJG698U2Mvo" frameborder="0" allowfullscreen=""></iframe>
-        
-</div>
-</div>
-</section>
-<section id="self-attention-1" class="slide level2 center">
-<h2>Self-attention</h2>
-<p><br>
-</p>
-<p>When we process information, we often selectively focus on specific parts of the input, giving more attention to relevant information and less attention to irrelevant information. This is the core idea of <strong>attention</strong>.</p>
-<p>Consider the examples below:</p>
-<ul>
-<li><p>Example 1: She left a brief <strong>note</strong> on the kitchen table, reminding him to pick up groceries.</p></li>
-<li><p>Example 2: The diplomat’s speech struck a positive <strong>note</strong> in the peace negotiations.</p></li>
-<li><p>Example 3: She plucked the guitar strings, ending with a melancholic <strong>note</strong>.</p></li>
-</ul>
-<p>The word <strong>note</strong> in these examples serves quite distinct meanings, each tied to different contexts. To capture varying word meanings across different contexts, we need a mechanism that considers the wider context to compute each word’s contextual representation.</p>
-<ul>
-<li><strong>Self-attention</strong> is just that mechanism!</li>
-</ul>
-</section>
-<section id="using-llms-in-your-applications" class="slide level2 center">
-<h2>Using LLMs in your applications</h2>
-<p><br>
-</p>
-<ul>
-<li>There are several Python libraries available which allow us to use pre-trained LLMs in our applications.
-<ul>
-<li><a href="https://huggingface.co/docs/transformers/index">🤗 Transformers library</a></li>
-<li><a href="https://pypi.org/project/openai/">OpenAI GPT</a></li>
-<li><a href="https://pypi.org/project/farm-haystack/">Haystack</a></li>
-<li><a href="https://python.langchain.com/v0.2/docs/introduction/">LangChain</a></li>
-<li><a href="https://spacy.io/universe/project/spacy-transformers"><code>spacy-transformers</code></a></li>
-<li>…</li>
-</ul></li>
-</ul>
-</section>
-<section id="types-of-llms" class="slide level2 center">
-<h2>Types of LLMs</h2>
-<p>If you want to use pre-trained LLMs, it’s useful to know that there are three main types of LLMs.</p>
-<table class="caption-top">
-<colgroup>
-<col style="width: 9%">
-<col style="width: 26%">
-<col style="width: 32%">
-<col style="width: 31%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>Decoder-only (e.g., GPT-3)</th>
-<th>Encoder-only (e.g., BERT, RoBERTa)</th>
-<th>Encoder decoder (e.g., T5, BARD)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Output Computation is based on</td>
-<td>Information earlier in the context</td>
-<td>Entire context (bidirectional)</td>
-<td>Encoded input context</td>
-</tr>
-<tr class="even">
-<td>Text Generation</td>
-<td>Can naturally generate text completion</td>
-<td>Cannot directly generate text</td>
-<td>Can generate outputs naturally</td>
-</tr>
-<tr class="odd">
-<td>Example</td>
-<td>DSI ML workshop audience is ___</td>
-<td>DSI ML workshop audience is the best! → positive</td>
-<td>Input: Translate to Mandarin: Long but productive day! Output: 漫长而富有成效的一天！</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="pipelines-before-llms" class="slide level2 center">
-<h2>Pipelines before LLMs</h2>
-<p><br>
-</p>
-<ul>
-<li>Text preprocessing: Tokenization, stopword removal, stemming/lemmatization.</li>
-<li><strong>Feature extraction</strong>: Bag of Words or word embeddings.</li>
-<li>Training: Supervised learning on a labeled dataset (e.g., with positive, negative, and neutral sentiment categories for sentiment analysis).</li>
-<li>Evaluation: Performance typically measured using accuracy, F1-score, etc.</li>
-<li><strong>Main challenges:</strong>
-<ul>
-<li>Extensive feature engineering required for good performance.</li>
-<li>Difficulty in capturing the nuances and context of sentiment, especially in complex sentences.</li>
-</ul></li>
-</ul>
-</section>
-<section id="pipelines-after-llms" class="slide level2 center">
-<h2>Pipelines after LLMs</h2>
-<p>&nbsp;</p>
-<div id="b2126f1b" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline, AutoModelForTokenClassification, AutoTokenizer</span>
-<span id="cb1-2"><a></a><span class="co"># Sentiment analysis pipeline</span></span>
-<span id="cb1-3"><a></a>analyzer <span class="op">=</span> pipeline(<span class="st">"sentiment-analysis"</span>, model<span class="op">=</span><span class="st">'distilbert-base-uncased-finetuned-sst-2-english'</span>)</span>
-<span id="cb1-4"><a></a>analyzer([<span class="st">"I asked my model to predict my future, and it said '404: Life not found.'"</span>,</span>
-<span id="cb1-5"><a></a>          <span class="st">'''Machine learning is just like cooking—sometimes you follow the recipe, </span></span>
-<span id="cb1-6"><a></a><span class="st">            and other times you just hope for the best!.'''</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="4">
-<pre><code>[{'label': 'NEGATIVE', 'score': 0.995707631111145},
- {'label': 'POSITIVE', 'score': 0.9994770884513855}]</code></pre>
-</div>
-</div>
-</section>
-<section id="zero-shot-learning" class="slide level2 center">
-<h2>Zero-shot learning</h2>
-<p><br>
-</p>
-<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="23d10fb7" class="cell" data-execution_count="5">
-<div class="cell-output cell-output-display" data-execution_count="5">
-<pre><code>['i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived',
- 'i was feeling a little vain when i did this one',
- 'i cant walk into a shop anywhere where i do not feel uncomfortable',
- 'i felt anger when at the end of a telephone call',
- 'i explain why i clung to a relationship with a boy who was in many ways immature and uncommitted despite the excitement i should have been feeling for getting accepted into the masters program at the university of virginia',
- 'i like to have the same breathless feeling as a reader eager to see what will happen next',
- 'i jest i feel grumpy tired and pre menstrual which i probably am but then again its only been a week and im about as fit as a walrus on vacation for the summer',
- 'i don t feel particularly agitated',
- 'i feel beautifully emotional knowing that these women of whom i knew just a handful were holding me and my baba on our journey',
- 'i pay attention it deepens into a feeling of being invaded and helpless',
- 'i just feel extremely comfortable with the group of people that i dont even need to hide myself',
- 'i find myself in the odd position of feeling supportive of']</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="zero-shot-learning-for-emotion-detection" class="slide level2 center">
-<h2>Zero-shot learning for emotion detection</h2>
-<p><br>
-</p>
-<div id="f5867987" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer</span>
-<span id="cb4-2"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline </span>
-<span id="cb4-3"><a></a><span class="im">import</span> torch</span>
-<span id="cb4-4"><a></a></span>
-<span id="cb4-5"><a></a><span class="co">#Load the pretrained model</span></span>
-<span id="cb4-6"><a></a>model_name <span class="op">=</span> <span class="st">"facebook/bart-large-mnli"</span></span>
-<span id="cb4-7"><a></a>classifier <span class="op">=</span> pipeline(<span class="st">'zero-shot-classification'</span>, model<span class="op">=</span>model_name)</span>
-<span id="cb4-8"><a></a>exs <span class="op">=</span> dataset[<span class="st">"test"</span>][<span class="st">"text"</span>][:<span class="dv">10</span>]</span>
-<span id="cb4-9"><a></a>candidate_labels <span class="op">=</span> [<span class="st">"sadness"</span>, <span class="st">"joy"</span>, <span class="st">"love"</span>,<span class="st">"anger"</span>, <span class="st">"fear"</span>, <span class="st">"surprise"</span>]</span>
-<span id="cb4-10"><a></a>outputs <span class="op">=</span> classifier(exs, candidate_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="zero-shot-learning-for-emotion-detection-1" class="slide level2 center">
-<h2>Zero-shot learning for emotion detection</h2>
-<p><br>
-</p>
-<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="6303de8f" class="cell" data-execution_count="7">
-<div class="cell-output cell-output-display" data-execution_count="7">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-
-<table class="dataframe caption-top" data-quarto-postprocess="true" data-border="1">
-<thead>
-<tr class="header" style="text-align: right;">
-<th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">sequence</th>
-<th data-quarto-table-cell-role="th">labels</th>
-<th data-quarto-table-cell-role="th">scores</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">0</td>
-<td>im feeling rather rotten so im not very ambiti...</td>
-<td>[sadness, anger, surprise, fear, joy, love]</td>
-<td>[0.7367963194847107, 0.10041721910238266, 0.09...</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">1</td>
-<td>im updating my blog because i feel shitty</td>
-<td>[sadness, surprise, anger, fear, joy, love]</td>
-<td>[0.7429746985435486, 0.13775986433029175, 0.05...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">2</td>
-<td>i never make her separate from me because i do...</td>
-<td>[love, sadness, surprise, fear, anger, joy]</td>
-<td>[0.3153638243675232, 0.22490324079990387, 0.19...</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">3</td>
-<td>i left with my bouquet of red and yellow tulip...</td>
-<td>[surprise, joy, love, sadness, fear, anger]</td>
-<td>[0.42182087898254395, 0.3336702883243561, 0.21...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">4</td>
-<td>i was feeling a little vain when i did this one</td>
-<td>[surprise, anger, fear, love, joy, sadness]</td>
-<td>[0.5639430284500122, 0.17000176012516022, 0.08...</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">5</td>
-<td>i cant walk into a shop anywhere where i do no...</td>
-<td>[surprise, fear, sadness, anger, joy, love]</td>
-<td>[0.37033382058143616, 0.36559492349624634, 0.1...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">6</td>
-<td>i felt anger when at the end of a telephone call</td>
-<td>[anger, surprise, fear, sadness, joy, love]</td>
-<td>[0.9760521054267883, 0.01253431849181652, 0.00...</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">7</td>
-<td>i explain why i clung to a relationship with a...</td>
-<td>[surprise, joy, love, sadness, fear, anger]</td>
-<td>[0.4382022023200989, 0.232231006026268, 0.1298...</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">8</td>
-<td>i like to have the same breathless feeling as ...</td>
-<td>[surprise, joy, love, fear, anger, sadness]</td>
-<td>[0.7675782442092896, 0.13846899569034576, 0.03...</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">9</td>
-<td>i jest i feel grumpy tired and pre menstrual w...</td>
-<td>[surprise, sadness, anger, fear, joy, love]</td>
-<td>[0.7340186834335327, 0.11860235780477524, 0.07...</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="harms-of-large-language-models" class="slide level2 center">
-<h2>Harms of large language models</h2>
-<p>While these models are super powerful and useful, be mindful of the harms caused by these models. Some of the harms as summarized <a href="https://stanford-cs324.github.io/winter2022/lectures/harms-1/">here</a> are:</p>
-<ul>
-<li>performance disparties</li>
-<li>social biases and stereotypes</li>
-<li>toxicity</li>
-<li>misinformation</li>
-<li>security and privacy risks</li>
-<li>copyright and legal protections</li>
-<li>environmental impact</li>
-<li>centralization of power</li>
-</ul>
-</section>
-<section id="thank-you" class="slide level2 center">
-<h2>Thank you!</h2>
-<ul>
-<li><p>That’s it for the modules! Now, let’s begin the lab session.</p></li>
-<li><p>Thank you for your engagement! We would love your feedback. Here is the survey link:</p>
-<ul>
-<li><a href="https://forms.gle/e5YWKPZtC3N7UNEW9">https://forms.gle/e5YWKPZtC3N7UNEW9</a></li>
-</ul></li>
-</ul>
+<img src="img/notebook_options2.png" alt="drawing" width="400" class="r-stretch"></section>
+<section id="how-to-add-a-dataset" class="slide level2 center">
+<h2>How To Add a Dataset</h2>
+<ol type="1">
+<li><p>Click <code>+ Add data</code> at the top right of the notebook.</p></li>
+<li><p>Choose <code>Datasets</code> and search for the keyword (e.g.&nbsp;‘cat-breed-mardhik’). Several datasets will appear. Look for and ‘Add’ the dataset.</p></li>
+</ol>
+<p><img src="img/add_data1.png" alt="drawing" width="400"> <img src="img/add_data2.png" alt="drawing" width="400"></p>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">

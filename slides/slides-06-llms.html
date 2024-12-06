@@ -10,7 +10,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <title>Introduction to Machine Learning Workshop – Deep Learning</title>
+  <title>Introduction to Machine Learning Workshop – Large Language Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -393,7 +393,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Deep Learning</h1>
+  <h1 class="title">Large Language Models</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -403,487 +403,258 @@
 <h2>Learning outcomes</h2>
 <p><br>
 From this module, you will be able to</p>
+</section>
+<section id="language-models-activity" class="slide level2 center">
+<h2>Language models activity</h2>
+<p><br>
+</p>
+<p>Each of you will receive a sticky note with a word on it. Here’s what you’ll do:</p>
 <ul>
-<li>Explain the role of neural networks in machine learning, including their advantages and disadvantages.</li>
-<li>Discuss why traditional methods are less effective for image data.</li>
-<li>Gain a high-level understanding of transfer learning.</li>
-<li>Use transfer learning for your own tasks.</li>
-<li>Differentiate between image classification and object detection.</li>
+<li>Carefully <strong>remove the sticky note to see the word</strong>. This word is for your eyes only —- no peeking, neighbours!</li>
+<li>Think quickly: what word would logically follow the word on the sticky note? <strong>Write this next word on a new sticky note</strong>.</li>
+<li>You have about 20 seconds for this step, so trust your instincts!</li>
+<li><strong>Pass your predicted word to the person next to you</strong>. Do not pass the word you <strong>received</strong> from your neighbour forward. Keep the chain going!</li>
+<li>Stop after the last person in your row has finished.</li>
+<li>Finally, one person from your row will enter the collective sentence into <a href="https://docs.google.com/document/d/1TdmH5LKLC0Y9IWySC4FgsYX0dsNtkX_dBcc7FSSrQg0/edit#heading=h.h4gszne09tpb">our Google Doc</a>.</li>
+</ul>
+<p><br><br><br><br></p>
+</section>
+<section id="markov-model-of-language" class="slide level2 center">
+<h2>Markov model of language</h2>
+<p><br>
+</p>
+<ul>
+<li>You’ve just created a simple Markov model of language!</li>
+<li>In predicting the next word from a minimal context, you likely used your linguistic intuition and familiarity with common two-word phrases or collocations.</li>
+<li>You could create more coherent sentences by taking into account more context e.g., previous two words or four words or 100 words.</li>
+<li>This idea was first used by Shannon for characters in The Shannon’s game. See this video by <a href="https://www.youtube.com/watch?v=0shft1gokac">Jordan Boyd-Graber</a> for more information on this.</li>
 </ul>
 </section>
-<section id="image-classification" class="slide level2 center">
-<h2>Image classification</h2>
+<section id="applications-of-predicting-next-word" class="slide level2 center">
+<h2>Applications of predicting next word</h2>
 <p><br>
 </p>
-<p>Have you used search in Google Photos? You can search for “my photos of cat” and it will retrieve photos from your libraries containing cats. This can be done using <strong>image classification</strong>, which is treated as a supervised learning problem, where we define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos.</p>
+<p>One of the most common applications for predicting the next word is the ‘smart compose’ feature in your emails, text messages, and search engines.</p>
+<div id="67d5b3cb" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
+
+        <iframe width="500" height="500" src="https://2.bp.blogspot.com/-KlBuhzV_oFw/WvxP_OAkJ1I/AAAAAAAACu0/T0F6lFZl-2QpS0O7VBMhf8wkUPvnRaPIACLcBGAs/s1600/image2.gif" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
 </section>
-<section id="image-classification-1" class="slide level2 center">
-<h2>Image classification</h2>
+<section id="language-model" class="slide level2 center">
+<h2>Language model</h2>
 <p><br>
 </p>
-<p>Image classification is not an easy problem because of the variations in the location of the object, lighting, background, camera angle, camera focus etc.</p>
-<p><img data-src="img/cat_variation.png"> <!-- [Source](https://developers.google.com/machine-learning/practica/image-classification) --></p>
+<p>A language model computes the probability distribution over sequences (of words or characters). Intuitively, this probability tells us how “good” or plausible a sequence of words is.</p>
+
+<!-- <img src="img/voice-assistant-ex.png" height="1400" width="1400"> -->
+<img data-src="img/voice-assistant-ex.png" class="r-stretch"><p>Check out this <a href="https://www.youtube.com/watch?v=VzqKtAYeJt4">recent BMO ad</a>.</p>
 </section>
-<section id="neural-networks" class="slide level2 center">
-<h2>Neural networks</h2>
+<section id="a-simple-model-of-language" class="slide level2 center">
+<h2>A simple model of language</h2>
 <p><br>
 </p>
 <ul>
-<li>Neural networks are perfect for these types of problems where local structures are important.</li>
-<li>A significant advancement in image classification was the application of <strong>convolutional neural networks</strong> (ConvNets or CNNs) to this problem.
-<ul>
-<li><a href="https://dl.acm.org/doi/10.1145/3065386">ImageNet Classification with Deep Convolutional Neural Networks</a></li>
-<li>Achieved a winning test error rate of 15.3%, compared to 26.2% achieved by the second-best entry in the ILSVRC-2012 competition.</li>
-</ul></li>
-<li>Let’s go over the basics of a neural network.</li>
-</ul>
-</section>
-<section id="introduction-to-neural-networks" class="slide level2 center">
-<h2>Introduction to neural networks</h2>
-<p><br>
-</p>
-<ul>
-<li>Neural networks can be viewed a generalization of linear models where we apply a series of transformations.</li>
-<li>Here is graphical representation of a logistic regression model.</li>
-<li>We have 4 features: x[0], x[1], x[2], x[3]</li>
+<li>Calculate the co-occurrence frequencies and probabilities based on these frequencies</li>
+<li>Predict the next word based on these probabilities</li>
+<li>This is a Markov model of language.</li>
 </ul>
 
-<img data-src="slides-04-deep-learning_files/figure-revealjs/cell-3-output-1.svg" class="r-stretch"></section>
-<section id="adding-a-layer-of-transformations" class="slide level2 center">
-<h2>Adding a layer of transformations</h2>
+<img data-src="img/Markov-bigram-probs.png" class="r-stretch"></section>
+<section id="long-distance-dependencies" class="slide level2 center">
+<h2>Long-distance dependencies</h2>
 <p><br>
 </p>
-<ul>
-<li>Below we are adding one “layer” of transformations in between features and the target.</li>
-<li>We are repeating the the process of computing the weighted sum multiple times.<br>
-</li>
-<li>The <strong>hidden units</strong> (e.g., h[1], h[2], …) represent the intermediate processing steps.</li>
-</ul>
+<p>What are some reasonable predictions for the next word in the sequence?</p>
+<blockquote>
+<p>I am studying law at the University of British Columbia Point Grey campus in Vancouver because I want to work as a ___</p>
+</blockquote>
+<p>Markov model is unable to capture such long-distance dependencies in language.</p>
+</section>
+<section id="transformer-models" class="slide level2 center">
+<h2>Transformer models</h2>
+<p><br>
+</p>
+<p>Enter attention and transformer models! Transformer models are at the core of all state-of-the-art Generative AI models (e.g., BERT, GPT3, GPT4, Gemini, DALL-E, Llama, Github Copilot)?</p>
 
-<img data-src="slides-04-deep-learning_files/figure-revealjs/cell-4-output-1.svg" class="r-stretch"></section>
-<section id="one-more-layer-of-transformations" class="slide level2 center">
-<h2>One more layer of transformations</h2>
-<p><br>
-</p>
-<ul>
-<li>Now we are adding one more layer of transformations.</li>
-</ul>
-
-<img data-src="slides-04-deep-learning_files/figure-revealjs/cell-5-output-1.svg" class="r-stretch"></section>
-<section id="neural-networks-1" class="slide level2 center">
-<h2>Neural networks</h2>
-<p><br>
-</p>
-<ul>
-<li>With a neural net, you specify the number of features after each transformation.
-<ul>
-<li>In the above, it goes from 4 to 3 to 3 to 1.</li>
-</ul></li>
-<li>To make them really powerful compared to the linear models, we apply a non-linear function to the weighted sum for each hidden node.</li>
-<li>Neural network = neural net</li>
-<li>Deep learning ~ using neural networks</li>
-</ul>
+<img data-src="img/genai.png" class="r-stretch"><p><a href="https://jalammar.github.io/how-gpt3-works-visualizations-animations/">Source</a></p>
 </section>
-<section id="why-neural-networks" class="slide level2 center">
-<h2>Why neural networks?</h2>
-<p><br>
-</p>
-<ul>
-<li>They can learn very complex functions.
-<ul>
-<li>The fundamental tradeoff is primarily controlled by the <strong>number of layers</strong> and <strong>layer sizes</strong>.</li>
-<li>More layers / bigger layers –&gt; more complex model.</li>
-<li>You can generally get a model that will not underfit.</li>
-</ul></li>
-<li>They work really well for structured data:
-<ul>
-<li>1D sequence, e.g.&nbsp;timeseries, language</li>
-<li>2D image</li>
-<li>3D image or video</li>
-</ul></li>
-<li>They’ve had some incredible successes in the last 12 years.</li>
-<li>Transfer learning (coming later today) is really useful.</li>
-</ul>
-</section>
-<section id="why-not-neural-networks" class="slide level2 center">
-<h2>Why not neural networks?</h2>
-<p><br>
-</p>
-<ul>
-<li>Often they require a lot of data.</li>
-<li>They require a lot of compute time, and, to be faster, specialized hardware called <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a>.</li>
-<li>They have huge numbers of hyperparameters
-<ul>
-<li>Think of each layer having hyperparameters, plus some overall hyperparameters.</li>
-<li>Being slow compounds this problem.</li>
-</ul></li>
-<li>They are not interpretable.</li>
-<li>I don’t recommend training them on your own without further training</li>
-<li>Good news
-<ul>
-<li>You don’t have to train your models from scratch in order to use them.</li>
-<li>I’ll show you some ways to use neural networks without training them yourselves.</li>
-</ul></li>
-</ul>
-</section>
-<section id="deep-learning-software" class="slide level2 center">
-<h2>Deep learning software</h2>
-<p><br>
-</p>
-<p>The current big players are:</p>
-<ol type="1">
-<li><a href="http://pytorch.org">PyTorch</a></li>
-<li><a href="https://www.tensorflow.org">TensorFlow</a></li>
-</ol>
-<p>Both are heavily used in industry. If interested, see <a href="https://en.wikipedia.org/wiki/Comparison_of_deep_learning_software">comparison of deep learning software</a>.</p>
-<p><br><br></p>
-</section>
-<section id="introduction-to-computer-vision" class="slide level2 center">
-<h2>Introduction to computer vision</h2>
-<p><br>
-</p>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Computer_vision">Computer vision</a> refers to understanding images/videos, usually using ML/AI.</li>
-<li>In the last decade this field has been dominated by deep learning. We will explore <strong>image classification</strong> and <strong>object detection</strong>.</li>
-</ul>
-</section>
-<section id="introduction-to-computer-vision-1" class="slide level2 center">
-<h2>Introduction to computer vision</h2>
-<p><br>
-</p>
-<ul>
-<li>image classification: is this a cat or a dog?</li>
-<li>object localization: where is the cat in this image?</li>
-<li>object detection: What are the various objects in the image?</li>
-<li>instance segmentation: What are the shapes of these various objects in the image?</li>
-<li>and much more…</li>
-</ul>
-<p><img data-src="img/vision-apps.jpeg"> <!-- Source: https://learning.oreilly.com/library/view/python-advanced-guide/9781789957211/--></p>
-</section>
-<section id="pre-trained-models" class="slide level2 center">
-<h2>Pre-trained models</h2>
-<p><br>
-</p>
-<ul>
-<li>In practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.</li>
-<li>Instead, a common practice is to download a pre-trained model and fine tune it for your task. This is called <strong>transfer learning</strong>.</li>
-<li>Transfer learning is one of the most common techniques used in the context of computer vision and natural language processing.</li>
-<li>It refers to using a model already trained on one task as a starting point for learning to perform another task.</li>
-</ul>
-</section>
-<section id="pre-trained-models-out-of-the-box" class="slide level2 center">
-<h2>Pre-trained models out-of-the-box</h2>
+<section id="transformer-models-1" class="slide level2 center">
+<h2>Transformer models</h2>
 <p><br>
 </p>
 
-<!-- Source: https://cezannec.github.io/Convolutional_Neural_Networks/ -->
-<img data-src="img/cnn-ex.png" class="r-stretch"><ul>
-<li>Let’s first apply one of these pre-trained models to our own problem right out of the box.</li>
-</ul>
+<img data-src="img/GPT-4-tech-report-abstract.png" class="r-stretch"><p>Source: <a href="https://arxiv.org/pdf/2303.08774.pdf">GPT-4 Technical Report</a></p>
 </section>
-<section id="pre-trained-models-out-of-the-box-1" class="slide level2 center">
-<h2>Pre-trained models out-of-the-box</h2>
+<section id="self-attention" class="slide level2 center">
+<h2>Self-attention</h2>
 <p><br>
 </p>
 <ul>
-<li>We can easily download famous models using the <code>torchvision.models</code> module. All models are available with pre-trained weights (based on ImageNet’s 224 x 224 images)</li>
-<li>We used a pre-trained model vgg16 which is trained on the ImageNet data.</li>
-<li>We preprocess the given image.</li>
-<li>We get prediction from this pre-trained model on a given image along with prediction probabilities.<br>
-</li>
-<li>For a given image, this model will spit out one of the 1000 classes from ImageNet.</li>
+<li>An important innovation which makes these models work so well is <strong>self-attention</strong>.</li>
+<li>Count how many times the players wearing the white pass the basketball?</li>
 </ul>
+<div id="fed93de5" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
+
+        <iframe width="500" height="500" src="https://www.youtube.com/embed/vJG698U2Mvo" frameborder="0" allowfullscreen=""></iframe>
+        
+</div>
+</div>
 </section>
-<section id="pre-trained-models-out-of-the-box-2" class="slide level2 scrollable center">
-<h2>Pre-trained models out-of-the-box</h2>
+<section id="self-attention-1" class="slide level2 center">
+<h2>Self-attention</h2>
+<p><br>
+</p>
+<p>When we process information, we often selectively focus on specific parts of the input, giving more attention to relevant information and less attention to irrelevant information. This is the core idea of <strong>attention</strong>.</p>
+<p>Consider the examples below:</p>
 <ul>
-<li>Let’s predict labels with associated probabilities for unseen images</li>
+<li><p>Example 1: She left a brief <strong>note</strong> on the kitchen table, reminding him to pick up groceries.</p></li>
+<li><p>Example 2: The diplomat’s speech struck a positive <strong>note</strong> in the peace negotiations.</p></li>
+<li><p>Example 3: She plucked the guitar strings, ending with a melancholic <strong>note</strong>.</p></li>
 </ul>
-<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="465eb7e3" class="cell" data-execution_count="5">
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-6-output-1.png" width="434" height="325"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                         Class  Probability score
-                     tiger cat              0.353
-              tabby, tabby cat              0.207
-               lynx, catamount              0.050
-Pembroke, Pembroke Welsh corgi              0.046
---------------------------------------------------------------</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-6-output-3.png" width="324" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                                     Class  Probability score
-         cheetah, chetah, Acinonyx jubatus              0.983
-                  leopard, Panthera pardus              0.012
-jaguar, panther, Panthera onca, Felis onca              0.004
-       snow leopard, ounce, Panthera uncia              0.001
---------------------------------------------------------------</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-6-output-5.png" width="309" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                                   Class  Probability score
-                                 macaque              0.714
-patas, hussar monkey, Erythrocebus patas              0.122
-      proboscis monkey, Nasalis larvatus              0.098
-                   guenon, guenon monkey              0.017
---------------------------------------------------------------</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-6-output-7.png" width="299" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                        Class  Probability score
-Walker hound, Walker foxhound              0.580
-             English foxhound              0.091
-                  EntleBucher              0.080
-                       beagle              0.065
---------------------------------------------------------------</code></pre>
-</div>
-</div>
-</div>
+<p>The word <strong>note</strong> in these examples serves quite distinct meanings, each tied to different contexts. To capture varying word meanings across different contexts, we need a mechanism that considers the wider context to compute each word’s contextual representation.</p>
+<ul>
+<li><strong>Self-attention</strong> is just that mechanism!</li>
+</ul>
 </section>
-<section id="pre-trained-models-out-of-the-box-3" class="slide level2 center">
-<h2>Pre-trained models out-of-the-box</h2>
+<section id="using-llms-in-your-applications" class="slide level2 center">
+<h2>Using LLMs in your applications</h2>
 <p><br>
 </p>
 <ul>
-<li>We got these predictions without “doing the ML ourselves”.</li>
-<li>We are using <strong>pre-trained</strong> <code>vgg16</code> model which is available in <code>torchvision</code>.
+<li>There are several Python libraries available which allow us to use pre-trained LLMs in our applications.
 <ul>
-<li><code>torchvision</code> has many such pre-trained models available that have been very successful across a wide range of tasks: AlexNet, VGG, ResNet, Inception, MobileNet, etc.</li>
+<li><a href="https://huggingface.co/docs/transformers/index">🤗 Transformers library</a></li>
+<li><a href="https://pypi.org/project/openai/">OpenAI GPT</a></li>
+<li><a href="https://pypi.org/project/farm-haystack/">Haystack</a></li>
+<li><a href="https://python.langchain.com/v0.2/docs/introduction/">LangChain</a></li>
+<li><a href="https://spacy.io/universe/project/spacy-transformers"><code>spacy-transformers</code></a></li>
+<li>…</li>
 </ul></li>
-<li>Many of these models have been pre-trained on famous datasets like <strong>ImageNet</strong>.</li>
-<li>So if we use them out-of-the-box, they will give us one of the ImageNet classes as classification.</li>
 </ul>
 </section>
-<section id="pre-trained-models-out-of-the-box-4" class="slide level2 smaller center">
-<h2>Pre-trained models out-of-the-box</h2>
+<section id="types-of-llms" class="slide level2 center">
+<h2>Types of LLMs</h2>
+<p>If you want to use pre-trained LLMs, it’s useful to know that there are three main types of LLMs.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 26%">
+<col style="width: 32%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Decoder-only (e.g., GPT-3)</th>
+<th>Encoder-only (e.g., BERT, RoBERTa)</th>
+<th>Encoder decoder (e.g., T5, BARD)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Output Computation is based on</td>
+<td>Information earlier in the context</td>
+<td>Entire context (bidirectional)</td>
+<td>Encoded input context</td>
+</tr>
+<tr class="even">
+<td>Text Generation</td>
+<td>Can naturally generate text completion</td>
+<td>Cannot directly generate text</td>
+<td>Can generate outputs naturally</td>
+</tr>
+<tr class="odd">
+<td>Example</td>
+<td>DSI ML workshop audience is ___</td>
+<td>DSI ML workshop audience is the best! → positive</td>
+<td>Input: Translate to Mandarin: Long but productive day! Output: 漫长而富有成效的一天！</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pipelines-before-llms" class="slide level2 center">
+<h2>Pipelines before LLMs</h2>
 <p><br>
 </p>
 <ul>
-<li>Let’s try some images which are unlikely to be there in ImageNet.</li>
-<li>It’s not doing very well here because ImageNet doesn’t have proper classes for these images.</li>
-</ul>
-<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="f4a243ed" class="cell" data-execution_count="6">
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-7-output-1.png" width="549" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>         Class  Probability score
-cucumber, cuke              0.146
-         plate              0.117
-     guacamole              0.099
-  Granny Smith              0.091
---------------------------------------------------------------</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-7-output-3.png" width="702" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                                      Class  Probability score
-                                        fig              0.637
-                                pomegranate              0.193
-grocery store, grocery, food market, market              0.041
-                                      crate              0.023
---------------------------------------------------------------</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-7-output-5.png" width="611" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                                               Class  Probability score
-                                         toilet seat              0.171
-                                          safety pin              0.060
-bannister, banister, balustrade, balusters, handrail              0.039
-                                              bubble              0.035
---------------------------------------------------------------</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-7-output-7.png" width="428" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                  Class  Probability score
-                   vase              0.078
-                thimble              0.074
-             plate rack              0.049
-saltshaker, salt shaker              0.047
---------------------------------------------------------------</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-7-output-9.png" width="331" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                      Class  Probability score
-           pizza, pizza pie              0.998
-frying pan, frypan, skillet              0.001
-                     potpie              0.000
-                French loaf              0.000
---------------------------------------------------------------</code></pre>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-7-output-11.png" width="607" height="416"></p>
-</figure>
-</div>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>              Class  Probability score
-     patio, terrace              0.213
-           fountain              0.164
-lakeside, lakeshore              0.097
-            sundial              0.088
---------------------------------------------------------------</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="pre-trained-models-out-of-the-box-5" class="slide level2 center">
-<h2>Pre-trained models out-of-the-box</h2>
-<p><br>
-</p>
+<li>Text preprocessing: Tokenization, stopword removal, stemming/lemmatization.</li>
+<li><strong>Feature extraction</strong>: Bag of Words or word embeddings.</li>
+<li>Training: Supervised learning on a labeled dataset (e.g., with positive, negative, and neutral sentiment categories for sentiment analysis).</li>
+<li>Evaluation: Performance typically measured using accuracy, F1-score, etc.</li>
+<li><strong>Main challenges:</strong>
 <ul>
-<li>Here we are using pre-trained models out-of-the-box.</li>
-<li>Can we use pre-trained models for our own classification problem with our classes?</li>
-<li>Yes!! We have two options here:
-<ol type="1">
-<li>Add some extra layers to the pre-trained network to suit our particular task</li>
-<li>Pass training data through the network and save the output to use as features for training some other model</li>
-</ol></li>
+<li>Extensive feature engineering required for good performance.</li>
+<li>Difficulty in capturing the nuances and context of sentiment, especially in complex sentences.</li>
+</ul></li>
 </ul>
 </section>
-<section id="pre-trained-models-to-extract-features" class="slide level2 center">
-<h2>Pre-trained models to extract features</h2>
-<p><br>
-</p>
-<ul>
-<li>Let’s use pre-trained models to extract features.</li>
-<li>We will pass our specific data through a pre-trained network to get a feature vector for each example in the data.</li>
-<li>The feature vector is usually extracted from the last layer, before the classification layer from the pre-trained network.</li>
-<li>You can think of each layer a transformer applying some transformations on the input received to that later.</li>
-</ul>
-
-<img data-src="img/cnn-ex.png" class="r-stretch"></section>
-<section id="pre-trained-models-to-extract-features-1" class="slide level2 center">
-<h2>Pre-trained models to extract features</h2>
-<p><br>
-</p>
-<ul>
-<li>Once we extract these feature vectors for all images in our training data, we can train a machine learning classifier such as logistic regression or random forest.</li>
-<li>This classifier will be trained on our classes using feature representations extracted from the pre-trained models.<br>
-</li>
-<li>Let’s try this out.</li>
-<li>It’s better to train such models with GPU. Since our dataset is quite small, we won’t have problems running it on a CPU.</li>
-</ul>
-</section>
-<section id="pre-trained-models-to-extract-features-2" class="slide level2 center">
-<h2>Pre-trained models to extract features</h2>
-<p><br>
-</p>
-<p>Let’s look at some sample images in the dataset.</p>
-<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="27fcb433" class="cell" data-execution_count="7">
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-8-output-1.png" width="611" height="631"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="dataset-statistics" class="slide level2 center">
-<h2>Dataset statistics</h2>
-<p><br>
-</p>
-<p>Here is the stat of our toy dataset.</p>
-<div id="2861674f" class="cell" data-execution_count="8">
-<div class="cell-output cell-output-stdout">
-<pre><code>Classes: ['beet_salad', 'chocolate_cake', 'edamame', 'french_fries', 'pizza', 'spring_rolls', 'sushi']
-Class count: 40, 38, 40
-Samples: 283
-First sample: ('data/food/train/beet_salad/104294.jpg', 0)</code></pre>
-</div>
-</div>
-</section>
-<section id="pre-trained-models-to-extract-features-3" class="slide level2 center">
-<h2>Pre-trained models to extract features</h2>
-<p><br>
-</p>
-<ul>
-<li>Now for each image in our dataset, we’ll extract a feature vector from a pre-trained model called densenet121, which is trained on the ImageNet dataset.</li>
-</ul>
-</section>
-<section id="shape-of-the-feature-vector" class="slide level2 center">
-<h2>Shape of the feature vector</h2>
-<p><br>
-</p>
-<ul>
-<li>Now we have extracted feature vectors for all examples. What’s the shape of these features?</li>
-</ul>
-<div id="4cc98652" class="cell" data-execution_count="10">
-<div class="cell-output cell-output-display" data-execution_count="10">
-<pre><code>torch.Size([283, 1024])</code></pre>
-</div>
-</div>
-<ul>
-<li>The size of each feature vector is 1024 because the size of the last layer in densenet architecture is 1024.</li>
-</ul>
-
-<img data-src="img/densenet-architecture.png" class="r-stretch"><p><a href="https://towardsdatascience.com/understanding-and-visualizing-densenets-7f688092391a">Source</a></p>
-</section>
-<section id="a-feature-vector-given-by-densenet" class="slide level2 center">
-<h2>A feature vector given by densenet</h2>
+<section id="pipelines-after-llms" class="slide level2 center">
+<h2>Pipelines after LLMs</h2>
 <p>&nbsp;</p>
-<ul>
-<li>Let’s examine the feature vectors.</li>
-</ul>
-<div id="0a075ad5" class="cell" data-execution_count="11">
-<div class="cell-output cell-output-display" data-execution_count="11">
+<div id="dfc0b856" class="cell" data-execution_count="4">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline, AutoModelForTokenClassification, AutoTokenizer</span>
+<span id="cb1-2"><a></a><span class="co"># Sentiment analysis pipeline</span></span>
+<span id="cb1-3"><a></a>analyzer <span class="op">=</span> pipeline(<span class="st">"sentiment-analysis"</span>, model<span class="op">=</span><span class="st">'distilbert-base-uncased-finetuned-sst-2-english'</span>)</span>
+<span id="cb1-4"><a></a>analyzer([<span class="st">"I asked my model to predict my future, and it said '404: Life not found.'"</span>,</span>
+<span id="cb1-5"><a></a>          <span class="st">'''Machine learning is just like cooking—sometimes you follow the recipe, </span></span>
+<span id="cb1-6"><a></a><span class="st">            and other times you just hope for the best!.'''</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>[{'label': 'NEGATIVE', 'score': 0.995707631111145},
+ {'label': 'POSITIVE', 'score': 0.9994770884513855}]</code></pre>
+</div>
+</div>
+</section>
+<section id="zero-shot-learning" class="slide level2 center">
+<h2>Zero-shot learning</h2>
+<p><br>
+</p>
+<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
+<div id="325a8302" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>['i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived',
+ 'i was feeling a little vain when i did this one',
+ 'i cant walk into a shop anywhere where i do not feel uncomfortable',
+ 'i felt anger when at the end of a telephone call',
+ 'i explain why i clung to a relationship with a boy who was in many ways immature and uncommitted despite the excitement i should have been feeling for getting accepted into the masters program at the university of virginia',
+ 'i like to have the same breathless feeling as a reader eager to see what will happen next',
+ 'i jest i feel grumpy tired and pre menstrual which i probably am but then again its only been a week and im about as fit as a walrus on vacation for the summer',
+ 'i don t feel particularly agitated',
+ 'i feel beautifully emotional knowing that these women of whom i knew just a handful were holding me and my baba on our journey',
+ 'i pay attention it deepens into a feeling of being invaded and helpless',
+ 'i just feel extremely comfortable with the group of people that i dont even need to hide myself',
+ 'i find myself in the odd position of feeling supportive of']</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="zero-shot-learning-for-emotion-detection" class="slide level2 center">
+<h2>Zero-shot learning for emotion detection</h2>
+<p><br>
+</p>
+<div id="6eccbc5c" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer</span>
+<span id="cb4-2"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline </span>
+<span id="cb4-3"><a></a><span class="im">import</span> torch</span>
+<span id="cb4-4"><a></a></span>
+<span id="cb4-5"><a></a><span class="co">#Load the pretrained model</span></span>
+<span id="cb4-6"><a></a>model_name <span class="op">=</span> <span class="st">"facebook/bart-large-mnli"</span></span>
+<span id="cb4-7"><a></a>classifier <span class="op">=</span> pipeline(<span class="st">'zero-shot-classification'</span>, model<span class="op">=</span>model_name)</span>
+<span id="cb4-8"><a></a>exs <span class="op">=</span> dataset[<span class="st">"test"</span>][<span class="st">"text"</span>][:<span class="dv">10</span>]</span>
+<span id="cb4-9"><a></a>candidate_labels <span class="op">=</span> [<span class="st">"sadness"</span>, <span class="st">"joy"</span>, <span class="st">"love"</span>,<span class="st">"anger"</span>, <span class="st">"fear"</span>, <span class="st">"surprise"</span>]</span>
+<span id="cb4-10"><a></a>outputs <span class="op">=</span> classifier(exs, candidate_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="zero-shot-learning-for-emotion-detection-1" class="slide level2 center">
+<h2>Zero-shot learning for emotion detection</h2>
+<p><br>
+</p>
+<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
+<div id="e62ac9db" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -903,265 +674,92 @@ First sample: ('data/food/train/beet_salad/104294.jpg', 0)</code></pre>
 <thead>
 <tr class="header" style="text-align: right;">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">0</th>
-<th data-quarto-table-cell-role="th">1</th>
-<th data-quarto-table-cell-role="th">2</th>
-<th data-quarto-table-cell-role="th">3</th>
-<th data-quarto-table-cell-role="th">4</th>
-<th data-quarto-table-cell-role="th">5</th>
-<th data-quarto-table-cell-role="th">6</th>
-<th data-quarto-table-cell-role="th">7</th>
-<th data-quarto-table-cell-role="th">8</th>
-<th data-quarto-table-cell-role="th">9</th>
-<th data-quarto-table-cell-role="th">...</th>
-<th data-quarto-table-cell-role="th">1014</th>
-<th data-quarto-table-cell-role="th">1015</th>
-<th data-quarto-table-cell-role="th">1016</th>
-<th data-quarto-table-cell-role="th">1017</th>
-<th data-quarto-table-cell-role="th">1018</th>
-<th data-quarto-table-cell-role="th">1019</th>
-<th data-quarto-table-cell-role="th">1020</th>
-<th data-quarto-table-cell-role="th">1021</th>
-<th data-quarto-table-cell-role="th">1022</th>
-<th data-quarto-table-cell-role="th">1023</th>
+<th data-quarto-table-cell-role="th">sequence</th>
+<th data-quarto-table-cell-role="th">labels</th>
+<th data-quarto-table-cell-role="th">scores</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>0.000290</td>
-<td>0.003821</td>
-<td>0.005015</td>
-<td>0.001307</td>
-<td>0.052690</td>
-<td>0.063403</td>
-<td>0.000626</td>
-<td>0.001850</td>
-<td>0.256254</td>
-<td>0.000223</td>
-<td>...</td>
-<td>0.229935</td>
-<td>1.046375</td>
-<td>2.241259</td>
-<td>0.229641</td>
-<td>0.033674</td>
-<td>0.742792</td>
-<td>1.338698</td>
-<td>2.130880</td>
-<td>0.625475</td>
-<td>0.463088</td>
+<td>im feeling rather rotten so im not very ambiti...</td>
+<td>[sadness, anger, surprise, fear, joy, love]</td>
+<td>[0.7367963194847107, 0.10041721910238266, 0.09...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>0.000407</td>
-<td>0.005973</td>
-<td>0.003206</td>
-<td>0.001932</td>
-<td>0.090702</td>
-<td>0.438523</td>
-<td>0.001513</td>
-<td>0.003906</td>
-<td>0.166081</td>
-<td>0.000286</td>
-<td>...</td>
-<td>0.910680</td>
-<td>1.580815</td>
-<td>0.087191</td>
-<td>0.606904</td>
-<td>0.436106</td>
-<td>0.306456</td>
-<td>0.940102</td>
-<td>1.159818</td>
-<td>1.712705</td>
-<td>1.624753</td>
+<td>im updating my blog because i feel shitty</td>
+<td>[sadness, surprise, anger, fear, joy, love]</td>
+<td>[0.7429746985435486, 0.13775986433029175, 0.05...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>0.000626</td>
-<td>0.005090</td>
-<td>0.002887</td>
-<td>0.001299</td>
-<td>0.091715</td>
-<td>0.548537</td>
-<td>0.000491</td>
-<td>0.003587</td>
-<td>0.266537</td>
-<td>0.000408</td>
-<td>...</td>
-<td>0.465152</td>
-<td>0.678276</td>
-<td>0.946387</td>
-<td>1.194697</td>
-<td>2.537747</td>
-<td>1.642383</td>
-<td>0.701200</td>
-<td>0.115620</td>
-<td>0.186433</td>
-<td>0.166605</td>
+<td>i never make her separate from me because i do...</td>
+<td>[love, sadness, surprise, fear, anger, joy]</td>
+<td>[0.3153638243675232, 0.22490324079990387, 0.19...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>0.000169</td>
-<td>0.006087</td>
-<td>0.002489</td>
-<td>0.002167</td>
-<td>0.087537</td>
-<td>0.623212</td>
-<td>0.000427</td>
-<td>0.000226</td>
-<td>0.460680</td>
-<td>0.000388</td>
-<td>...</td>
-<td>0.394083</td>
-<td>0.700158</td>
-<td>0.105200</td>
-<td>0.856323</td>
-<td>0.038457</td>
-<td>0.023948</td>
-<td>0.131838</td>
-<td>1.296370</td>
-<td>0.723323</td>
-<td>1.915215</td>
+<td>i left with my bouquet of red and yellow tulip...</td>
+<td>[surprise, joy, love, sadness, fear, anger]</td>
+<td>[0.42182087898254395, 0.3336702883243561, 0.21...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>0.000286</td>
-<td>0.005520</td>
-<td>0.001906</td>
-<td>0.001599</td>
-<td>0.186034</td>
-<td>0.850148</td>
-<td>0.000835</td>
-<td>0.003025</td>
-<td>0.036309</td>
-<td>0.000142</td>
-<td>...</td>
-<td>3.313760</td>
-<td>0.565744</td>
-<td>0.473564</td>
-<td>0.139446</td>
-<td>0.029283</td>
-<td>1.165938</td>
-<td>0.442319</td>
-<td>0.227593</td>
-<td>0.884266</td>
-<td>1.592698</td>
+<td>i was feeling a little vain when i did this one</td>
+<td>[surprise, anger, fear, love, joy, sadness]</td>
+<td>[0.5639430284500122, 0.17000176012516022, 0.08...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>i cant walk into a shop anywhere where i do no...</td>
+<td>[surprise, fear, sadness, anger, joy, love]</td>
+<td>[0.37033382058143616, 0.36559492349624634, 0.1...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>i felt anger when at the end of a telephone call</td>
+<td>[anger, surprise, fear, sadness, joy, love]</td>
+<td>[0.9760521054267883, 0.01253431849181652, 0.00...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>i explain why i clung to a relationship with a...</td>
+<td>[surprise, joy, love, sadness, fear, anger]</td>
+<td>[0.4382022023200989, 0.232231006026268, 0.1298...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>i like to have the same breathless feeling as ...</td>
+<td>[surprise, joy, love, fear, anger, sadness]</td>
+<td>[0.7675782442092896, 0.13846899569034576, 0.03...</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>i jest i feel grumpy tired and pre menstrual w...</td>
+<td>[surprise, sadness, anger, fear, joy, love]</td>
+<td>[0.7340186834335327, 0.11860235780477524, 0.07...</td>
 </tr>
 </tbody>
 </table>
 
-<p>5 rows × 1024 columns</p>
-</div>
-</div>
-</div>
-<ul>
-<li>The features are hard to interpret but they have some important information about the images which can be useful for classification.</li>
-</ul>
-</section>
-<section id="logistic-regression-with-the-extracted-features" class="slide level2 center">
-<h2>Logistic regression with the extracted features</h2>
-<p><br>
-</p>
-<ul>
-<li>Let’s try out logistic regression on these extracted features.</li>
-</ul>
-<div id="01e0e644" class="cell" data-execution_count="12">
-<div class="cell-output cell-output-stdout">
-<pre><code>Training score:  1.0</code></pre>
-</div>
-</div>
-<div id="06f76692" class="cell" data-execution_count="13">
-<div class="cell-output cell-output-stdout">
-<pre><code>Validation score:  0.835820895522388</code></pre>
-</div>
-</div>
-<ul>
-<li>This is great accuracy for so little data and little effort!!!</li>
-</ul>
-</section>
-<section id="sample-predictions" class="slide level2 center">
-<h2>Sample predictions</h2>
-<p><br>
-</p>
-<p>Let’s examine some sample predictions on the validation set.</p>
-<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="2ad168d1" class="cell" data-execution_count="14">
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-15-output-1.png" width="1151" height="1901"></p>
-</figure>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="object-detection" class="slide level2 center">
-<h2>Object detection</h2>
-<p><br>
-</p>
+<section id="harms-of-large-language-models" class="slide level2 center">
+<h2>Harms of large language models</h2>
+<p>While these models are super powerful and useful, be mindful of the harms caused by these models. Some of the harms as summarized <a href="https://stanford-cs324.github.io/winter2022/lectures/harms-1/">here</a> are:</p>
 <ul>
-<li>Another useful task and tool to know is object detection using YOLO model.</li>
-<li>Let’s identify objects in a sample image using a pretrained model called YOLO8.</li>
-<li>List the objects present in this image.</li>
-</ul>
-
-<img data-src="data/yolo_test/3356700488_183566145b.jpg" class="r-stretch"></section>
-<section id="object-detection-using-yolo" class="slide level2 center">
-<h2>Object detection using <a href="https://docs.ultralytics.com/">YOLO</a></h2>
-<p><br>
-</p>
-<p>Let’s try this out using a pre-trained model.</p>
-<div id="2d4605ae" class="cell" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a></a><span class="im">from</span> ultralytics <span class="im">import</span> YOLO</span>
-<span id="cb15-2"><a></a>model <span class="op">=</span> YOLO(<span class="st">"yolov8n.pt"</span>)  <span class="co"># pretrained YOLOv8n model</span></span>
-<span id="cb15-3"><a></a></span>
-<span id="cb15-4"><a></a>yolo_input <span class="op">=</span> <span class="st">"data/yolo_test/3356700488_183566145b.jpg"</span></span>
-<span id="cb15-5"><a></a>yolo_result <span class="op">=</span> <span class="st">"data/yolo_result.jpg"</span></span>
-<span id="cb15-6"><a></a><span class="co"># Run batched inference on a list of images</span></span>
-<span id="cb15-7"><a></a>result <span class="op">=</span> model(yolo_input)  <span class="co"># return a list of Results objects</span></span>
-<span id="cb15-8"><a></a>result[<span class="dv">0</span>].save(filename<span class="op">=</span>yolo_result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-image 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 68.4ms
-Speed: 1.2ms preprocess, 68.4ms inference, 6.6ms postprocess per image at shape (1, 3, 512, 640)</code></pre>
-</div>
-<div class="cell-output cell-output-display" data-execution_count="15">
-<pre><code>'data/yolo_result.jpg'</code></pre>
-</div>
-</div>
-</section>
-<section id="object-detection-output" class="slide level2 center">
-<h2>Object detection output</h2>
-<p><br>
-</p>
-<div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="d12564f8" class="cell" data-execution_count="16">
-<div class="cell-output cell-output-display">
-<div>
-<figure>
-<p><img data-src="slides-04-deep-learning_files/figure-revealjs/cell-17-output-1.png" width="950" height="401"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="summary" class="slide level2 center">
-<h2>Summary</h2>
-<p><br>
-</p>
-<ul>
-<li>Neural networks are a flexible class of models.
-<ul>
-<li>They are particular powerful for structured input like images, videos, audio, etc.</li>
-<li>They can be challenging to train and often require significant computational resources.</li>
-</ul></li>
-<li>The good news is we can use pre-trained neural networks.
-<ul>
-<li>This saves us a huge amount of time/cost/effort/resources.</li>
-<li>We can use these pre-trained networks directly or use them as feature transformers.</li>
-</ul></li>
+<li>performance disparties</li>
+<li>social biases and stereotypes</li>
+<li>toxicity</li>
+<li>misinformation</li>
+<li>security and privacy risks</li>
+<li>copyright and legal protections</li>
+<li>environmental impact</li>
+<li>centralization of power</li>
 </ul>
 </section>
 <section id="thank-you" class="slide level2 center">
