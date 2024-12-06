@@ -441,4 +441,4 @@ plt.show()
 
 ## Thank you! 
 
-- That's it for the modules! Now, let's begin the game time.
+- That's it for the module! Let's practice what you've just learned. 

@@ -665,28 +665,28 @@
   {
     "objectID": "slides/slides-05-deep-learning-exercise.html#game-time",
     "href": "slides/slides-05-deep-learning-exercise.html#game-time",
-    "title": "Deep Learning Exercise",
+    "title": "Exercise 2: Transfer Learning",
     "section": "Game Time",
-    "text": "Game Time\nHere is a Jupyter notebook you can download for further exploration: Download and Save the Jupyter Notebook\nFollow the guidelines in the next page."
+    "text": "Game Time\nHere is a Jupyter notebook you can download for further exploration:\nDownload and Save the Jupyter Notebook"
   },
   {
     "objectID": "slides/slides-05-deep-learning-exercise.html#how-to-work-on-kaggle",
     "href": "slides/slides-05-deep-learning-exercise.html#how-to-work-on-kaggle",
-    "title": "Deep Learning Exercise",
+    "title": "Exercise 2: Transfer Learning",
     "section": "How To Work On Kaggle",
-    "text": "How To Work On Kaggle\n\nGo to https://www.kaggle.com/kernels\nMake an account if you don’t have one, and verify your phone number (to get access to GPUs)\nSelect + New Notebook \nGo to File -&gt; Import Notebook \nUpload this notebook"
+    "text": "How To Work On Kaggle\n\nGo to https://www.kaggle.com/kernels\nMake an account if you don’t have one, and verify your phone number (to get access to GPUs)\nSelect + New Notebook \nGo to File -&gt; Import Notebook \nUpload the downloaded notebook"
   },
   {
     "objectID": "slides/slides-05-deep-learning-exercise.html#how-to-work-on-kaggle-1",
     "href": "slides/slides-05-deep-learning-exercise.html#how-to-work-on-kaggle-1",
-    "title": "Deep Learning Exercise",
+    "title": "Exercise 2: Transfer Learning",
     "section": "How To Work On Kaggle",
     "text": "How To Work On Kaggle\n\nOn the right-hand side of your Kaggle notebook, make sure:\n\n\nInternet is enabled.\nIn the Accelerator dropdown, choose GPU when you’re ready to use it (you can turn it on/off as you need it).\n\n\nFollow the guidelines in the notebook"
   },
   {
     "objectID": "slides/slides-05-deep-learning-exercise.html#how-to-add-a-dataset",
     "href": "slides/slides-05-deep-learning-exercise.html#how-to-add-a-dataset",
-    "title": "Deep Learning Exercise",
+    "title": "Exercise 2: Transfer Learning",
     "section": "How To Add a Dataset",
     "text": "How To Add a Dataset\n\nClick + Add data at the top right of the notebook.\nChoose Datasets and search for the keyword (e.g. ‘cat-breed-mardhik’). Several datasets will appear. Look for and ‘Add’ the dataset."
   },
@@ -1274,7 +1274,7 @@
     "href": "slides/slides-04-deep-learning.html#object-detection-using-yolo",
     "title": "Deep Learning",
     "section": "Object detection using YOLO",
-    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 80.5ms\nSpeed: 3.9ms preprocess, 80.5ms inference, 7.0ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
+    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 83.1ms\nSpeed: 4.3ms preprocess, 83.1ms inference, 10.9ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#object-detection-output",
@@ -1295,6 +1295,6 @@
     "href": "slides/slides-04-deep-learning.html#thank-you",
     "title": "Deep Learning",
     "section": "Thank you!",
-    "text": "Thank you!\n\nThat’s it for the modules! Now, let’s begin the game time."
+    "text": "Thank you!\n\nThat’s it for the module! Let’s practice what you’ve just learned."
   }
 ]

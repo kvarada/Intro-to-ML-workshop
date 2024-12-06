@@ -1,5 +1,5 @@
 ---
-title: "Deep Learning Exercise"
+title: "Exercise 2: Transfer Learning"
 format: 
     revealjs:
       smaller: true
@@ -9,11 +9,14 @@ format:
 ## Game Time
 
 Here is a Jupyter notebook you can download for further exploration:
+
+[Download and Save the Jupyter Notebook](https://github.com/kvarada/Intro-to-ML-workshop-2024/blob/main/website/slides/downloads/exercise-02-deep-learning.ipynb)
+
+<!--
 [Download and Save the Jupyter Notebook](downloads/exercise-02-deep-learning.ipynb){.btn .btn-primary}
-
 Follow the guidelines in the next page.
-
 <img src="img/save_notebook.png" alt="drawing" width="400"/>
+-->
 
 ## How To Work On Kaggle
 
@@ -25,7 +28,7 @@ Follow the guidelines in the next page.
 4. Go to `File -> Import Notebook`
 <img src="img/import_notebook.png" alt="drawing" width="400"/>
 
-5. Upload this notebook
+5. Upload the downloaded notebook
 
 
 ## How To Work On Kaggle
