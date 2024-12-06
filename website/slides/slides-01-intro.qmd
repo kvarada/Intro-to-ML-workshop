@@ -38,10 +38,18 @@ editor:
 \
 
 - The primary learning goal of the workshop is to familiarize yourself with the fundamentals of machine learning and its various types. This knowledge will help you determine which type of machine learning, or whether a non-machine learning approach, would be most appropriate for your problem.
+
+
+## Agenda
 - We will have four modules in the workshop
   - Module 1: Machine learning fundamentals 
   - Module 2: Supervised machine learning models 
   - Module 3: Introduction to deep learning
   - Module 4: Introduction to large language models 
 
-  There will be hands-on exercises associated with these modules. 
+- Each module will include hands-on exercises to reinforce learning.
+- We'll also make sure to take some breaks in between sessions. 
+
+# Let's get started! Buckle up and enjoy the ride! 
+
+![](img/eva-hippo-ride.png)
