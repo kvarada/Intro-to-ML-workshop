@@ -8,15 +8,16 @@ page-navigation: false
 listing:
   template: about.ejs
   contents:
-    - name: Varada Kolhatkar
-      instructor: true
-      role: "Assistant Professor of Teaching, Computer Science, Master of Data Science"
-      image: varada.png
     - name: Prajeet Bajpai
       instructor: true
       role: "Teaching Postdoctoral Fellow, Master of Data Science"
       image: prajeet.jpg
+    - name: Varada Kolhatkar
+      instructor: true
+      role: "Assistant Professor of Teaching, Computer Science, Master of Data Science"
+      image: varada.png
     - name: Tony Shum
+      role: "Data Engineer & Data Scientist"
       image: tony.jpeg
       assistant: true
     - name: Michele Ng

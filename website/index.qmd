@@ -3,7 +3,7 @@
 Welcome everyone to the "CS Alumni Workshop: Is Machine Learning Suitable for Your Projects?" 
 
 - **When** 🕘
-    9:00 am to 4:00 pm on December 7th, 2024
+    9:30 am to 4:00 pm on December 7th, 2024
 
 - **Where?** 📍
     [Room 4074 of the UBC Orchard Commons](https://learningspaces.ubc.ca/classrooms/orch-4074), 6363 Agronomy Rd, Vancouver, BC V6T 1Z4
