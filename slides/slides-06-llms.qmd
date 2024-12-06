@@ -22,14 +22,13 @@ import pandas as pd
 ## Language models activity 
 \
 
-Each of you will receive a sticky note with a word on it. Here's what you'll do:
+Each of you will receive a sticky note with a word on it at some point. Here's what you'll do:
 
-- Carefully **remove the sticky note to see the word**. This word is for your eyes only —- no peeking, neighbours!
+- Carefully **remove the sticky note to see the word**. This word is for your eyes only —- don't show it to your neighbours!
 - Think quickly: what word would logically follow the word on the sticky note? **Write this next word on a new sticky note**.
 - You have about 20 seconds for this step, so trust your instincts!
 - **Pass your predicted word to the person next to you**. Do not pass the word you **received** from your neighbour forward. Keep the chain going!
-- Stop after the last person in your row has finished. 
-- Finally, one person from your row will enter the collective sentence into [our Google Doc](https://docs.google.com/document/d/1TdmH5LKLC0Y9IWySC4FgsYX0dsNtkX_dBcc7FSSrQg0/edit#heading=h.h4gszne09tpb).
+- Stop after the last person in your row/table has finished. 
 
 <br><br><br><br>
 

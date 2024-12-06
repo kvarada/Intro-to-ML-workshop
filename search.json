@@ -116,7 +116,7 @@
     "href": "slides/slides-03-ml-models.html#testing-performance-1",
     "title": "Supervised Machine Learning Models",
     "section": "Testing Performance",
-    "text": "Testing Performance\n\n\nLet’s see how the model performs after training.\n\n\n\n\n\n\n\n\n\nfit_time\nscore_time\ntest_score\ntrain_score\n\n\n\n\n0\n0.414605\n0.064162\n0.828\n0.99975\n\n\n1\n0.405794\n0.063070\n0.830\n0.99975\n\n\n2\n0.397011\n0.061530\n0.848\n0.99975\n\n\n3\n0.384352\n0.060801\n0.833\n1.00000\n\n\n4\n0.380680\n0.062513\n0.840\n0.99975\n\n\n\n\n\n\n\n\nWe’re able to predict with roughly 84% accuracy on validation sets. Looks like our model learned something!"
+    "text": "Testing Performance\n\n\nLet’s see how the model performs after training.\n\n\n\n\n\n\n\n\n\nfit_time\nscore_time\ntest_score\ntrain_score\n\n\n\n\n0\n0.560845\n0.115263\n0.828\n0.99975\n\n\n1\n0.561880\n0.118652\n0.830\n0.99975\n\n\n2\n0.573375\n0.115782\n0.848\n0.99975\n\n\n3\n0.562171\n0.115407\n0.833\n1.00000\n\n\n4\n0.554538\n0.117706\n0.840\n0.99975\n\n\n\n\n\n\n\n\nWe’re able to predict with roughly 84% accuracy on validation sets. Looks like our model learned something!"
   },
   {
     "objectID": "slides/slides-03-ml-models.html#tuning-hyperparameters",
@@ -137,7 +137,7 @@
     "href": "slides/slides-03-ml-models.html#investigating-the-model",
     "title": "Supervised Machine Learning Models",
     "section": "Investigating the model",
-    "text": "Investigating the model\n\n\n\nLet’s see what associations our model learned.\n\n\n\n\n\n\n\n\n\nCoefficient\n\n\n\n\nexcellent\n0.829925\n\n\namazing\n0.659019\n\n\nperfect\n0.652637\n\n\nwonderful\n0.614264\n\n\nsurprised\n0.591126\n\n\n...\n...\n\n\nwaste\n-0.741045\n\n\nterrible\n-0.771132\n\n\nboring\n-0.774340\n\n\nawful\n-0.937574\n\n\nworst\n-1.200254\n\n\n\n\n15102 rows × 1 columns"
+    "text": "Investigating the model\n\n\n\nLet’s see what associations our model learned.\n\n\n\n\n\n\n\n\n\nCoefficient\n\n\n\n\nexcellent\n0.933518\n\n\nperfect\n0.782269\n\n\nsurprised\n0.764706\n\n\namazing\n0.763805\n\n\nwonderful\n0.750105\n\n\n...\n...\n\n\nwaste\n-0.898678\n\n\nboring\n-0.911756\n\n\nterrible\n-0.918246\n\n\nawful\n-1.115507\n\n\nworst\n-1.402834\n\n\n\n\n23218 rows × 1 columns"
   },
   {
     "objectID": "slides/slides-03-ml-models.html#investigating-the-model-1",
@@ -249,7 +249,7 @@
     "href": "slides/slides-06-llms.html#language-models-activity",
     "title": "Large Language Models",
     "section": "Language models activity",
-    "text": "Language models activity\n\n\nEach of you will receive a sticky note with a word on it. Here’s what you’ll do:\n\nCarefully remove the sticky note to see the word. This word is for your eyes only —- no peeking, neighbours!\nThink quickly: what word would logically follow the word on the sticky note? Write this next word on a new sticky note.\nYou have about 20 seconds for this step, so trust your instincts!\nPass your predicted word to the person next to you. Do not pass the word you received from your neighbour forward. Keep the chain going!\nStop after the last person in your row has finished.\nFinally, one person from your row will enter the collective sentence into our Google Doc."
+    "text": "Language models activity\n\n\nEach of you will receive a sticky note with a word on it at some point. Here’s what you’ll do:\n\nCarefully remove the sticky note to see the word. This word is for your eyes only —- don’t show it to your neighbours!\nThink quickly: what word would logically follow the word on the sticky note? Write this next word on a new sticky note.\nYou have about 20 seconds for this step, so trust your instincts!\nPass your predicted word to the person next to you. Do not pass the word you received from your neighbour forward. Keep the chain going!\nStop after the last person in your row/table has finished."
   },
   {
     "objectID": "slides/slides-06-llms.html#markov-model-of-language",
@@ -361,7 +361,7 @@
     "href": "slides/slides-06-llms.html#zero-shot-learning-for-emotion-detection-1",
     "title": "Large Language Models",
     "section": "Zero-shot learning for emotion detection",
-    "text": "Zero-shot learning for emotion detection\n\n\n\n\n\n\n\n\n\n\n\n\nsequence\nlabels\nscores\n\n\n\n\n0\nim feeling rather rotten so im not very ambiti...\n[sadness, anger, surprise, fear, joy, love]\n[0.7367963194847107, 0.10041721910238266, 0.09...\n\n\n1\nim updating my blog because i feel shitty\n[sadness, surprise, anger, fear, joy, love]\n[0.7429746985435486, 0.13775986433029175, 0.05...\n\n\n2\ni never make her separate from me because i do...\n[love, sadness, surprise, fear, anger, joy]\n[0.3153638243675232, 0.22490324079990387, 0.19...\n\n\n3\ni left with my bouquet of red and yellow tulip...\n[surprise, joy, love, sadness, fear, anger]\n[0.42182087898254395, 0.3336702883243561, 0.21...\n\n\n4\ni was feeling a little vain when i did this one\n[surprise, anger, fear, love, joy, sadness]\n[0.5639430284500122, 0.17000176012516022, 0.08...\n\n\n5\ni cant walk into a shop anywhere where i do no...\n[surprise, fear, sadness, anger, joy, love]\n[0.37033382058143616, 0.36559492349624634, 0.1...\n\n\n6\ni felt anger when at the end of a telephone call\n[anger, surprise, fear, sadness, joy, love]\n[0.9760521054267883, 0.01253431849181652, 0.00...\n\n\n7\ni explain why i clung to a relationship with a...\n[surprise, joy, love, sadness, fear, anger]\n[0.4382022023200989, 0.232231006026268, 0.1298...\n\n\n8\ni like to have the same breathless feeling as ...\n[surprise, joy, love, fear, anger, sadness]\n[0.7675782442092896, 0.13846899569034576, 0.03...\n\n\n9\ni jest i feel grumpy tired and pre menstrual w...\n[surprise, sadness, anger, fear, joy, love]\n[0.7340186834335327, 0.11860235780477524, 0.07..."
+    "text": "Zero-shot learning for emotion detection\n\n\n\n\n\n\n\n\n\n\n\n\nsequence\nlabels\nscores\n\n\n\n\n0\nim feeling rather rotten so im not very ambiti...\n[sadness, anger, surprise, fear, joy, love]\n[0.7367969155311584, 0.10041738301515579, 0.09...\n\n\n1\nim updating my blog because i feel shitty\n[sadness, surprise, anger, fear, joy, love]\n[0.742975652217865, 0.1377592831850052, 0.0582...\n\n\n2\ni never make her separate from me because i do...\n[love, sadness, surprise, fear, anger, joy]\n[0.3153638541698456, 0.22490325570106506, 0.19...\n\n\n3\ni left with my bouquet of red and yellow tulip...\n[surprise, joy, love, sadness, fear, anger]\n[0.42182016372680664, 0.3336696922779083, 0.21...\n\n\n4\ni was feeling a little vain when i did this one\n[surprise, anger, fear, love, joy, sadness]\n[0.5639426112174988, 0.17000216245651245, 0.08...\n\n\n5\ni cant walk into a shop anywhere where i do no...\n[surprise, fear, sadness, anger, joy, love]\n[0.37033361196517944, 0.3655940890312195, 0.14...\n\n\n6\ni felt anger when at the end of a telephone call\n[anger, surprise, fear, sadness, joy, love]\n[0.9760519862174988, 0.012534386478364468, 0.0...\n\n\n7\ni explain why i clung to a relationship with a...\n[surprise, joy, love, sadness, fear, anger]\n[0.4382023811340332, 0.23223140835762024, 0.12...\n\n\n8\ni like to have the same breathless feeling as ...\n[surprise, joy, love, fear, anger, sadness]\n[0.7675781846046448, 0.1384691298007965, 0.031...\n\n\n9\ni jest i feel grumpy tired and pre menstrual w...\n[surprise, sadness, anger, fear, joy, love]\n[0.7340186834335327, 0.11860296875238419, 0.07..."
   },
   {
     "objectID": "slides/slides-06-llms.html#harms-of-large-language-models",
@@ -415,21 +415,33 @@
     "href": "workshop-09.html",
     "title": "Module 4: Large Language Models",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Module 4: Large Language Models"
+    ]
   },
   {
     "objectID": "workshop-09.html#slides",
     "href": "workshop-09.html#slides",
     "title": "Module 4: Large Language Models",
     "section": "",
-    "text": "View slides in full screen"
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Workshop",
+      "Module 4: Large Language Models"
+    ]
   },
   {
     "objectID": "workshop-09.html#outline",
     "href": "workshop-09.html#outline",
     "title": "Module 4: Large Language Models",
     "section": "Outline",
-    "text": "Outline\n\nActivity\nMarkov model of language\nTransformers, self-attention (high level)\nPipelines before and after LLMs"
+    "text": "Outline\n\nActivity\nMarkov model of language\nTransformers, self-attention (high level)\nPipelines before and after LLMs",
+    "crumbs": [
+      "Workshop",
+      "Module 4: Large Language Models"
+    ]
   },
   {
     "objectID": "workshop-06.html",
@@ -558,7 +570,7 @@
     "href": "slides/slides-01-intro.html#welcome-to-the-workshop",
     "title": "Welcome!",
     "section": "Welcome to the workshop!",
-    "text": "Welcome to the workshop!\n\n\n\nFind a seat where you can see the screen!\nYou will be discussing concepts with your neighbours. So take 15 seconds to introduce yourself to your neighbour."
+    "text": "Welcome to the workshop!\n\n\n\nFind a seat of your choice.\nTake 15 seconds to introduce yourself to your neighbour."
   },
   {
     "objectID": "slides/slides-01-intro.html#qr-code",
@@ -579,7 +591,14 @@
     "href": "slides/slides-01-intro.html#learning-goals-of-the-workshop",
     "title": "Welcome!",
     "section": "Learning goals of the workshop",
-    "text": "Learning goals of the workshop\n\n\nThe primary learning goal of the workshop is to familiarize yourself with the fundamentals of machine learning and its various types. This knowledge will help you determine which type of machine learning, or whether a non-machine learning approach, would be most appropriate for your problem."
+    "text": "Learning goals of the workshop\n\n\n\nThe primary learning goal of the workshop is to familiarize yourself with the fundamentals of machine learning and its various types. This knowledge will help you determine which type of machine learning, or whether a non-machine learning approach, would be most appropriate for your problem."
+  },
+  {
+    "objectID": "slides/slides-01-intro.html#agenda",
+    "href": "slides/slides-01-intro.html#agenda",
+    "title": "Welcome!",
+    "section": "Agenda",
+    "text": "Agenda\n\nWe will have four modules in the workshop\n\nModule 1: Machine learning fundamentals\nModule 2: Supervised machine learning models\nModule 3: Introduction to deep learning\nModule 4: Introduction to large language models\n\nEach module will include hands-on exercises to reinforce learning.\nWe’ll also make sure to take some breaks in between sessions."
   },
   {
     "objectID": "workshop-05-exercise1.html",
@@ -626,7 +645,7 @@
     "href": "workshop.html",
     "title": "Overview",
     "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:30 - 9:40\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:40 - 10:30\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:30 - 10:55\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:55 - 11:00\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n11:00 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:20\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:00 - 14:50\n\n\nIntroduction to Large Language Models\n\n\n\n\n☕ Break\n\n\n14:50 - 15:00\n\n\n \n\n\n\n\nExercise 3: Language Models\n\n\n15:00 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:30 - 9:40\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:40 - 10:30\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:30 - 10:55\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:55 - 11:00\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n11:00 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning and trasfer learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:20\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:00 - 14:50\n\n\nIntroduction to Large Language Models\n\n\n\n\n☕ Break\n\n\n14:50 - 15:00\n\n\n \n\n\n\n\nExercise 3: Language Models\n\n\n15:00 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
       "Overview"
@@ -637,7 +656,7 @@
     "href": "workshop.html#schedule",
     "title": "Overview",
     "section": "",
-    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:30 - 9:40\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:40 - 10:30\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:30 - 10:55\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:55 - 11:00\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n11:00 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:20\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:00 - 14:50\n\n\nIntroduction to Large Language Models\n\n\n\n\n☕ Break\n\n\n14:50 - 15:00\n\n\n \n\n\n\n\nExercise 3: Language Models\n\n\n15:00 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
+    "text": "Title\n\n\ntime\n\n\nDescription\n\n\n\n\n\n\nWelcome and getting started\n\n\n9:30 - 9:40\n\n\nHello and welcome to the workshop!\n\n\n\n\nModule 1: ML Fundamentals\n\n\n9:40 - 10:30\n\n\nIntroduction to Machine Learning Fundamentals\n\n\n\n\nModule 2: ML Models\n\n\n10:30 - 10:55\n\n\nIntroduction to Different Types of Machine Learning Models\n\n\n\n\n☕ Break\n\n\n10:55 - 11:00\n\n\n \n\n\n\n\nExercise 1: ML fundamentals\n\n\n11:00 - 11:30\n\n\n \n\n\n\n\nModule 3: Deep Learning\n\n\n11:30 - 12:30\n\n\nIntroduction to Deep Learning and trasfer learning\n\n\n\n\n🥗🍴 Lunch\n\n\n12:30 - 13:20\n\n\n \n\n\n\n\nExercise 2: Transfer Learning\n\n\n13:30 - 14:20\n\n\n \n\n\n\n\nModule 4: Large Language Models\n\n\n14:00 - 14:50\n\n\nIntroduction to Large Language Models\n\n\n\n\n☕ Break\n\n\n14:50 - 15:00\n\n\n \n\n\n\n\nExercise 3: Language Models\n\n\n15:00 - 15:45\n\n\n \n\n\n\n\nSummary and wrap up\n\n\n15:45 - 16:00\n\n\n \n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Workshop",
       "Overview"
@@ -982,14 +1001,14 @@
     "href": "slides/slides-02-ml-intro.html#a-decision-tree-classifier-1",
     "title": "Introduction to Machine Learning",
     "section": "A Decision Tree Classifier",
-    "text": "A Decision Tree Classifier\n\n\n\n\nThe model classified 100.0% of training examples correctly by \n building a decision tree of depth 41\n\n\n\nThat’s very accurate indeed! Maybe decision trees are a really good way to detect and classify faces.\nRemember, we only trained on 80% of the data. Let’s see how our model performs on the remaining 20%"
+    "text": "A Decision Tree Classifier\n\n\n\n\nThe model classified 100.0% of training examples correctly by \n building a decision tree of depth 42\n\n\n\nThat’s very accurate indeed! Maybe decision trees are a really good way to detect and classify faces.\nRemember, we only trained on 80% of the data. Let’s see how our model performs on the remaining 20%"
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#did-we-build-a-good-model",
     "href": "slides/slides-02-ml-intro.html#did-we-build-a-good-model",
     "title": "Introduction to Machine Learning",
     "section": "Did we build a good model?",
-    "text": "Did we build a good model?\n\n\n\n\nThe model acheived an accuracy of 52.5% on new data\n\n\n\n…oops."
+    "text": "Did we build a good model?\n\n\n\n\nThe model acheived an accuracy of 42.5% on new data\n\n\n\n…oops."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#whats-going-on",
@@ -1227,7 +1246,7 @@
     "href": "slides/slides-04-deep-learning.html#a-feature-vector-given-by-densenet",
     "title": "Deep Learning",
     "section": "A feature vector given by densenet",
-    "text": "A feature vector given by densenet\n \n\nLet’s examine the feature vectors.\n\n\n\n\n\n\n\n\n\n\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n...\n1014\n1015\n1016\n1017\n1018\n1019\n1020\n1021\n1022\n1023\n\n\n\n\n0\n0.000290\n0.003821\n0.005015\n0.001307\n0.052690\n0.063403\n0.000626\n0.001850\n0.256254\n0.000223\n...\n0.229935\n1.046375\n2.241259\n0.229641\n0.033674\n0.742792\n1.338698\n2.130880\n0.625475\n0.463088\n\n\n1\n0.000407\n0.005973\n0.003206\n0.001932\n0.090702\n0.438523\n0.001513\n0.003906\n0.166081\n0.000286\n...\n0.910680\n1.580815\n0.087191\n0.606904\n0.436106\n0.306456\n0.940102\n1.159818\n1.712705\n1.624753\n\n\n2\n0.000626\n0.005090\n0.002887\n0.001299\n0.091715\n0.548537\n0.000491\n0.003587\n0.266537\n0.000408\n...\n0.465152\n0.678276\n0.946387\n1.194697\n2.537747\n1.642383\n0.701200\n0.115620\n0.186433\n0.166605\n\n\n3\n0.000169\n0.006087\n0.002489\n0.002167\n0.087537\n0.623212\n0.000427\n0.000226\n0.460680\n0.000388\n...\n0.394083\n0.700158\n0.105200\n0.856323\n0.038457\n0.023948\n0.131838\n1.296370\n0.723323\n1.915215\n\n\n4\n0.000286\n0.005520\n0.001906\n0.001599\n0.186034\n0.850148\n0.000835\n0.003025\n0.036309\n0.000142\n...\n3.313760\n0.565744\n0.473564\n0.139446\n0.029283\n1.165938\n0.442319\n0.227593\n0.884266\n1.592698\n\n\n\n\n5 rows × 1024 columns\n\n\n\n\nThe features are hard to interpret but they have some important information about the images which can be useful for classification."
+    "text": "A feature vector given by densenet\n \n\nLet’s examine the feature vectors.\n\n\n\n\n\n\n\n\n\n\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n...\n1014\n1015\n1016\n1017\n1018\n1019\n1020\n1021\n1022\n1023\n\n\n\n\n0\n0.000290\n0.003821\n0.005015\n0.001307\n0.052690\n0.063403\n0.000626\n0.001850\n0.256254\n0.000223\n...\n0.229934\n1.046362\n2.241249\n0.229643\n0.033676\n0.742794\n1.338701\n2.130871\n0.625471\n0.463095\n\n\n1\n0.000407\n0.005973\n0.003206\n0.001932\n0.090702\n0.438522\n0.001513\n0.003906\n0.166081\n0.000286\n...\n0.910676\n1.580822\n0.087190\n0.606906\n0.436105\n0.306453\n0.940105\n1.159830\n1.712704\n1.624745\n\n\n2\n0.000626\n0.005090\n0.002887\n0.001299\n0.091715\n0.548536\n0.000491\n0.003587\n0.266537\n0.000408\n...\n0.465153\n0.678283\n0.946386\n1.194697\n2.537743\n1.642387\n0.701204\n0.115618\n0.186434\n0.166608\n\n\n3\n0.000169\n0.006087\n0.002489\n0.002167\n0.087537\n0.623212\n0.000427\n0.000226\n0.460680\n0.000388\n...\n0.394086\n0.700153\n0.105199\n0.856321\n0.038457\n0.023949\n0.131834\n1.296365\n0.723329\n1.915225\n\n\n4\n0.000286\n0.005520\n0.001906\n0.001599\n0.186035\n0.850148\n0.000835\n0.003025\n0.036309\n0.000142\n...\n3.313759\n0.565745\n0.473563\n0.139443\n0.029283\n1.165939\n0.442323\n0.227594\n0.884269\n1.592695\n\n\n\n\n5 rows × 1024 columns\n\n\n\n\nThe features are hard to interpret but they have some important information about the images which can be useful for classification."
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#logistic-regression-with-the-extracted-features",
@@ -1255,7 +1274,7 @@
     "href": "slides/slides-04-deep-learning.html#object-detection-using-yolo",
     "title": "Deep Learning",
     "section": "Object detection using YOLO",
-    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 68.4ms\nSpeed: 1.2ms preprocess, 68.4ms inference, 6.6ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
+    "text": "Object detection using YOLO\n\n\nLet’s try this out using a pre-trained model.\n\nfrom ultralytics import YOLO\nmodel = YOLO(\"yolov8n.pt\")  # pretrained YOLOv8n model\n\nyolo_input = \"data/yolo_test/3356700488_183566145b.jpg\"\nyolo_result = \"data/yolo_result.jpg\"\n# Run batched inference on a list of images\nresult = model(yolo_input)  # return a list of Results objects\nresult[0].save(filename=yolo_result)\n\n\nimage 1/1 /Users/kvarada/EL/workshops/Intro-to-ML-workshop-2024/website/slides/data/yolo_test/3356700488_183566145b.jpg: 512x640 4 persons, 2 cars, 1 stop sign, 80.5ms\nSpeed: 3.9ms preprocess, 80.5ms inference, 7.0ms postprocess per image at shape (1, 3, 512, 640)\n\n\n'data/yolo_result.jpg'"
   },
   {
     "objectID": "slides/slides-04-deep-learning.html#object-detection-output",
