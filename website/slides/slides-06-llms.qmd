@@ -227,24 +227,6 @@ While these models are super powerful and useful, be mindful of the harms caused
 - environmental impact
 - centralization of power
 
-## Game Time
-\
-
-Here is a Jupyter notebook you can download and some guidelines for further exploration:
-[Download and Save the Jupyter Notebook](downloads/exercise-03-language-model.ipynb){.btn .btn-primary}
-
-1. Go to [https://www.kaggle.com/kernels](https://www.kaggle.com/kernels)
-2. Make an account if you don't have one
-3. Select `+ New Notebook`
-<img src="img/create_notebook.png" alt="drawing" width="400"/>
-
-4. Go to `File -> Import Notebook`
-<img src="img/import_notebook.png" alt="drawing" width="400"/>
-
-5. Upload this notebook
-6. Follow the guidelines in the notebook
-
-
 ## Thank you! 
 
 - That's it for the modules! Now, let's begin the game time.
