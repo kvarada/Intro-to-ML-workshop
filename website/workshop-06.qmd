@@ -1,7 +1,7 @@
 ---
 title: "Module 3: Deep Learning"
-description: Introduction to Deep Learning
-description-short: Introduction to Deep Learning
+description: "Introduction to Deep Learning and trasfer learning"
+description-short: "Introduction to Deep Learning and trasfer learning"
 duration: 60 mins
 time: 11:30 - 12:30
 
