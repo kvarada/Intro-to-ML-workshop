@@ -1,0 +1,49 @@
+---
+title: "Deep Learning Exercise"
+format: 
+    revealjs:
+      smaller: true
+      center: true
+---
+
+## Game Time
+
+Here is a Jupyter notebook you can download for further exploration:
+[Download and Save the Jupyter Notebook](downloads/exercise-02-deep-learning.ipynb){.btn .btn-primary}
+
+Follow the guidelines in the next page.
+
+<img src="img/save_notebook.png" alt="drawing" width="400"/>
+
+## How To Work On Kaggle
+
+1. Go to [https://www.kaggle.com/kernels](https://www.kaggle.com/kernels)
+2. Make an account if you don't have one, and verify your phone number (to get access to GPUs)
+3. Select `+ New Notebook`
+<img src="img/create_notebook.png" alt="drawing" width="400"/>
+
+4. Go to `File -> Import Notebook`
+<img src="img/import_notebook.png" alt="drawing" width="400"/>
+
+5. Upload this notebook
+
+
+## How To Work On Kaggle
+
+6. On the right-hand side of your Kaggle notebook, make sure:
+  - `Internet` is enabled.
+  
+  - In the `Accelerator` dropdown, choose `GPU` when you're ready to use it (you can turn it on/off as you need it).
+
+7. Follow the guidelines in the notebook
+
+<img src="img/notebook_options.png" alt="drawing" width="400"/>
+
+## How To Add a Dataset
+
+1. Click `+ Add data` at the top right of the notebook.
+
+2. Choose `Datasets` and search for the keyword (e.g. 'cat-breed-mardhik'). Several datasets will appear. Look for and 'Add' the dataset.
+
+<img src="img/add_data1.png" alt="drawing" width="400"/>
+<img src="img/add_data2.png" alt="drawing" width="400"/>

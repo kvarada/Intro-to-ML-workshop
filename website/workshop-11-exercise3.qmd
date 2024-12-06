@@ -10,9 +10,4 @@ editor: { render-on-save: true }
 
 ## Slides
 
-{{< revealjs "slides/slides-03-ml-models.html" height="600px" class="ratio ratio-16x9" >}}
-
-## Outline
-
-- Machine learning terminology
-- Machine learning fundamentals
+{{< revealjs "slides/slides-07-llms-exercise.html" height="600px" class="ratio ratio-16x9" >}}
