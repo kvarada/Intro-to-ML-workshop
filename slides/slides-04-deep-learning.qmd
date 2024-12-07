@@ -165,8 +165,7 @@ Both are heavily used in industry. If interested, see [comparison of deep learni
 \
 
 - In practice, very few people train an entire CNN from scratch because it requires a large dataset, powerful computers, and a huge amount of human effort to train the model.
-- Instead, a common practice is to download a pre-trained model and use it aout of the box or fine tune it for your task. This is called **transfer learning**.
-- It's similar to using your general knowledge of languages to quickly learn a new, related one.
+- Instead, a common practice is to download a pre-trained model and fine tune it for your task. This is called **transfer learning**.
 - Transfer learning is one of the most common techniques used in the context of computer vision and natural language processing.
 - It refers to using a model already trained on one task as a starting point for learning to perform another task.
 
@@ -442,4 +441,4 @@ plt.show()
 
 ## Thank you! 
 
-- That's it for the module! Let's practice what you've just learned. 
+- That's it for the modules! Now, let's begin the game time.

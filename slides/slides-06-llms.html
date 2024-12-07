@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+  <meta name="generator" content="quarto-1.5.57">
 
   <title>Introduction to Machine Learning Workshop – Large Language Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -434,7 +434,7 @@ From this module, you will be able to</p>
 <p><br>
 </p>
 <p>One of the most common applications for predicting the next word is the ‘smart compose’ feature in your emails, text messages, and search engines.</p>
-<div id="a62706df" class="cell" data-execution_count="2">
+<div id="8663ca78" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display" data-execution_count="2">
 
         <iframe width="500" height="500" src="https://2.bp.blogspot.com/-KlBuhzV_oFw/WvxP_OAkJ1I/AAAAAAAACu0/T0F6lFZl-2QpS0O7VBMhf8wkUPvnRaPIACLcBGAs/s1600/image2.gif" frameborder="0" allowfullscreen=""></iframe>
@@ -495,7 +495,7 @@ From this module, you will be able to</p>
 <li>An important innovation which makes these models work so well is <strong>self-attention</strong>.</li>
 <li>Count how many times the players wearing the white pass the basketball?</li>
 </ul>
-<div id="95b77b46" class="cell" data-execution_count="3">
+<div id="96d4ea26" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 
         <iframe width="500" height="500" src="https://www.youtube.com/embed/vJG698U2Mvo" frameborder="0" allowfullscreen=""></iframe>
@@ -594,7 +594,7 @@ From this module, you will be able to</p>
 <section id="pipelines-after-llms" class="slide level2 center">
 <h2>Pipelines after LLMs</h2>
 <p>&nbsp;</p>
-<div id="fa3a78b8" class="cell" data-execution_count="4">
+<div id="ddf6797a" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline, AutoModelForTokenClassification, AutoTokenizer</span>
 <span id="cb1-2"><a></a><span class="co"># Sentiment analysis pipeline</span></span>
 <span id="cb1-3"><a></a>analyzer <span class="op">=</span> pipeline(<span class="st">"sentiment-analysis"</span>, model<span class="op">=</span><span class="st">'distilbert-base-uncased-finetuned-sst-2-english'</span>)</span>
@@ -612,7 +612,7 @@ From this module, you will be able to</p>
 <p><br>
 </p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="baae9fe7" class="cell" data-execution_count="5">
+<div id="16889cc1" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>['i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived',
  'i was feeling a little vain when i did this one',
@@ -634,7 +634,7 @@ From this module, you will be able to</p>
 <h2>Zero-shot learning for emotion detection</h2>
 <p><br>
 </p>
-<div id="a7a9b247" class="cell" data-execution_count="6">
+<div id="6f96c11c" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer</span>
 <span id="cb4-2"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline </span>
 <span id="cb4-3"><a></a><span class="im">import</span> torch</span>
@@ -652,7 +652,7 @@ From this module, you will be able to</p>
 <p><br>
 </p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="2e252a4a" class="cell" data-execution_count="7">
+<div id="78b7f6bf" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 <style scoped="">
@@ -683,61 +683,61 @@ From this module, you will be able to</p>
 <td data-quarto-table-cell-role="th">0</td>
 <td>im feeling rather rotten so im not very ambiti...</td>
 <td>[sadness, anger, surprise, fear, joy, love]</td>
-<td>[0.7367969155311584, 0.10041738301515579, 0.09...</td>
+<td>[0.7367963194847107, 0.10041721910238266, 0.09...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
 <td>im updating my blog because i feel shitty</td>
 <td>[sadness, surprise, anger, fear, joy, love]</td>
-<td>[0.742975652217865, 0.1377592831850052, 0.0582...</td>
+<td>[0.7429746985435486, 0.13775986433029175, 0.05...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
 <td>i never make her separate from me because i do...</td>
 <td>[love, sadness, surprise, fear, anger, joy]</td>
-<td>[0.3153638541698456, 0.22490325570106506, 0.19...</td>
+<td>[0.3153638243675232, 0.22490324079990387, 0.19...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
 <td>i left with my bouquet of red and yellow tulip...</td>
 <td>[surprise, joy, love, sadness, fear, anger]</td>
-<td>[0.42182016372680664, 0.3336696922779083, 0.21...</td>
+<td>[0.42182087898254395, 0.3336702883243561, 0.21...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
 <td>i was feeling a little vain when i did this one</td>
 <td>[surprise, anger, fear, love, joy, sadness]</td>
-<td>[0.5639426112174988, 0.17000216245651245, 0.08...</td>
+<td>[0.5639430284500122, 0.17000176012516022, 0.08...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">5</td>
 <td>i cant walk into a shop anywhere where i do no...</td>
 <td>[surprise, fear, sadness, anger, joy, love]</td>
-<td>[0.37033361196517944, 0.3655940890312195, 0.14...</td>
+<td>[0.37033382058143616, 0.36559492349624634, 0.1...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">6</td>
 <td>i felt anger when at the end of a telephone call</td>
 <td>[anger, surprise, fear, sadness, joy, love]</td>
-<td>[0.9760519862174988, 0.012534386478364468, 0.0...</td>
+<td>[0.9760521054267883, 0.01253431849181652, 0.00...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">7</td>
 <td>i explain why i clung to a relationship with a...</td>
 <td>[surprise, joy, love, sadness, fear, anger]</td>
-<td>[0.4382023811340332, 0.23223140835762024, 0.12...</td>
+<td>[0.4382022023200989, 0.232231006026268, 0.1298...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">8</td>
 <td>i like to have the same breathless feeling as ...</td>
 <td>[surprise, joy, love, fear, anger, sadness]</td>
-<td>[0.7675781846046448, 0.1384691298007965, 0.031...</td>
+<td>[0.7675782442092896, 0.13846899569034576, 0.03...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">9</td>
 <td>i jest i feel grumpy tired and pre menstrual w...</td>
 <td>[surprise, sadness, anger, fear, joy, love]</td>
-<td>[0.7340186834335327, 0.11860296875238419, 0.07...</td>
+<td>[0.7340186834335327, 0.11860235780477524, 0.07...</td>
 </tr>
 </tbody>
 </table>
