@@ -2,7 +2,7 @@
 title: ☕ Break
 description: >
   Get up and move around!
-  We'll start back up at 10:40.
+  We'll start back up at 15:00.
 duration: 10 min
 time: 14:50 - 15:00
 countdown:

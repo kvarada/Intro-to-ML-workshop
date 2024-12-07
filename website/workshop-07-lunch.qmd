@@ -1,8 +1,8 @@
 ---
 title: 🥗🍴 Lunch
 description: >
-  Lunch time! Go eat. We'll see you at 13:30.
-duration: 55 mins
+  Lunch time! Go eat. We'll see you at 13:20.
+duration: 50 mins
 time: 12:30 - 13:20
 countdown:
   box_shadow: none
