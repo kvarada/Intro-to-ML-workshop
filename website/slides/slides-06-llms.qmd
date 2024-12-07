@@ -27,7 +27,7 @@ import pandas as pd
 
 ## Take a guess
 
-- What's the estimate of the vocabulary size of young adult speakers of American English? 
+- What do you think is the vocabulary size of young adult speakers of American English? 
 
 
 ## Language models activity 
@@ -264,6 +264,13 @@ outputs = classifier(exs, candidate_labels)
 pd.DataFrame(outputs)
 ```
 :::
+
+## Fun tools 
+- [NotebookLM](https://notebooklm.google/) 
+- [LIDA](https://microsoft.github.io/lida/)
+- [LangChain](https://www.langchain.com/)
+- [Graphologue](https://graphologue.app/)
+- ...
 
 ## Harms of large language models 
 
