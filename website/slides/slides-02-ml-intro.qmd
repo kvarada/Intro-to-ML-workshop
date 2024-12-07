@@ -20,7 +20,7 @@ The program learns based on the *features* present in the data, which represent 
 
 ## Activity 1
 \
-Write one (or several) problems in your research field where you think Machine Learning could be applied. Try to address the following questions:
+Write one (or several) problems in your area of work where you think Machine Learning could be applied. Try to address the following questions:
 
 * What goal are you trying to accomplish? What would an ideal solution to your problem look like?
 * How would a human solve this problem? What approaches are presently available and utilized?
@@ -66,11 +66,17 @@ Is this inference or prediction?
 
 ## Types of Machine Learning
 \
-Today we will see two main types of machine learning, namely
+There are many kinds of machine learning, including
 
-* Supervised Learning, and
+* Supervised Learning (which we'll talk about a lot)
 
-* Unsupervised Learning.
+* Unsupervised Learning
+
+* Semi-supervised learning
+
+* Reinforcement Learning
+
+* Generative AI
 
 We will also discuss which problems each type might be best suited for.
 
@@ -80,19 +86,8 @@ Here the training data is comprised of a set of *features*, and each example com
 
 Examples could include spam filtering, face recognition or weather forecasting.
 
-## Unsupervised Learning
-\
-In unsupervised learning, there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together.
+By contrast, in unsupervised learning there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together. Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix).
 
-Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix).
-
-## Other ML types
-\
-Some other types of Machine Learning include self-supervised learning and reinforcement learning.
-
-Self-supervised algorithms automatically learn to generate labels and transform unsupervised problems to supervised ones.
-
-Reinforcement Leaning trains an agent using a system of rewards and penalties. The agent learns strategies to maximize reward. AlphaGo is a reinforcement learning agent that taught itself to play Go, and was able to beat the strongest human Go players.
 
 ## Activity 2
 \ 
@@ -271,7 +266,7 @@ df.plot();
 \
 Our deep decision tree likely just memorized the dataset. After all, with a tree of depth 38, we could actually memorize up to 2^38^ distinct examples!
 
-Clearly this does not make for a good model. After all, we want a model that can recognize faces, even when they appear in new images.
+Clearly this does not make for a good model. We want a model that can recognize faces, even when they appear in new images.
 
 ## Overfitting
 \
@@ -303,7 +298,7 @@ By using the same test set for each of the 10,000 models they tried, your collea
 
 The golden rule tells us that **test data must not influence the model training in any way**.
 
-Even though your colleague never directly trained on test data, they used test data multiple times to validate model performance. As a result, they are likely to have found good performance *purely by accident*.
+Even though your colleague never directly trained on test data, they used test data multiple times to validate model performance. As a result, they may have found good performance *purely by accident*.
 
 ## Scenario 2
 \
