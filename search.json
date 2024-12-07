@@ -541,22 +541,29 @@
     "objectID": "slides/slides-08-summary.html#what-did-we-cover",
     "href": "slides/slides-08-summary.html#what-did-we-cover",
     "title": "Summary and conclusion",
-    "section": "## What did we cover?",
-    "text": "## What did we cover?"
+    "section": "What did we cover?",
+    "text": "What did we cover?\n\nSupervised machine learning fundamentals\nIntroduction to linear models\nIntroduction to deep learning and transfer learning\nIntroduction to language models"
   },
   {
-    "objectID": "slides/slides-08-summary.html#thank-you",
-    "href": "slides/slides-08-summary.html#thank-you",
+    "objectID": "slides/slides-08-summary.html#a-bit-about-our-mds-program",
+    "href": "slides/slides-08-summary.html#a-bit-about-our-mds-program",
     "title": "Summary and conclusion",
-    "section": "Thank you!",
-    "text": "Thank you!\n\nThank you for attending the workshop!"
+    "section": "A bit about our MDS program",
+    "text": "A bit about our MDS program\n\n- 10-month accelerated professional program with industry consultation - 24 1-credit courses in 8 months + 2 months Capstone with industry/academia partners - Unique partnership between CS, Stats, and Linguistics - Curriculum designed from scratch"
+  },
+  {
+    "objectID": "slides/slides-08-summary.html#our-audience",
+    "href": "slides/slides-08-summary.html#our-audience",
+    "title": "Summary and conclusion",
+    "section": "Our audience",
+    "text": "Our audience\n\nIndividuals with basic knowledge of programming, statistics, calculus, and linear algebra.\nProfessionals currently working with data, seeking a systematic understanding of data science to effectively solve their data problems\nThose looking for a career change, feeling bored, or aiming to upskill\nFresh undergrads with research experience or who have completed co-ops or internships"
   },
   {
     "objectID": "slides/slides-08-summary.html#mds-qr-code",
     "href": "slides/slides-08-summary.html#mds-qr-code",
     "title": "Summary and conclusion",
     "section": "MDS QR code",
-    "text": "MDS QR code\n\n- Master of Data Science program - 10-month accelerated program - Submit a data science related Capstone project - https://ubc-mds.github.io/capstone/about/ - If you are interested in applying to the program check out this page:"
+    "text": "MDS QR code\n\n- Submit a data science related Capstone project - https://ubc-mds.github.io/capstone/about/ - If you are interested in applying to the program check out this page:"
   },
   {
     "objectID": "slides/slides-08-summary.html#how-did-we-do",

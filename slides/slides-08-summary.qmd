@@ -22,8 +22,16 @@ editor:
 
 ## A bit about our MDS program 
 \
-- The teaching team is from the Master of Data Science program. 
-- 10-month accelerated program 
+- 10-month accelerated professional program with industry consultation
+- 24 1-credit courses in 8 months + 2 months Capstone with industry/academia partners 
+- Unique partnership between CS, Stats, and Linguistics
+- Curriculum designed from scratch 
+
+## Our audience
+- Individuals with basic knowledge of programming, statistics, calculus, and linear algebra.
+- Professionals currently working with data, seeking a systematic understanding of data science to effectively solve their data problems 
+- Those looking for a career change, feeling bored, or aiming to upskill
+- Fresh undergrads with research experience or who have completed co-ops or internships
 
 
 ## MDS QR code
@@ -39,6 +47,3 @@ editor:
 - We would greatly appreciate your feedback.
   - Feedback form: https://forms.gle/xnkDu7nHqHTcWyk8A
 - Your input will also help us advocate for organizing more workshops like this in the future.
-
-
-
