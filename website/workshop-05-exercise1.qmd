@@ -9,10 +9,13 @@ editor: { render-on-save: true }
 ---
 
 
-In this session, you will do a hands on exercise on machine learning fundamentals. 
+In this session, you will do a hands on exercise on machine learning fundamentals. Pair up with your neighbour and get started!
 
-- Team up with your neighbor(s).
+## Kaggle
 
-## Resources 
+Create a (free) Kaggle account. You will run the Jupyter notebook for this exercise using Kaggle notebooks.
 
-## Slides
+## Notebook Download
+
+You can find the exercise notebook [here](https://github.com/kvarada/Intro-to-ML-workshop-2024/blob/main/website/slides/downloads/exercise-01-ml-fundamentals.ipynb)
+
