@@ -132,7 +132,7 @@ X_test, y_test = test_df["review_pp"], test_df["label"]
 \
 To create features that logistic regression can use, we will represent these reviews via a "bag of words" strategy.
 
-We create a new feature for every word that appears in the dataset. Then, if a review contains that word the corresponding feature gets a value of 1 for that review. If the word is not present, it's marked as 0.
+We create a new feature for every word that appears in the dataset. Then, if a review contains that word exactly once, the corresponding feature gets a value of 1 for that review. If the word appears four times, the feature gets a value of 4. If the word is not present, it's marked as 0.
 
 ## Bag of Words
 \
