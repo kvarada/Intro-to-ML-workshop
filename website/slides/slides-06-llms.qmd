@@ -38,7 +38,7 @@ Each of you will receive a sticky note with a word on it at some point. Here's w
 - You've just created a simple Markov model of language!
 - In predicting the next word from a minimal context, you likely used your linguistic intuition and familiarity with common two-word phrases or collocations.
 - You could create more coherent sentences by taking into account more context e.g., previous two words or four words or 100 words.
-- This idea was first used by Shannon for characters in The Shannon's game. See this video by [Jordan Boyd-Graber](https://www.youtube.com/watch?v=0shft1gokac) for more information on this. 
+- This idea was first used by Shannon for character prediction in The Shannon's game. See this video by [Jordan Boyd-Graber](https://www.youtube.com/watch?v=0shft1gokac) for more information on this. 
 
 ## Applications of predicting next word
 \
@@ -146,7 +146,7 @@ If you want to use pre-trained LLMs, it's useful to know that there are three ma
 |-----------|-----------------------------|------------------------------------|-----------------------------------|
 | Output Computation is based on | Information earlier in the context | Entire context (bidirectional) | Encoded input context |
 | Text Generation     | Can naturally generate text completion | Cannot directly generate text| Can generate outputs naturally |
-| Example   | DSI ML workshop audience is ___  | DSI ML workshop audience is the best! → positive                                     | Input: Translate to Mandarin: Long but productive day! Output:  漫长而富有成效的一天！  |
+| Example   | Our ML workshop audience is ___  | Our ML workshop audience is the best! → positive                                     | Input: Translate to Mandarin: Long but productive day! Output:  漫长而富有成效的一天！  |
 
 
 ## Pipelines before LLMs
@@ -228,4 +228,4 @@ While these models are super powerful and useful, be mindful of the harms caused
 
 ## Thank you! 
 
-- That's it for the modules! Now, let's begin the game time.
+- That's it for the modules! Now, let's work on exercises. 
