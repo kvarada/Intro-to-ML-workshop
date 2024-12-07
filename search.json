@@ -95,7 +95,7 @@
     "href": "slides/slides-03-ml-models.html#bag-of-words",
     "title": "Supervised Machine Learning Models",
     "section": "Bag of Words",
-    "text": "Bag of Words\n\nTo create features that logistic regression can use, we will represent these reviews via a “bag of words” strategy.\nWe create a new feature for every word that appears in the dataset. Then, if a review contains that word the corresponding feature gets a value of 1 for that review. If the word is not present, it’s marked as 0."
+    "text": "Bag of Words\n\nTo create features that logistic regression can use, we will represent these reviews via a “bag of words” strategy.\nWe create a new feature for every word that appears in the dataset. Then, if a review contains that word exactly once, the corresponding feature gets a value of 1 for that review. If the word appears four times, the feature gets a value of 4. If the word is not present, it’s marked as 0."
   },
   {
     "objectID": "slides/slides-03-ml-models.html#bag-of-words-1",
@@ -116,7 +116,7 @@
     "href": "slides/slides-03-ml-models.html#testing-performance-1",
     "title": "Supervised Machine Learning Models",
     "section": "Testing Performance",
-    "text": "Testing Performance\n\n\nLet’s see how the model performs after training.\n\n\n\n\n\n\n\n\n\nfit_time\nscore_time\ntest_score\ntrain_score\n\n\n\n\n0\n0.414605\n0.064162\n0.828\n0.99975\n\n\n1\n0.405794\n0.063070\n0.830\n0.99975\n\n\n2\n0.397011\n0.061530\n0.848\n0.99975\n\n\n3\n0.384352\n0.060801\n0.833\n1.00000\n\n\n4\n0.380680\n0.062513\n0.840\n0.99975\n\n\n\n\n\n\n\n\nWe’re able to predict with roughly 84% accuracy on validation sets. Looks like our model learned something!"
+    "text": "Testing Performance\n\n\nLet’s see how the model performs after training.\n\n\n\n\n\n\n\n\n\nfit_time\nscore_time\ntest_score\ntrain_score\n\n\n\n\n0\n0.411476\n0.058247\n0.828\n0.99975\n\n\n1\n0.407961\n0.059842\n0.830\n0.99975\n\n\n2\n0.422086\n0.058663\n0.848\n0.99975\n\n\n3\n0.408087\n0.057880\n0.833\n1.00000\n\n\n4\n0.397947\n0.059378\n0.840\n0.99975\n\n\n\n\n\n\n\n\nWe’re able to predict with roughly 84% accuracy on validation sets. Looks like our model learned something!"
   },
   {
     "objectID": "slides/slides-03-ml-models.html#tuning-hyperparameters",
@@ -137,7 +137,7 @@
     "href": "slides/slides-03-ml-models.html#investigating-the-model",
     "title": "Supervised Machine Learning Models",
     "section": "Investigating the model",
-    "text": "Investigating the model\n\n\n\nLet’s see what associations our model learned.\n\n\n\n\n\n\n\n\n\nCoefficient\n\n\n\n\nexcellent\n0.829925\n\n\namazing\n0.659019\n\n\nperfect\n0.652637\n\n\nwonderful\n0.614264\n\n\nsurprised\n0.591126\n\n\n...\n...\n\n\nwaste\n-0.741045\n\n\nterrible\n-0.771132\n\n\nboring\n-0.774340\n\n\nawful\n-0.937574\n\n\nworst\n-1.200254\n\n\n\n\n15102 rows × 1 columns"
+    "text": "Investigating the model\n\n\n\nLet’s see what associations our model learned.\n\n\n\n\n\n\n\n\n\nCoefficient\n\n\n\n\nexcellent\n0.792911\n\n\nperfect\n0.608851\n\n\namazing\n0.602716\n\n\nwonderful\n0.564188\n\n\nsurprised\n0.536449\n\n\n...\n...\n\n\nwaste\n-0.669122\n\n\nterrible\n-0.697831\n\n\nboring\n-0.709981\n\n\nawful\n-0.870623\n\n\nworst\n-1.117365\n\n\n\n\n5775 rows × 1 columns"
   },
   {
     "objectID": "slides/slides-03-ml-models.html#investigating-the-model-1",
@@ -938,7 +938,7 @@
     "href": "slides/slides-02-ml-intro.html#activity-1",
     "title": "Introduction to Machine Learning",
     "section": "Activity 1",
-    "text": "Activity 1\n\nWrite one (or several) problems in your research field where you think Machine Learning could be applied. Try to address the following questions:\n\nWhat goal are you trying to accomplish? What would an ideal solution to your problem look like?\nHow would a human solve this problem? What approaches are presently available and utilized?\nWhat kind of data is available to you, or might be collected? What features are present in the data?\n\nOne of the learning objectives of the workshop will be to determine whether your goal is best addressed using supervised machine learning, inferential statistics, unsupervised learning, deep learning, generative AI, or a non-ML solution."
+    "text": "Activity 1\n\nWrite one (or several) problems in your area of work where you think Machine Learning could be applied. Try to address the following questions:\n\nWhat goal are you trying to accomplish? What would an ideal solution to your problem look like?\nHow would a human solve this problem? What approaches are presently available and utilized?\nWhat kind of data is available to you, or might be collected? What features are present in the data?\n\nOne of the learning objectives of the workshop will be to determine whether your goal is best addressed using supervised machine learning, inferential statistics, unsupervised learning, deep learning, generative AI, or a non-ML solution."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#classification-vs.-regression",
@@ -980,28 +980,14 @@
     "href": "slides/slides-02-ml-intro.html#types-of-machine-learning",
     "title": "Introduction to Machine Learning",
     "section": "Types of Machine Learning",
-    "text": "Types of Machine Learning\n\nToday we will see two main types of machine learning, namely\n\nSupervised Learning, and\nUnsupervised Learning.\n\nWe will also discuss which problems each type might be best suited for."
+    "text": "Types of Machine Learning\n\nThere are many kinds of machine learning, including\n\nSupervised Learning (which we’ll talk about a lot)\nUnsupervised Learning\nSemi-supervised learning\nReinforcement Learning\nGenerative AI\n\nWe will also discuss which problems each type might be best suited for."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#supervised-learning",
     "href": "slides/slides-02-ml-intro.html#supervised-learning",
     "title": "Introduction to Machine Learning",
     "section": "Supervised Learning",
-    "text": "Supervised Learning\n\nHere the training data is comprised of a set of features, and each example comes with a corresponding target. The goal is to get a machine learning model to accurately predict the target based on the feature values.\nExamples could include spam filtering, face recognition or weather forecasting."
-  },
-  {
-    "objectID": "slides/slides-02-ml-intro.html#unsupervised-learning",
-    "href": "slides/slides-02-ml-intro.html#unsupervised-learning",
-    "title": "Introduction to Machine Learning",
-    "section": "Unsupervised Learning",
-    "text": "Unsupervised Learning\n\nIn unsupervised learning, there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together.\nExamples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix)."
-  },
-  {
-    "objectID": "slides/slides-02-ml-intro.html#other-ml-types",
-    "href": "slides/slides-02-ml-intro.html#other-ml-types",
-    "title": "Introduction to Machine Learning",
-    "section": "Other ML types",
-    "text": "Other ML types\n\nSome other types of Machine Learning include self-supervised learning and reinforcement learning.\nSelf-supervised algorithms automatically learn to generate labels and transform unsupervised problems to supervised ones.\nReinforcement Leaning trains an agent using a system of rewards and penalties. The agent learns strategies to maximize reward. AlphaGo is a reinforcement learning agent that taught itself to play Go, and was able to beat the strongest human Go players."
+    "text": "Supervised Learning\n\nHere the training data is comprised of a set of features, and each example comes with a corresponding target. The goal is to get a machine learning model to accurately predict the target based on the feature values.\nExamples could include spam filtering, face recognition or weather forecasting.\nBy contrast, in unsupervised learning there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together. Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix)."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#activity-2",
@@ -1099,7 +1085,7 @@
     "href": "slides/slides-02-ml-intro.html#did-we-build-a-good-model",
     "title": "Introduction to Machine Learning",
     "section": "Did we build a good model?",
-    "text": "Did we build a good model?\n\n\n\n\nThe model acheived an accuracy of 52.5% on new data\n\n\n\n…oops."
+    "text": "Did we build a good model?\n\n\n\n\nThe model acheived an accuracy of 45.0% on new data\n\n\n\n…oops."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#whats-going-on",
@@ -1113,7 +1099,7 @@
     "href": "slides/slides-02-ml-intro.html#practice-makes-perfect",
     "title": "Introduction to Machine Learning",
     "section": "Practice makes perfect",
-    "text": "Practice makes perfect\n\nOur deep decision tree likely just memorized the dataset. After all, with a tree of depth 38, we could actually memorize up to 238 distinct examples!\nClearly this does not make for a good model. After all, we want a model that can recognize faces, even when they appear in new images."
+    "text": "Practice makes perfect\n\nOur deep decision tree likely just memorized the dataset. After all, with a tree of depth 38, we could actually memorize up to 238 distinct examples!\nClearly this does not make for a good model. We want a model that can recognize faces, even when they appear in new images."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#overfitting",
@@ -1141,7 +1127,7 @@
     "href": "slides/slides-02-ml-intro.html#the-golden-rule-of-machine-learning",
     "title": "Introduction to Machine Learning",
     "section": "The Golden Rule of Machine Learning",
-    "text": "The Golden Rule of Machine Learning\n\nBy using the same test set for each of the 10,000 models they tried, your colleague has violated the golden rule of machine learning.\nThe golden rule tells us that test data must not influence the model training in any way.\nEven though your colleague never directly trained on test data, they used test data multiple times to validate model performance. As a result, they are likely to have found good performance purely by accident."
+    "text": "The Golden Rule of Machine Learning\n\nBy using the same test set for each of the 10,000 models they tried, your colleague has violated the golden rule of machine learning.\nThe golden rule tells us that test data must not influence the model training in any way.\nEven though your colleague never directly trained on test data, they used test data multiple times to validate model performance. As a result, they may have found good performance purely by accident."
   },
   {
     "objectID": "slides/slides-02-ml-intro.html#scenario-2",

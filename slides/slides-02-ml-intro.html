@@ -348,7 +348,7 @@ Machine Learning uses computer programs to digest and accurately model data. Aft
 <section id="activity-1" class="slide level2 center">
 <h2>Activity 1</h2>
 <p><br>
-Write one (or several) problems in your research field where you think Machine Learning could be applied. Try to address the following questions:</p>
+Write one (or several) problems in your area of work where you think Machine Learning could be applied. Try to address the following questions:</p>
 <ul>
 <li>What goal are you trying to accomplish? What would an ideal solution to your problem look like?</li>
 <li>How would a human solve this problem? What approaches are presently available and utilized?</li>
@@ -399,10 +399,13 @@ Write one (or several) problems in your research field where you think Machine L
 <section id="types-of-machine-learning" class="slide level2 center">
 <h2>Types of Machine Learning</h2>
 <p><br>
-Today we will see two main types of machine learning, namely</p>
+There are many kinds of machine learning, including</p>
 <ul>
-<li><p>Supervised Learning, and</p></li>
-<li><p>Unsupervised Learning.</p></li>
+<li><p>Supervised Learning (which we’ll talk about a lot)</p></li>
+<li><p>Unsupervised Learning</p></li>
+<li><p>Semi-supervised learning</p></li>
+<li><p>Reinforcement Learning</p></li>
+<li><p>Generative AI</p></li>
 </ul>
 <p>We will also discuss which problems each type might be best suited for.</p>
 </section>
@@ -411,19 +414,7 @@ Today we will see two main types of machine learning, namely</p>
 <p><br>
 Here the training data is comprised of a set of <em>features</em>, and each example comes with a corresponding <em>target</em>. The goal is to get a machine learning model to accurately predict the target based on the feature values.</p>
 <p>Examples could include spam filtering, face recognition or weather forecasting.</p>
-</section>
-<section id="unsupervised-learning" class="slide level2 center">
-<h2>Unsupervised Learning</h2>
-<p><br>
-In unsupervised learning, there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together.</p>
-<p>Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix).</p>
-</section>
-<section id="other-ml-types" class="slide level2 center">
-<h2>Other ML types</h2>
-<p><br>
-Some other types of Machine Learning include self-supervised learning and reinforcement learning.</p>
-<p>Self-supervised algorithms automatically learn to generate labels and transform unsupervised problems to supervised ones.</p>
-<p>Reinforcement Leaning trains an agent using a system of rewards and penalties. The agent learns strategies to maximize reward. AlphaGo is a reinforcement learning agent that taught itself to play Go, and was able to beat the strongest human Go players.</p>
+<p>By contrast, in unsupervised learning there are no targets. The goal is instead to uncover underlying patterns. These can be used to provide a concise summary of the data, or group similar examples together. Examples could include customer segmentation, anomaly detection or online recommendation systems (think Netflix).</p>
 </section>
 <section id="activity-2" class="slide level2 center">
 <h2>Activity 2</h2>
@@ -436,7 +427,7 @@ Some other types of Machine Learning include self-supervised learning and reinfo
 <p><br>
 We will use a simple machine learning model– a decision tree– to demonstrate some fundamental concepts in machine learning. Suppose we have the following dataset:<br>
 </p>
-<div id="6bb353be" class="cell" data-execution_count="1">
+<div id="c60f5307" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display" data-execution_count="1">
 <div>
 <style scoped="">
@@ -541,7 +532,7 @@ A decision tree iteratively splits the data by asking questions about feature va
 <h2>A Decision Stump</h2>
 <p><br>
 </p>
-<div id="61fb9bdf" class="cell" data-execution_count="2">
+<div id="b32a7752" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -555,7 +546,7 @@ A decision tree iteratively splits the data by asking questions about feature va
 <section id="iterating-the-procedure" class="slide level2 center">
 <h2>Iterating the procedure</h2>
 <p>&nbsp;</p>
-<div id="de5f2f56" class="cell" data-execution_count="3">
+<div id="ef0d7c95" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -569,7 +560,7 @@ A decision tree iteratively splits the data by asking questions about feature va
 <section id="building-a-decision-tree" class="slide level2 center">
 <h2>Building a Decision Tree</h2>
 <p>&nbsp;</p>
-<div id="c0ff176e" class="cell" data-execution_count="4">
+<div id="f0b10eb5" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -607,7 +598,7 @@ To demonstrate some fundamental concepts in machine learning, we will attempt to
 <h2>A Look at the Data</h2>
 <p><br>
 Each photo is 64x64 pixels in grayscale. The images are represented by a row of pixel intensities showing how dark each individual pixel should be.</p>
-<div id="d5146fc2" class="cell" data-execution_count="5">
+<div id="f40518e4" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
 <style scoped="">
@@ -731,7 +722,7 @@ Each photo is 64x64 pixels in grayscale. The images are represented by a row of 
 </div>
 </div>
 </div>
-<div id="751ab584" class="cell" data-execution_count="6">
+<div id="56d9511b" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-stdout">
 <pre><code>The dataset has 4096 features.</code></pre>
 </div>
@@ -747,7 +738,7 @@ We can build a decision tree classifier on the dataset of faces and see how it p
 <h2>A Decision Tree Classifier</h2>
 <p><br>
 </p>
-<div id="57070131" class="cell" data-execution_count="7">
+<div id="b0bcbb6a" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-stdout">
 <pre><code>The model classified 100.0% of training examples correctly by 
  building a decision tree of depth 41</code></pre>
@@ -761,9 +752,9 @@ That’s very accurate indeed! Maybe decision trees are a really good way to det
 <h2>Did we build a good model?</h2>
 <p><br>
 </p>
-<div id="52be862f" class="cell" data-execution_count="8">
+<div id="5e6d458b" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-stdout">
-<pre><code>The model acheived an accuracy of 52.5% on new data</code></pre>
+<pre><code>The model acheived an accuracy of 45.0% on new data</code></pre>
 </div>
 </div>
 <p><br>
@@ -771,7 +762,7 @@ That’s very accurate indeed! Maybe decision trees are a really good way to det
 </section>
 <section id="whats-going-on" class="slide level2 center">
 <h2>What’s going on?</h2>
-<div id="906f5451" class="cell" data-execution_count="9">
+<div id="cfa9d4ae" class="cell" data-execution_count="9">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -785,7 +776,7 @@ That’s very accurate indeed! Maybe decision trees are a really good way to det
 <h2>Practice makes perfect</h2>
 <p><br>
 Our deep decision tree likely just memorized the dataset. After all, with a tree of depth 38, we could actually memorize up to 2<sup>38</sup> distinct examples!</p>
-<p>Clearly this does not make for a good model. After all, we want a model that can recognize faces, even when they appear in new images.</p>
+<p>Clearly this does not make for a good model. We want a model that can recognize faces, even when they appear in new images.</p>
 </section>
 <section id="overfitting" class="slide level2 center">
 <h2>Overfitting</h2>
@@ -814,7 +805,7 @@ Your colleague is trying to build a machine learning model to detect cancers in 
 <p><br>
 By using the same test set for each of the 10,000 models they tried, your colleague has violated the <em>golden rule of machine learning</em>.</p>
 <p>The golden rule tells us that <strong>test data must not influence the model training in any way</strong>.</p>
-<p>Even though your colleague never directly trained on test data, they used test data multiple times to validate model performance. As a result, they are likely to have found good performance <em>purely by accident</em>.</p>
+<p>Even though your colleague never directly trained on test data, they used test data multiple times to validate model performance. As a result, they may have found good performance <em>purely by accident</em>.</p>
 </section>
 <section id="scenario-2" class="slide level2 center">
 <h2>Scenario 2</h2>

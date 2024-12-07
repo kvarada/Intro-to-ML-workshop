@@ -492,11 +492,11 @@
 <h2>Sentiment Analysis: An Example</h2>
 <p><br>
 Let us attempt to use logistic regression to do sentiment analysis on a database of IMDB reviews. The database is available <a href="https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews?resource=download">here</a>.</p>
-<div id="11a88c7f" class="cell" data-execution_count="2">
+<div id="220ceefd" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a>imdb_df <span class="op">=</span> pd.read_csv(<span class="st">"data/imdb_master.csv"</span>, encoding<span class="op">=</span><span class="st">"ISO-8859-1"</span>)</span>
 <span id="cb1-2"><a></a>imdb_df.rename(columns<span class="op">=</span>{<span class="st">"sentiment"</span>: <span class="st">"label"</span>}, inplace <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="e8776c59" class="cell" data-execution_count="3">
+<div id="73afe7d8" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 <style scoped="">
@@ -559,13 +559,13 @@ Let us attempt to use logistic regression to do sentiment analysis on a database
 <h2>Bag of Words</h2>
 <p><br>
 To create features that logistic regression can use, we will represent these reviews via a “bag of words” strategy.</p>
-<p>We create a new feature for every word that appears in the dataset. Then, if a review contains that word the corresponding feature gets a value of 1 for that review. If the word is not present, it’s marked as 0.</p>
+<p>We create a new feature for every word that appears in the dataset. Then, if a review contains that word exactly once, the corresponding feature gets a value of 1 for that review. If the word appears four times, the feature gets a value of 4. If the word is not present, it’s marked as 0.</p>
 </section>
 <section id="bag-of-words-1" class="slide level2 center">
 <h2>Bag of Words</h2>
 <p><br>
 Notice that the result is a sparse matrix. Most reviews contain only a small number of words.</p>
-<div id="0f0dcdae" class="cell" data-execution_count="5">
+<div id="940dbdcb" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>vec <span class="op">=</span> CountVectorizer(stop_words<span class="op">=</span><span class="st">"english"</span>)</span>
 <span id="cb2-2"><a></a>bow <span class="op">=</span> vec.fit_transform(X_train)</span>
 <span id="cb2-3"><a></a>bow</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -575,7 +575,7 @@ Notice that the result is a sparse matrix. Most reviews contain only a small num
 </div>
 </div>
 <p>There are a total of 38867 “words” among the reviews. Here are some of them:</p>
-<div id="e3419ca3" class="cell" data-execution_count="6">
+<div id="f32f6917" class="cell" data-execution_count="6">
 <div class="cell-output cell-output-display" data-execution_count="6">
 <pre><code>array(['00', 'affection', 'apprehensive', 'barbara', 'blore',
        'businessman', 'chatterjee', 'commanding', 'cramped', 'defining',
@@ -591,7 +591,7 @@ Notice that the result is a sparse matrix. Most reviews contain only a small num
 <section id="checking-the-class-counts" class="slide level2 center">
 <h2>Checking the class counts</h2>
 <p>Let us see how many reviews are positive, and how many are negative. &nbsp;</p>
-<div id="3129492a" class="cell" data-execution_count="7">
+<div id="02f3ea82" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a></a>y_train.value_counts()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>label
@@ -615,7 +615,7 @@ Name: count, dtype: int64</code></pre>
 <p><br>
 </p>
 <p>Let’s see how the model performs after training.</p>
-<div id="3187cab3" class="cell" data-execution_count="8">
+<div id="fe149da6" class="cell" data-execution_count="8">
 <div class="cell-output cell-output-display" data-execution_count="8">
 <div>
 <style scoped="">
@@ -645,36 +645,36 @@ Name: count, dtype: int64</code></pre>
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>0.414605</td>
-<td>0.064162</td>
+<td>0.411476</td>
+<td>0.058247</td>
 <td>0.828</td>
 <td>0.99975</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>0.405794</td>
-<td>0.063070</td>
+<td>0.407961</td>
+<td>0.059842</td>
 <td>0.830</td>
 <td>0.99975</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>0.397011</td>
-<td>0.061530</td>
+<td>0.422086</td>
+<td>0.058663</td>
 <td>0.848</td>
 <td>0.99975</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>0.384352</td>
-<td>0.060801</td>
+<td>0.408087</td>
+<td>0.057880</td>
 <td>0.833</td>
 <td>1.00000</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
-<td>0.380680</td>
-<td>0.062513</td>
+<td>0.397947</td>
+<td>0.059378</td>
 <td>0.840</td>
 <td>0.99975</td>
 </tr>
@@ -706,7 +706,7 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 <p><br>
 </p>
 <p>Let’s see what associations our model learned.</p>
-<div id="912cf319" class="cell" data-execution_count="10">
+<div id="6039ffdf" class="cell" data-execution_count="10">
 <div class="cell-output cell-output-display" data-execution_count="10">
 <div>
 <style scoped="">
@@ -733,23 +733,23 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">excellent</td>
-<td>0.829925</td>
+<td>0.792911</td>
 </tr>
 <tr class="even">
-<td data-quarto-table-cell-role="th">amazing</td>
-<td>0.659019</td>
+<td data-quarto-table-cell-role="th">perfect</td>
+<td>0.608851</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">perfect</td>
-<td>0.652637</td>
+<td data-quarto-table-cell-role="th">amazing</td>
+<td>0.602716</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">wonderful</td>
-<td>0.614264</td>
+<td>0.564188</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">surprised</td>
-<td>0.591126</td>
+<td>0.536449</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">...</td>
@@ -757,28 +757,28 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">waste</td>
-<td>-0.741045</td>
+<td>-0.669122</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">terrible</td>
-<td>-0.771132</td>
+<td>-0.697831</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">boring</td>
-<td>-0.774340</td>
+<td>-0.709981</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">awful</td>
-<td>-0.937574</td>
+<td>-0.870623</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">worst</td>
-<td>-1.200254</td>
+<td>-1.117365</td>
 </tr>
 </tbody>
 </table>
 
-<p>15102 rows × 1 columns</p>
+<p>5775 rows × 1 columns</p>
 </div>
 </div>
 </div>
@@ -789,7 +789,7 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 <p><br>
 </p>
 <p>They make sense! Let’s visualize the 20 most important features.</p>
-<div id="8d18ffcc" class="cell" data-execution_count="11">
+<div id="fdc6f40c" class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display">
 <div>
 <figure>
@@ -805,14 +805,14 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 </p>
 <p>Finally, let’s try predicting on some new examples.<br>
 </p>
-<div id="c9a246fa" class="cell" data-execution_count="12">
+<div id="b7ea4de7" class="cell" data-execution_count="12">
 <div class="cell-output cell-output-display" data-execution_count="12">
 <pre><code>['It got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!',
  'The plot was shallower than a kiddie pool in a drought, but hey, at least we now know emojis should stick to texting and avoid the big screen.']</code></pre>
 </div>
 </div>
 <p>Here are the model predictions:</p>
-<div id="5e11d392" class="cell" data-execution_count="13">
+<div id="07b7af7d" class="cell" data-execution_count="13">
 <div class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>array(['positive', 'negative'], dtype=object)</code></pre>
 </div>
@@ -824,7 +824,7 @@ We’re able to predict with roughly 84% accuracy on validation sets. Looks like
 <section id="understanding-predictions" class="slide level2 center">
 <h2>Understanding Predictions</h2>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="dd3c993e" class="cell" data-execution_count="14">
+<div id="fc00820f" class="cell" data-execution_count="14">
 <div class="cell-output cell-output-stdout">
 <pre><code>It got a bit boring at times but the direction was excellent and the acting was flawless. Overall I enjoyed the movie and I highly recommend it!</code></pre>
 </div>
