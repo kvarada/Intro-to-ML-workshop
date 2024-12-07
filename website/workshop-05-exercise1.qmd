@@ -14,6 +14,7 @@ In this session, you will do a hands on exercise on machine learning fundamental
 ## Kaggle
 
 Create a (free) Kaggle account. You will run the Jupyter notebook for this exercise using Kaggle notebooks.
+{{< revealjs "slides/slides-09-ml-exercise.html" height="600px" class="ratio ratio-16x9" >}}
 
 ## Notebook Download
 
