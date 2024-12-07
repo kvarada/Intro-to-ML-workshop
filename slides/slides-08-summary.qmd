@@ -1,0 +1,44 @@
+---
+title: Summary and conclusion
+subtitle: Is Machine Learning Suitable for Your Projects? 
+date: 2024-12-07
+
+format:
+    revealjs:
+        html-math-method: plain
+        slide-level: 2
+        theme:
+          - slides.scss
+
+editor:
+  render-on-save: true
+---
+
+## What did we cover? 
+- Supervised machine learning fundamentals
+- Introduction to linear models 
+- Introduction to deep learning and transfer learning
+- Introduction to language models 
+
+## A bit about our MDS program 
+\
+- The teaching team is from the Master of Data Science program. 
+- 10-month accelerated program 
+
+
+## MDS QR code
+\
+- Submit a data science related Capstone project
+  - https://ubc-mds.github.io/capstone/about/ 
+- If you are interested in applying to the program check out this page: 
+![](img/MDS-V-QR-code.png)
+
+## How did we do?  
+
+- That's it! Thank you for attending our workshop.
+- We would greatly appreciate your feedback.
+  - Feedback form: https://forms.gle/xnkDu7nHqHTcWyk8A
+- Your input will also help us advocate for organizing more workshops like this in the future.
+
+
+
