@@ -29,7 +29,7 @@ format:
 
 ## How To Add a Dataset
 
-1. Click `+ Add data` at the top right of the notebook.
+1. Click `+ Add Input` at the top right of the notebook.
 
 2. Choose `Datasets` and search for the keyword (e.g. 'cat-breed-mardhik'). Several datasets will appear. Look for and 'Add' the dataset.
 
