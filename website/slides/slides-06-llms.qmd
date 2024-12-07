@@ -8,7 +8,11 @@ format:
 
 ## Learning outcomes 
 \
-From this module, you will be able to 
+By the end of this module, you will be able to:
+- Explain language models and large language models
+- Describe the concept of self-attention
+- Distinguish between decoder-only, encoder-only, and encoder-decoder models
+- Apply pre-trained large language models for zero-shot learning
 
 ```{python}
 import os
@@ -38,12 +42,19 @@ Each of you will receive a sticky note with a word on it at some point. Here's w
 - You've just created a simple Markov model of language!
 - In predicting the next word from a minimal context, you likely used your linguistic intuition and familiarity with common two-word phrases or collocations.
 - You could create more coherent sentences by taking into account more context e.g., previous two words or four words or 100 words.
-- This idea was first used by Shannon for character prediction in The Shannon's game. See this video by [Jordan Boyd-Graber](https://www.youtube.com/watch?v=0shft1gokac) for more information on this. 
 
-## Applications of predicting next word
-\
+## Language model 
+- **A language model** computes the probability distribution over sequences (of words or characters). Intuitively, this probability tells us how "good" or plausible a sequence of words is. 
 
-One of the most common applications for predicting the next word is the 'smart compose' feature in your emails, text messages, and search engines.
+![](img/voice-assistant-ex.png)
+
+<!-- <img src="img/voice-assistant-ex.png" height="1400" width="1400"> -->
+
+Check out this [recent BMO ad](https://www.youtube.com/watch?v=VzqKtAYeJt4).
+
+
+## Smart compose 
+A common application for predicting the next word is the 'smart compose' feature in your emails, text messages, and search engines.
 
 ```{python}
 url = "https://2.bp.blogspot.com/-KlBuhzV_oFw/WvxP_OAkJ1I/AAAAAAAACu0/T0F6lFZl-2QpS0O7VBMhf8wkUPvnRaPIACLcBGAs/s1600/image2.gif"
@@ -51,16 +62,39 @@ url = "https://2.bp.blogspot.com/-KlBuhzV_oFw/WvxP_OAkJ1I/AAAAAAAACu0/T0F6lFZl-2
 IPython.display.IFrame(url, width=500, height=500)
 ```
 
-## Language model
+## Why should we care about predicting next word? 
 \
 
-A language model computes the probability distribution over sequences (of words or characters). Intuitively, this probability tells us how "good" or plausible a sequence of words is. 
+- **Many practical language-related tasks can be cast as word prediction.**
 
-![](img/voice-assistant-ex.png)
 
-<!-- <img src="img/voice-assistant-ex.png" height="1400" width="1400"> -->
+## Sentiment analysis as word prediction 
 
-Check out this [recent BMO ad](https://www.youtube.com/watch?v=VzqKtAYeJt4).
+- We can cast sentiment analysis as language modeling by giving a language model a context like: 
+
+> The sentiment of the sentence "I like machine learning" is: 
+
+- And comparing the probability of word "postive" and the word negative. If the positive is more probable, we say the sentiment is positive, else negative. 
+
+## Question answering as word prediction 
+
+- We can cast question answering as language modeling by giving a language model a context like: 
+
+> Q: Who won the Nobel Prize in 2024 for their work in deep learning? A: 
+
+- We might expect to see that "Geoffrey" is very likely. If we continue and ask: 
+
+> Q: Who won the Nobel Prize in 2024 for their work in deep learning? A: Geoffrey
+
+- We might expect to see that "Hinton" is very likely.
+
+
+## Text summarization casted as word prediction
+
+- Input: Long text such as a full length article
+- Output: Effective shorter summary of it
+- We can follow the text of the artile by a token like: tl;dr; (too long; didn't read)
+- Since this token is sufficiently common in the recent years, a lanaguage model have seen many texts in which this token occurs before a summary. So it will interpret it as an instruction to generate a summary. 
 
 
 ## A simple model of language 
