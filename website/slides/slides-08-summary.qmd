@@ -14,14 +14,28 @@ editor:
   render-on-save: true
 ---
 
-## Thank you! 
+## What did we cover? 
+- Supervised machine learning fundamentals
+- Introduction to linear models 
+- Introduction to deep learning and transfer learning
+- Introduction to language models 
+
+## A bit about our MDS program 
 \
-Thank you for attending the workshop! 
+- 10-month accelerated professional program with industry consultation
+- 24 1-credit courses in 8 months + 2 months Capstone with industry/academia partners 
+- Unique partnership between CS, Stats, and Linguistics
+- Curriculum designed from scratch 
+
+## Our audience
+- Individuals with basic knowledge of programming, statistics, calculus, and linear algebra.
+- Professionals currently working with data, seeking a systematic understanding of data science to effectively solve their data problems 
+- Those looking for a career change, feeling bored, or aiming to upskill
+- Fresh undergrads with research experience or who have completed co-ops or internships
+
 
 ## MDS QR code
 \
-- Master of Data Science program 
-- 10-month accelerated program 
 - Submit a data science related Capstone project
   - https://ubc-mds.github.io/capstone/about/ 
 - If you are interested in applying to the program check out this page: 
@@ -33,6 +47,3 @@ Thank you for attending the workshop!
 - We would greatly appreciate your feedback.
   - Feedback form: https://forms.gle/xnkDu7nHqHTcWyk8A
 - Your input will also help us advocate for organizing more workshops like this in the future.
-
-
-
