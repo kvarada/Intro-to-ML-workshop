@@ -1,6 +1,5 @@
 ---
 title: Summary and conclusion
-subtitle: Is Machine Learning Suitable for Your Projects? 
 date: 2024-12-07
 
 format:
@@ -15,35 +14,47 @@ editor:
 ---
 
 ## What did we cover? 
+
 - Supervised machine learning fundamentals
 - Introduction to linear models 
 - Introduction to deep learning and transfer learning
-- Introduction to language models 
+- Introduction to language models and large language models
 
 ## A bit about our MDS program 
-\
-- 10-month accelerated professional program with industry consultation
+
+- Master of Data Science (MDS) is a 10-month accelerated professional program 
 - 24 1-credit courses in 8 months + 2 months Capstone with industry/academia partners 
 - Unique partnership between CS, Stats, and Linguistics
 - Curriculum designed from scratch 
 
 ## Our audience
+
 - Individuals with basic knowledge of programming, statistics, calculus, and linear algebra.
 - Professionals currently working with data, seeking a systematic understanding of data science to effectively solve their data problems 
 - Those looking for a career change, feeling bored, or aiming to upskill
 - Fresh undergrads with research experience or who have completed co-ops or internships
 
 
-## MDS QR code
-\
-- Submit a data science related Capstone project
-  - https://ubc-mds.github.io/capstone/about/ 
-- If you are interested in applying to the program check out this page: 
-![](img/MDS-V-QR-code.png)
+## Some possibilities
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Submit a data science related [Capstone project](https://ubc-mds.github.io/capstone/about/) and work with our students 
+- If you are interested in applying to the program check out our web page: https://ubc-mds.github.io/ 
+:::
+
+::: {.column width="50%"}
+![](img/MDS-V-QR-Code.png)
+:::
+::::
+
 
 ## How did we do?  
 
 - That's it! Thank you for attending our workshop.
 - We would greatly appreciate your feedback.
-  - Feedback form: https://forms.gle/xnkDu7nHqHTcWyk8A
+  - Feedback form: [https://forms.gle/xnkDu7nHqHTcWyk8A](https://forms.gle/xnkDu7nHqHTcWyk8A)
 - Your input will also help us advocate for organizing more workshops like this in the future.
+
+![](img/eva-signing-off.png)
