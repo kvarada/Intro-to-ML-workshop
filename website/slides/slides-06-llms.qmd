@@ -8,7 +8,9 @@ format:
 
 ## Learning outcomes 
 \
+
 By the end of this module, you will be able to:
+
 - Explain language models and large language models
 - Describe the concept of self-attention
 - Distinguish between decoder-only, encoder-only, and encoder-decoder models
@@ -22,6 +24,11 @@ import IPython
 from IPython.display import HTML, display
 import pandas as pd
 ```
+
+## Take a guess
+
+- What's the estimate of the vocabulary size of young adult speakers of American English? 
+
 
 ## Language models activity 
 \
@@ -93,7 +100,7 @@ IPython.display.IFrame(url, width=500, height=500)
 
 - Input: Long text such as a full length article
 - Output: Effective shorter summary of it
-- We can follow the text of the artile by a token like: tl;dr; (too long; didn't read)
+- We can follow the text of the artile by a token like: **tl;dr; (too long; didn't read)**
 - Since this token is sufficiently common in the recent years, a lanaguage model have seen many texts in which this token occurs before a summary. So it will interpret it as an instruction to generate a summary. 
 
 
@@ -160,6 +167,17 @@ Consider the examples below:
 The word **note** in these examples serves quite distinct meanings, each tied to different contexts. To capture varying word meanings across different contexts, we need a mechanism that considers the wider context to compute each word's contextual representation.
 
 - **Self-attention** is just that mechanism!
+
+
+## What is an LLM? 
+
+- A **large language model** learns knowledge about language and the world from vast amounts of text. 
+- It learns complexities of language simply by emersing in it without any text book to learn a language. 
+- At a high level, training LLMs works as follows:  
+    - we feed the model batches of text
+    - it tries to predict what comes next
+    - we check the answers and based on how well it does, the model changes its internal settings (parameters)
+    - it's learning and improving   
 
 ## Using LLMs in your applications
 \
