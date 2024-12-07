@@ -25,6 +25,11 @@ from IPython.display import HTML, display
 import pandas as pd
 ```
 
+## Take a guess
+
+- What do you think is the vocabulary size of young adult speakers of American English? 
+
+
 ## Language models activity 
 \
 
@@ -163,6 +168,17 @@ The word **note** in these examples serves quite distinct meanings, each tied to
 
 - **Self-attention** is just that mechanism!
 
+
+## What is an LLM? 
+
+- A **large language model** learns knowledge about language and the world from vast amounts of text. 
+- It learns complexities of language simply by emersing in it without any text book to learn a language. 
+- At a high level, training LLMs works as follows:  
+    - we feed the model batches of text
+    - it tries to predict what comes next
+    - we check the answers and based on how well it does, the model changes its internal settings (parameters)
+    - it's learning and improving   
+
 ## Using LLMs in your applications
 \
 
@@ -248,6 +264,13 @@ outputs = classifier(exs, candidate_labels)
 pd.DataFrame(outputs)
 ```
 :::
+
+## Fun tools 
+- [NotebookLM](https://notebooklm.google/) 
+- [LIDA](https://microsoft.github.io/lida/)
+- [LangChain](https://www.langchain.com/)
+- [Graphologue](https://graphologue.app/)
+- ...
 
 ## Harms of large language models 
 

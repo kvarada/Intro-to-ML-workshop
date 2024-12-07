@@ -411,6 +411,12 @@
 <li>Apply pre-trained large language models for zero-shot learning</li>
 </ul>
 </section>
+<section id="take-a-guess" class="slide level2 center">
+<h2>Take a guess</h2>
+<ul>
+<li>What do you think is the vocabulary size of young adult speakers of American English?</li>
+</ul>
+</section>
 <section id="language-models-activity" class="slide level2 center">
 <h2>Language models activity</h2>
 <p><br>
@@ -447,7 +453,7 @@
 <section id="smart-compose" class="slide level2 center">
 <h2>Smart compose</h2>
 <p>A common application for predicting the next word is the ‘smart compose’ feature in your emails, text messages, and search engines.</p>
-<div id="d683e4fe" class="cell" data-execution_count="2">
+<div id="66cf301b" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display" data-execution_count="2">
 
         <iframe width="500" height="500" src="https://2.bp.blogspot.com/-KlBuhzV_oFw/WvxP_OAkJ1I/AAAAAAAACu0/T0F6lFZl-2QpS0O7VBMhf8wkUPvnRaPIACLcBGAs/s1600/image2.gif" frameborder="0" allowfullscreen=""></iframe>
@@ -546,7 +552,7 @@
 <li>An important innovation which makes these models work so well is <strong>self-attention</strong>.</li>
 <li>Count how many times the players wearing the white pass the basketball?</li>
 </ul>
-<div id="e0174e94" class="cell" data-execution_count="3">
+<div id="24e293d4" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 
         <iframe width="500" height="500" src="https://www.youtube.com/embed/vJG698U2Mvo" frameborder="0" allowfullscreen=""></iframe>
@@ -568,6 +574,20 @@
 <p>The word <strong>note</strong> in these examples serves quite distinct meanings, each tied to different contexts. To capture varying word meanings across different contexts, we need a mechanism that considers the wider context to compute each word’s contextual representation.</p>
 <ul>
 <li><strong>Self-attention</strong> is just that mechanism!</li>
+</ul>
+</section>
+<section id="what-is-an-llm" class="slide level2 center">
+<h2>What is an LLM?</h2>
+<ul>
+<li>A <strong>large language model</strong> learns knowledge about language and the world from vast amounts of text.</li>
+<li>It learns complexities of language simply by emersing in it without any text book to learn a language.</li>
+<li>At a high level, training LLMs works as follows:
+<ul>
+<li>we feed the model batches of text</li>
+<li>it tries to predict what comes next</li>
+<li>we check the answers and based on how well it does, the model changes its internal settings (parameters)</li>
+<li>it’s learning and improving</li>
+</ul></li>
 </ul>
 </section>
 <section id="using-llms-in-your-applications" class="slide level2 center">
@@ -645,7 +665,7 @@
 <section id="pipelines-after-llms" class="slide level2 center">
 <h2>Pipelines after LLMs</h2>
 <p>&nbsp;</p>
-<div id="801135a5" class="cell" data-execution_count="4">
+<div id="16ef2902" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline, AutoModelForTokenClassification, AutoTokenizer</span>
 <span id="cb1-2"><a></a><span class="co"># Sentiment analysis pipeline</span></span>
 <span id="cb1-3"><a></a>analyzer <span class="op">=</span> pipeline(<span class="st">"sentiment-analysis"</span>, model<span class="op">=</span><span class="st">'distilbert-base-uncased-finetuned-sst-2-english'</span>)</span>
@@ -663,7 +683,7 @@
 <p><br>
 </p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="60a197e0" class="cell" data-execution_count="5">
+<div id="afb0a4e3" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>['i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived',
  'i was feeling a little vain when i did this one',
@@ -685,7 +705,7 @@
 <h2>Zero-shot learning for emotion detection</h2>
 <p><br>
 </p>
-<div id="f7904a95" class="cell" data-execution_count="6">
+<div id="945b7a9e" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer</span>
 <span id="cb4-2"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline </span>
 <span id="cb4-3"><a></a><span class="im">import</span> torch</span>
@@ -703,7 +723,7 @@
 <p><br>
 </p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="b06d7e3e" class="cell" data-execution_count="7">
+<div id="49d36b86" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 <style scoped="">
@@ -797,6 +817,16 @@
 </div>
 </div>
 </div>
+</section>
+<section id="fun-tools" class="slide level2 center">
+<h2>Fun tools</h2>
+<ul>
+<li><a href="https://notebooklm.google/">NotebookLM</a></li>
+<li><a href="https://microsoft.github.io/lida/">LIDA</a></li>
+<li><a href="https://www.langchain.com/">LangChain</a></li>
+<li><a href="https://graphologue.app/">Graphologue</a></li>
+<li>…</li>
+</ul>
 </section>
 <section id="harms-of-large-language-models" class="slide level2 center">
 <h2>Harms of large language models</h2>

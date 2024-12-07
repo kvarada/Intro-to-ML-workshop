@@ -245,6 +245,13 @@
     "text": "Learning outcomes\n\n\nBy the end of this module, you will be able to:\n\nExplain language models and large language models\nDescribe the concept of self-attention\nDistinguish between decoder-only, encoder-only, and encoder-decoder models\nApply pre-trained large language models for zero-shot learning"
   },
   {
+    "objectID": "slides/slides-06-llms.html#take-a-guess",
+    "href": "slides/slides-06-llms.html#take-a-guess",
+    "title": "Large Language Models",
+    "section": "Take a guess",
+    "text": "Take a guess\n\nWhat do you think is the vocabulary size of young adult speakers of American English?"
+  },
+  {
     "objectID": "slides/slides-06-llms.html#language-models-activity",
     "href": "slides/slides-06-llms.html#language-models-activity",
     "title": "Large Language Models",
@@ -343,6 +350,13 @@
     "text": "Self-attention\n\n\nWhen we process information, we often selectively focus on specific parts of the input, giving more attention to relevant information and less attention to irrelevant information. This is the core idea of attention.\nConsider the examples below:\n\nExample 1: She left a brief note on the kitchen table, reminding him to pick up groceries.\nExample 2: The diplomat’s speech struck a positive note in the peace negotiations.\nExample 3: She plucked the guitar strings, ending with a melancholic note.\n\nThe word note in these examples serves quite distinct meanings, each tied to different contexts. To capture varying word meanings across different contexts, we need a mechanism that considers the wider context to compute each word’s contextual representation.\n\nSelf-attention is just that mechanism!"
   },
   {
+    "objectID": "slides/slides-06-llms.html#what-is-an-llm",
+    "href": "slides/slides-06-llms.html#what-is-an-llm",
+    "title": "Large Language Models",
+    "section": "What is an LLM?",
+    "text": "What is an LLM?\n\nA large language model learns knowledge about language and the world from vast amounts of text.\nIt learns complexities of language simply by emersing in it without any text book to learn a language.\nAt a high level, training LLMs works as follows:\n\nwe feed the model batches of text\nit tries to predict what comes next\nwe check the answers and based on how well it does, the model changes its internal settings (parameters)\nit’s learning and improving"
+  },
+  {
     "objectID": "slides/slides-06-llms.html#using-llms-in-your-applications",
     "href": "slides/slides-06-llms.html#using-llms-in-your-applications",
     "title": "Large Language Models",
@@ -390,6 +404,13 @@
     "title": "Large Language Models",
     "section": "Zero-shot learning for emotion detection",
     "text": "Zero-shot learning for emotion detection\n\n\n\n\n\n\n\n\n\n\n\n\nsequence\nlabels\nscores\n\n\n\n\n0\nim feeling rather rotten so im not very ambiti...\n[sadness, anger, surprise, fear, joy, love]\n[0.7367963194847107, 0.10041721910238266, 0.09...\n\n\n1\nim updating my blog because i feel shitty\n[sadness, surprise, anger, fear, joy, love]\n[0.7429746985435486, 0.13775986433029175, 0.05...\n\n\n2\ni never make her separate from me because i do...\n[love, sadness, surprise, fear, anger, joy]\n[0.3153638243675232, 0.22490324079990387, 0.19...\n\n\n3\ni left with my bouquet of red and yellow tulip...\n[surprise, joy, love, sadness, fear, anger]\n[0.42182087898254395, 0.3336702883243561, 0.21...\n\n\n4\ni was feeling a little vain when i did this one\n[surprise, anger, fear, love, joy, sadness]\n[0.5639430284500122, 0.17000176012516022, 0.08...\n\n\n5\ni cant walk into a shop anywhere where i do no...\n[surprise, fear, sadness, anger, joy, love]\n[0.37033382058143616, 0.36559492349624634, 0.1...\n\n\n6\ni felt anger when at the end of a telephone call\n[anger, surprise, fear, sadness, joy, love]\n[0.9760521054267883, 0.01253431849181652, 0.00...\n\n\n7\ni explain why i clung to a relationship with a...\n[surprise, joy, love, sadness, fear, anger]\n[0.4382022023200989, 0.232231006026268, 0.1298...\n\n\n8\ni like to have the same breathless feeling as ...\n[surprise, joy, love, fear, anger, sadness]\n[0.7675782442092896, 0.13846899569034576, 0.03...\n\n\n9\ni jest i feel grumpy tired and pre menstrual w...\n[surprise, sadness, anger, fear, joy, love]\n[0.7340186834335327, 0.11860235780477524, 0.07..."
+  },
+  {
+    "objectID": "slides/slides-06-llms.html#fun-tools",
+    "href": "slides/slides-06-llms.html#fun-tools",
+    "title": "Large Language Models",
+    "section": "Fun tools",
+    "text": "Fun tools\n\nNotebookLM\nLIDA\nLangChain\nGraphologue\n…"
   },
   {
     "objectID": "slides/slides-06-llms.html#harms-of-large-language-models",
