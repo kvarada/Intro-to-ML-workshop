@@ -46,9 +46,11 @@ editor:
   - Module 2: Supervised machine learning models 
   - Module 3: Introduction to deep learning
   - Module 4: Introduction to large language models 
-
 - Each module will include hands-on exercises to reinforce learning.
 - We'll also make sure to take some breaks in between sessions. 
+
+## Source of the website 
+- We are using Quarto to create slides, with live code running in the background. You can access the source for this website and our slides on this GitHub page [https://github.com/kvarada/Intro-to-ML-workshop-2024](https://github.com/kvarada/Intro-to-ML-workshop-2024)
 
 # Let's get started! Buckle up and enjoy the ride! 
 

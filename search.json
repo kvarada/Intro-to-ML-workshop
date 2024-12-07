@@ -698,11 +698,18 @@
     "text": "Agenda\n\nWe will have four modules in the workshop\n\nModule 1: Machine learning fundamentals\nModule 2: Supervised machine learning models\nModule 3: Introduction to deep learning\nModule 4: Introduction to large language models\n\nEach module will include hands-on exercises to reinforce learning.\nWe’ll also make sure to take some breaks in between sessions."
   },
   {
+    "objectID": "slides/slides-01-intro.html#source-of-the-website",
+    "href": "slides/slides-01-intro.html#source-of-the-website",
+    "title": "Welcome!",
+    "section": "Source of the website",
+    "text": "Source of the website\n\nWe are using Quarto to create slides, with live code running in the background. You can access the source for this website and our slides on this GitHub page https://github.com/kvarada/Intro-to-ML-workshop-2024"
+  },
+  {
     "objectID": "slides/slides-07-llms-exercise.html#game-time",
     "href": "slides/slides-07-llms-exercise.html#game-time",
     "title": "Large Language Models Exercise",
     "section": "Game Time",
-    "text": "Game Time\nHere is a Jupyter notebook you can download for further exploration: Download and Save the Jupyter Notebook\nFollow the guidelines in the next page."
+    "text": "Game Time\nHere is a Jupyter notebook you can download for further exploration:\nDownload and Save the Jupyter Notebook"
   },
   {
     "objectID": "slides/slides-07-llms-exercise.html#how-to-work-on-kaggle",

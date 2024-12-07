@@ -9,11 +9,9 @@ format:
 ## Game Time
 
 Here is a Jupyter notebook you can download for further exploration:
-[Download and Save the Jupyter Notebook](downloads/exercise-03-language-model.ipynb){.btn .btn-primary}
 
-Follow the guidelines in the next page.
+[Download and Save the Jupyter Notebook](https://github.com/kvarada/Intro-to-ML-workshop-2024/blob/main/website/slides/downloads/exercise-03-language-model.ipynb)
 
-<img src="img/save_notebook.png" alt="drawing" width="400"/>
 
 ## How To Work On Kaggle
 
