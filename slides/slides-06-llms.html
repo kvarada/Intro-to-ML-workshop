@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.56">
+  <meta name="generator" content="quarto-1.5.57">
 
   <title>Introduction to Machine Learning Workshop – Large Language Models</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -402,7 +402,14 @@
 <section id="learning-outcomes" class="slide level2 center">
 <h2>Learning outcomes</h2>
 <p><br>
-From this module, you will be able to</p>
+</p>
+<p>By the end of this module, you will be able to:</p>
+<ul>
+<li>Explain language models and large language models</li>
+<li>Describe the concept of self-attention</li>
+<li>Distinguish between decoder-only, encoder-only, and encoder-decoder models</li>
+<li>Apply pre-trained large language models for zero-shot learning</li>
+</ul>
 </section>
 <section id="language-models-activity" class="slide level2 center">
 <h2>Language models activity</h2>
@@ -426,15 +433,21 @@ From this module, you will be able to</p>
 <li>You’ve just created a simple Markov model of language!</li>
 <li>In predicting the next word from a minimal context, you likely used your linguistic intuition and familiarity with common two-word phrases or collocations.</li>
 <li>You could create more coherent sentences by taking into account more context e.g., previous two words or four words or 100 words.</li>
-<li>This idea was first used by Shannon for characters in The Shannon’s game. See this video by <a href="https://www.youtube.com/watch?v=0shft1gokac">Jordan Boyd-Graber</a> for more information on this.</li>
 </ul>
 </section>
-<section id="applications-of-predicting-next-word" class="slide level2 center">
-<h2>Applications of predicting next word</h2>
-<p><br>
-</p>
-<p>One of the most common applications for predicting the next word is the ‘smart compose’ feature in your emails, text messages, and search engines.</p>
-<div id="0d23e566" class="cell" data-execution_count="2">
+<section id="language-model" class="slide level2 center">
+<h2>Language model</h2>
+<ul>
+<li><strong>A language model</strong> computes the probability distribution over sequences (of words or characters). Intuitively, this probability tells us how “good” or plausible a sequence of words is.</li>
+</ul>
+
+<!-- <img src="img/voice-assistant-ex.png" height="1400" width="1400"> -->
+<img data-src="img/voice-assistant-ex.png" class="r-stretch"><p>Check out this <a href="https://www.youtube.com/watch?v=VzqKtAYeJt4">recent BMO ad</a>.</p>
+</section>
+<section id="smart-compose" class="slide level2 center">
+<h2>Smart compose</h2>
+<p>A common application for predicting the next word is the ‘smart compose’ feature in your emails, text messages, and search engines.</p>
+<div id="d683e4fe" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display" data-execution_count="2">
 
         <iframe width="500" height="500" src="https://2.bp.blogspot.com/-KlBuhzV_oFw/WvxP_OAkJ1I/AAAAAAAACu0/T0F6lFZl-2QpS0O7VBMhf8wkUPvnRaPIACLcBGAs/s1600/image2.gif" frameborder="0" allowfullscreen=""></iframe>
@@ -442,14 +455,52 @@ From this module, you will be able to</p>
 </div>
 </div>
 </section>
-<section id="language-model" class="slide level2 center">
-<h2>Language model</h2>
+<section id="why-should-we-care-about-predicting-next-word" class="slide level2 center">
+<h2>Why should we care about predicting next word?</h2>
 <p><br>
 </p>
-<p>A language model computes the probability distribution over sequences (of words or characters). Intuitively, this probability tells us how “good” or plausible a sequence of words is.</p>
-
-<!-- <img src="img/voice-assistant-ex.png" height="1400" width="1400"> -->
-<img data-src="img/voice-assistant-ex.png" class="r-stretch"><p>Check out this <a href="https://www.youtube.com/watch?v=VzqKtAYeJt4">recent BMO ad</a>.</p>
+<ul>
+<li><strong>Many practical language-related tasks can be cast as word prediction.</strong></li>
+</ul>
+</section>
+<section id="sentiment-analysis-as-word-prediction" class="slide level2 center">
+<h2>Sentiment analysis as word prediction</h2>
+<ul>
+<li>We can cast sentiment analysis as language modeling by giving a language model a context like:</li>
+</ul>
+<blockquote>
+<p>The sentiment of the sentence “I like machine learning” is:</p>
+</blockquote>
+<ul>
+<li>And comparing the probability of word “postive” and the word negative. If the positive is more probable, we say the sentiment is positive, else negative.</li>
+</ul>
+</section>
+<section id="question-answering-as-word-prediction" class="slide level2 center">
+<h2>Question answering as word prediction</h2>
+<ul>
+<li>We can cast question answering as language modeling by giving a language model a context like:</li>
+</ul>
+<blockquote>
+<p>Q: Who won the Nobel Prize in 2024 for their work in deep learning? A:</p>
+</blockquote>
+<ul>
+<li>We might expect to see that “Geoffrey” is very likely. If we continue and ask:</li>
+</ul>
+<blockquote>
+<p>Q: Who won the Nobel Prize in 2024 for their work in deep learning? A: Geoffrey</p>
+</blockquote>
+<ul>
+<li>We might expect to see that “Hinton” is very likely.</li>
+</ul>
+</section>
+<section id="text-summarization-casted-as-word-prediction" class="slide level2 center">
+<h2>Text summarization casted as word prediction</h2>
+<ul>
+<li>Input: Long text such as a full length article</li>
+<li>Output: Effective shorter summary of it</li>
+<li>We can follow the text of the artile by a token like: <strong>tl;dr; (too long; didn’t read)</strong></li>
+<li>Since this token is sufficiently common in the recent years, a lanaguage model have seen many texts in which this token occurs before a summary. So it will interpret it as an instruction to generate a summary.</li>
+</ul>
 </section>
 <section id="a-simple-model-of-language" class="slide level2 center">
 <h2>A simple model of language</h2>
@@ -495,7 +546,7 @@ From this module, you will be able to</p>
 <li>An important innovation which makes these models work so well is <strong>self-attention</strong>.</li>
 <li>Count how many times the players wearing the white pass the basketball?</li>
 </ul>
-<div id="9dc78b1e" class="cell" data-execution_count="3">
+<div id="e0174e94" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display" data-execution_count="3">
 
         <iframe width="500" height="500" src="https://www.youtube.com/embed/vJG698U2Mvo" frameborder="0" allowfullscreen=""></iframe>
@@ -568,8 +619,8 @@ From this module, you will be able to</p>
 </tr>
 <tr class="odd">
 <td>Example</td>
-<td>DSI ML workshop audience is ___</td>
-<td>DSI ML workshop audience is the best! → positive</td>
+<td>Our ML workshop audience is ___</td>
+<td>Our ML workshop audience is the best! → positive</td>
 <td>Input: Translate to Mandarin: Long but productive day! Output: 漫长而富有成效的一天！</td>
 </tr>
 </tbody>
@@ -594,7 +645,7 @@ From this module, you will be able to</p>
 <section id="pipelines-after-llms" class="slide level2 center">
 <h2>Pipelines after LLMs</h2>
 <p>&nbsp;</p>
-<div id="24314029" class="cell" data-execution_count="4">
+<div id="801135a5" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline, AutoModelForTokenClassification, AutoTokenizer</span>
 <span id="cb1-2"><a></a><span class="co"># Sentiment analysis pipeline</span></span>
 <span id="cb1-3"><a></a>analyzer <span class="op">=</span> pipeline(<span class="st">"sentiment-analysis"</span>, model<span class="op">=</span><span class="st">'distilbert-base-uncased-finetuned-sst-2-english'</span>)</span>
@@ -612,7 +663,7 @@ From this module, you will be able to</p>
 <p><br>
 </p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="79c0e04a" class="cell" data-execution_count="5">
+<div id="60a197e0" class="cell" data-execution_count="5">
 <div class="cell-output cell-output-display" data-execution_count="5">
 <pre><code>['i left with my bouquet of red and yellow tulips under my arm feeling slightly more optimistic than when i arrived',
  'i was feeling a little vain when i did this one',
@@ -634,7 +685,7 @@ From this module, you will be able to</p>
 <h2>Zero-shot learning for emotion detection</h2>
 <p><br>
 </p>
-<div id="0407cdd0" class="cell" data-execution_count="6">
+<div id="f7904a95" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a><span class="im">from</span> transformers <span class="im">import</span> AutoTokenizer</span>
 <span id="cb4-2"><a></a><span class="im">from</span> transformers <span class="im">import</span> pipeline </span>
 <span id="cb4-3"><a></a><span class="im">import</span> torch</span>
@@ -652,7 +703,7 @@ From this module, you will be able to</p>
 <p><br>
 </p>
 <div class="scroll-container" style="overflow-y: scroll; height: 400px;">
-<div id="29084c54" class="cell" data-execution_count="7">
+<div id="b06d7e3e" class="cell" data-execution_count="7">
 <div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 <style scoped="">
@@ -683,61 +734,61 @@ From this module, you will be able to</p>
 <td data-quarto-table-cell-role="th">0</td>
 <td>im feeling rather rotten so im not very ambiti...</td>
 <td>[sadness, anger, surprise, fear, joy, love]</td>
-<td>[0.7367967367172241, 0.10041747242212296, 0.09...</td>
+<td>[0.7367963194847107, 0.10041721910238266, 0.09...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
 <td>im updating my blog because i feel shitty</td>
 <td>[sadness, surprise, anger, fear, joy, love]</td>
-<td>[0.7429749369621277, 0.13775970041751862, 0.05...</td>
+<td>[0.7429746985435486, 0.13775986433029175, 0.05...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
 <td>i never make her separate from me because i do...</td>
 <td>[love, sadness, surprise, fear, anger, joy]</td>
-<td>[0.31536391377449036, 0.2249031811952591, 0.19...</td>
+<td>[0.3153638243675232, 0.22490324079990387, 0.19...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
 <td>i left with my bouquet of red and yellow tulip...</td>
 <td>[surprise, joy, love, sadness, fear, anger]</td>
-<td>[0.4218207895755768, 0.33366963267326355, 0.21...</td>
+<td>[0.42182087898254395, 0.3336702883243561, 0.21...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
 <td>i was feeling a little vain when i did this one</td>
 <td>[surprise, anger, fear, love, joy, sadness]</td>
-<td>[0.5639424920082092, 0.170002281665802, 0.0864...</td>
+<td>[0.5639430284500122, 0.17000176012516022, 0.08...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">5</td>
 <td>i cant walk into a shop anywhere where i do no...</td>
 <td>[surprise, fear, sadness, anger, joy, love]</td>
-<td>[0.3703337609767914, 0.36559417843818665, 0.14...</td>
+<td>[0.37033382058143616, 0.36559492349624634, 0.1...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">6</td>
 <td>i felt anger when at the end of a telephone call</td>
 <td>[anger, surprise, fear, sadness, joy, love]</td>
-<td>[0.9760519862174988, 0.012534384615719318, 0.0...</td>
+<td>[0.9760521054267883, 0.01253431849181652, 0.00...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">7</td>
 <td>i explain why i clung to a relationship with a...</td>
 <td>[surprise, joy, love, sadness, fear, anger]</td>
-<td>[0.4382023811340332, 0.2322317510843277, 0.129...</td>
+<td>[0.4382022023200989, 0.232231006026268, 0.1298...</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">8</td>
 <td>i like to have the same breathless feeling as ...</td>
 <td>[surprise, joy, love, fear, anger, sadness]</td>
-<td>[0.7675781846046448, 0.13846896588802338, 0.03...</td>
+<td>[0.7675782442092896, 0.13846899569034576, 0.03...</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">9</td>
 <td>i jest i feel grumpy tired and pre menstrual w...</td>
 <td>[surprise, sadness, anger, fear, joy, love]</td>
-<td>[0.7340189814567566, 0.11860307306051254, 0.07...</td>
+<td>[0.7340186834335327, 0.11860235780477524, 0.07...</td>
 </tr>
 </tbody>
 </table>
@@ -764,7 +815,7 @@ From this module, you will be able to</p>
 <section id="thank-you" class="slide level2 center">
 <h2>Thank you!</h2>
 <ul>
-<li>That’s it for the modules! Now, let’s begin the game time.</li>
+<li>That’s it for the modules! Now, let’s work on exercises.</li>
 </ul>
 
 <div class="quarto-auto-generated-content">
